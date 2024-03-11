@@ -1,11 +1,13 @@
+import Home from "@/components/templates/Home";
+
 export const metadata = {
-  title: "Empire-Streaming | Un vaste choix de films/series en streaming",
+  title: "Thiop Thiop Bike | Le sile saloum en vélo éléctrique",
   description:
-    "Découvrez l'univers captivant d'Empire-Streaming ! Explorez notre vaste catalogue de films, séries TV et contenus exclusifs. Profitez d'une expérience de streaming exceptionnelle avec une qualité HD, des nouveautés régulières et des fonctionnalités innovantes.",
+    "Découvrez l'univers captivant de Thiop Thiop Bike ! Profitez d'une expérience exceptionnelle à vélo.",
   keywords:
-    "Streaming en ligne, Films, Séries TV, Contenus exclusifs, Divertissement en streaming, Catalogue vidéo, Qualité HD, Cinéma, Abonnements, Diffusion en direct, Expérience de streaming, Plateforme de divertissement, Streaming en ligne, Films, Séries, TV, Vidéos à la demande, VOD, Contenu multimédia, Diffusion en direct, Divertissement, Plateforme de streaming, Catalogue vidéo, Qualité HD, 4K",
+    "Voyage, Vélo, Sénégal, Bike, Location, Exploration, Randonnée, Tourisme, Circuit touristique",
 };
 
 export default function HomePage() {
-  return <p>First line</p>;
+  return <Home />;
 }

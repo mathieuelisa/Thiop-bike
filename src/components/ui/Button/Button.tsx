@@ -31,20 +31,20 @@ export default function Button({
     if (color) {
       switch (color) {
         case "primary":
-          classes += "bg-red-600 hover:bg-red-700 text-colors-offWhite ";
+          classes += "bg-red-600 hover:bg-red-700 text-white ";
           break;
         case "secondary":
-          classes += "bg-gray-200 hover:bg-gray-300 text-colors-offWhite ";
+          classes += "bg-gray-200 hover:bg-gray-300 text-white ";
           break;
         case "success":
-          classes += "bg-green-600 hover:bg-green-700 text-colors-offWhite ";
+          classes += "bg-green-600 hover:bg-green-700 text-white ";
           break;
         case "error":
           classes += "bg-red-600 hover:bg-red-700 text-black ";
           break;
         case "transparent":
           classes +=
-            "bg-transparent text-colors-offWhite border hover:bg-colors-offWhite hover:text-colors-lightBlack ";
+            "bg-transparent text-white border hover:bg-colors-offWhite hover:text-colors-lightBlack ";
           break;
         default:
           break;
