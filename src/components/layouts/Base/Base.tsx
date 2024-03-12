@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 
 import { usePathname } from "next/navigation";
-import { NAVBAR_CONTENT } from "../Navbar/Navbar.data";
+import { NAVBAR_CONTENT_MOBILE } from "../Navbar/Navbar.data";
 import { twJoin, twMerge } from "tailwind-merge";
 import Typography from "@/components/ui/Typography";
 import Link from "next/link";
@@ -41,15 +41,15 @@ export default function Base({ children }: TpageProps) {
       {/* MENU MOBILE RESPONSIVE */}
       {isMobileMenuOpen && (
         <motion.div
-          initial={{ opacity: 1, x: -600 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.2 }}
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.07 }}
           className={twJoin(
             "fixed h-[5180px] p-5 bg-colors-lightbrown z-50 transform transition duration-1000 ease-in-out",
             isMobileMenuOpen ? "w-full" : "w-0"
           )}
         >
-          {NAVBAR_CONTENT.map((element) => {
+          {NAVBAR_CONTENT_MOBILE.map((element) => {
             return (
               <Link
                 onClick={() => setMobileMenuOpen(false)}
