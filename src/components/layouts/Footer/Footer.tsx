@@ -14,15 +14,13 @@ export default function Footer() {
 
       <div className='w-full py-5' />
       <div className=' pb-10 px-10 tablet:px-40'>
-        <div className='flex justify-center flex-col items-center'>
-          <Typography className=' text-base font-bold text-white'>
-            THIOP THIOP BIKE
-          </Typography>
-        </div>
         <div className='flex justify-between items-center flex-col tablet:flex-row'>
           <div className='flex justify-center gap-11 tablet:gap-36 pt-10'>
             <div className='flex flex-col z-20 items-center tablet:items-start'>
-              <Typography className='font-semibold mb-3'>
+              <Typography className='font-bold mb-5 text-white text-xl font-matisan'>
+                Thiop Thiop Bike
+              </Typography>
+              <Typography className='font-semibold mb-2 text-sm'>
                 Aide & Tarifs
               </Typography>
 
