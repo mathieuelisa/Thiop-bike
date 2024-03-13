@@ -22,9 +22,11 @@ export default function Navbar() {
     useMobileMenu();
 
   return (
-    <header className='sticky flex top-0 min-h-14 px-5 z-40 items-center border-b bg-colors-lightgreen border-gray-600 justify-between tablet:justify-center'>
-      <nav className='hidden tablet:flex'>
-        {NAVBAR_CONTENT_FIRST_PART.map((element) => {
+    // flex-direction: row-reverse;
+    // justify-content: start;
+    <header className='sticky flex-row-reverse justify-end flex top-0 min-h-14 tablet:px-5 px-2 z-40 items-center border-b bg-colors-lightgreen border-gray-600 tablet:justify-center'>
+      <nav className='hidden tablet:flex ml-5'>
+        {NAVBAR_CONTENT_SECOND_PART.map((element) => {
           return (
             <Link
               href={element.link}
@@ -54,12 +56,12 @@ export default function Navbar() {
         href='/'
         className=' flex items-center'
       >
-        <Typography type='h3' className='font-extrabold font-matisan'>
+        <Typography className='font-extrabold font-matisan tablet:text-2xl text-lg'>
           Thiop Thiop Bike
         </Typography>
       </Link>
       <nav className='hidden tablet:flex ml-5'>
-        {NAVBAR_CONTENT_SECOND_PART.map((element) => {
+        {NAVBAR_CONTENT_FIRST_PART.map((element) => {
           return (
             <Link
               href={element.link}

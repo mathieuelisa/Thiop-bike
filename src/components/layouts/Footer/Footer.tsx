@@ -6,11 +6,19 @@ import { FIRST_FOOTER_CONTENT, TFooterLink } from "./Footer.data";
 import TwitterIcon from "@/components/ui/Icons/TwitterIcon";
 import FacebookIcon from "@/components/ui/Icons/FacebookIcon";
 import TiktokIcon from "@/components/ui/Icons/TiktokIcon";
+import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className=' bg-red-600'>
-      <div className=' h-80 absolute w-full' />
+    <footer className='relative overflow-hidden'>
+      <Image
+        quality={50}
+        className='absolute left-10 opacity-10'
+        width={300}
+        height={300}
+        src='/assets/images/home/plane_path.svg'
+        alt='elephant'
+      />
 
       <div className='w-full py-5' />
       <div className=' pb-10 px-10 tablet:px-40'>

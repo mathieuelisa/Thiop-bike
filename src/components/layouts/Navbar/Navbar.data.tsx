@@ -1,4 +1,9 @@
-export const NAVBAR_CONTENT_FIRST_PART = [
+type TNavbarContent = {
+  label: string;
+  link: string;
+};
+
+export const NAVBAR_CONTENT_FIRST_PART: TNavbarContent[] = [
   {
     label: "Accueil",
     link: "/",
@@ -9,7 +14,7 @@ export const NAVBAR_CONTENT_FIRST_PART = [
   },
 ];
 
-export const NAVBAR_CONTENT_SECOND_PART = [
+export const NAVBAR_CONTENT_SECOND_PART: TNavbarContent[] = [
   {
     label: "Tarifs",
     link: "/tarifs",
@@ -20,7 +25,7 @@ export const NAVBAR_CONTENT_SECOND_PART = [
   },
 ];
 
-export const NAVBAR_CONTENT_MOBILE = [
+export const NAVBAR_CONTENT_MOBILE: TNavbarContent[] = [
   {
     label: "Accueil",
     link: "/",

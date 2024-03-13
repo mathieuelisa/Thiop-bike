@@ -21,9 +21,11 @@ export default function Proposals() {
           return (
             <div
               key={element.id}
-              className='bg-colors-gray-500 rounded-3xl px-6 py-3 mx-9'
+              className='bg-colors-middlegreen flex justify-center flex-col rounded-3xl px-6 py-3 mx-9'
             >
-              <Typography>{element.description}</Typography>
+              <Typography className='text-center'>
+                {element.description}
+              </Typography>
             </div>
           );
         })}

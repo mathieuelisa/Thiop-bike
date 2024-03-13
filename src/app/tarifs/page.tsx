@@ -1,5 +1,6 @@
+import Tarifs from "@/components/templates/Tarifs";
 import React from "react";
 
-export default function Tarifs() {
-  return <div className='h-screen'>Tarifs</div>;
+export default function TarifsPage() {
+  return <Tarifs />;
 }
