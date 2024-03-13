@@ -31,3 +31,12 @@ body {
     text-wrap: balance;
   }
 }
+
+.slider-container {
+  width: 350px;
+}
+
+.slide-current {
+  display: flex;
+  justify-content: center;
+}

@@ -22,8 +22,6 @@ export default function Navbar() {
     useMobileMenu();
 
   return (
-    // flex-direction: row-reverse;
-    // justify-content: start;
     <header className='sticky flex-row-reverse justify-end flex top-0 min-h-14 tablet:px-5 px-2 z-40 items-center border-b bg-colors-lightgreen border-gray-600 tablet:justify-center'>
       <nav className='hidden tablet:flex ml-5'>
         {NAVBAR_CONTENT_SECOND_PART.map((element) => {

@@ -1,11 +1,11 @@
-type TTarif = {
+export type TTarif = {
   id: number;
   numberCustomer: string;
   priceCFA: number;
   priceEUR: number;
 };
 
-type TpriceCFAContent = {
+export type TpriceCFAContent = {
   id: number;
   title: string;
   description: string;

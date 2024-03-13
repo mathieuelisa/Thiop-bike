@@ -38,7 +38,7 @@ export default function Typography({
     case "h1":
       classNameReturn = twMerge(
         baseClassName,
-        type === "claim" ? "claim" : "text-4xl"
+        type === "claim" ? "claim" : "text-6xl"
       );
       elementReturn = "h1";
       break;

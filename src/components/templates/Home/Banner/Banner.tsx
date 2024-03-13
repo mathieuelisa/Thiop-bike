@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
 
 import Image from "next/image";
+import { twJoin, twMerge } from "tailwind-merge";
 
 const container = {
   hidden: {
@@ -27,9 +28,9 @@ export default function Banner() {
     <section className='relative px-0 overflow-hidden h-screen flex justify-center items-center'>
       <Image
         quality={50}
-        className='absolute bottom-10 right-0 opacity-10'
-        width={700}
-        height={700}
+        className='absolute bottom-0 -right-32 opacity-10'
+        width={800}
+        height={800}
         src='/assets/images/home/bike.svg'
         alt='leaf'
       />
@@ -55,7 +56,12 @@ export default function Banner() {
         initial='hidden'
         animate='visible'
       >
-        <Typography className='uppercase text-6xl font-black flex-col flex tablet:flex-row text-center tablet:text-start'>
+        <Typography
+          type='h1'
+          className={twJoin(
+            "text-6xl uppercase font-black flex-col flex tablet:flex-row text-center tablet:text-start"
+          )}
+        >
           Let&#39;s ride{" "}
           <span className='text-colors-lightbrown'>together.</span>
         </Typography>
