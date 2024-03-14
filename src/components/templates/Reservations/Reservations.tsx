@@ -7,21 +7,43 @@ import {
   customerSchema,
 } from "@/entities/Contact.interface";
 import { zodResolver } from "@hookform/resolvers/zod";
-import React from "react";
+import React, { useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { twMerge } from "tailwind-merge";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 export default function Reservations() {
+  const notify = () =>
+    toast.success("Reservation effectuée!", { position: "top-right" });
+
   const {
     handleSubmit,
     register,
-    formState: { errors },
+    reset,
+    formState: { errors, isSubmitSuccessful },
   } = useForm<TCustomerFormSchema>({
     resolver: zodResolver(customerSchema),
   });
   const onSubmit = (data: any) => {
     console.log("formulaire validé:", data);
+    notify();
   };
+
+  useEffect(() => {
+    if (isSubmitSuccessful) {
+      reset({
+        firstname: "",
+        lastname: "",
+        phoneNumber: "",
+        email: "",
+        nbOfParticipants: "",
+        allergy: "",
+        additionalInfo: "",
+      });
+    }
+  }, [isSubmitSuccessful, reset]);
 
   return (
     <section className='h-screen mx-5 tablet:px-20 '>
@@ -204,6 +226,7 @@ export default function Reservations() {
       >
         ENVOYER
       </Button>
+      <ToastContainer />
     </section>
   );
 }
