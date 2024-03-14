@@ -8,7 +8,7 @@ export const FIRST_FOOTER_CONTENT: TFooterLink[] = [
   {
     id: 1,
     label: "Nous contacter",
-    link: "/contact",
+    link: "mailto:thipthiopbike@gmail.com",
   },
   {
     id: 2,
