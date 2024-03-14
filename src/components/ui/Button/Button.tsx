@@ -13,6 +13,7 @@ type TButtonProps = {
   size?: "lg" | "md" | "sm";
   className?: string;
   disabled?: boolean;
+  form?: string;
 };
 
 export default function Button({
@@ -24,6 +25,7 @@ export default function Button({
   size,
   className,
   disabled,
+  form,
 }: TButtonProps) {
   const options = useMemo(() => {
     let classes = "";
@@ -90,6 +92,7 @@ export default function Button({
       disabled={disabled}
       type={type}
       onClick={onClick}
+      form={form}
       className={twMerge(
         "cursor-pointer font-muli flex justify-center items-center px-4 py-2 rounded-md transition duration-500 ease-in-out",
         options,

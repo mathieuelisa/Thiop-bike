@@ -64,7 +64,9 @@ export default function Base({ children }: TpageProps) {
                     : ""
                 )}
               >
-                <Typography className='text-xl'>{element.label}</Typography>
+                <Typography className='text-xl font-yeseva'>
+                  {element.label}
+                </Typography>
               </Link>
             );
           })}

@@ -11,6 +11,8 @@ const config: Config = {
   theme: {
     fontFamily: {
       matisan: ["var(--font-matisan)"],
+      abril: ["var(--font-abril)"],
+      yeseva: ["var(--font-yeseva)"],
     },
     extend: {
       backgroundImage: {

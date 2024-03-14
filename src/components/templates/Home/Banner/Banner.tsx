@@ -31,7 +31,7 @@ export default function Banner() {
         className='absolute bottom-0 -right-32 opacity-10'
         width={800}
         height={800}
-        src='/assets/images/home/bike.svg'
+        src='/assets/images/home/bike.png'
         alt='leaf'
       />
       <Image
@@ -59,11 +59,11 @@ export default function Banner() {
         <Typography
           type='h1'
           className={twJoin(
-            "text-6xl uppercase font-black flex-col flex tablet:flex-row text-center tablet:text-start"
+            "text-6xl font-yeseva uppercase font-black flex-col flex tablet:flex-row text-center tablet:text-start"
           )}
         >
           Let&#39;s ride{" "}
-          <span className='text-colors-lightbrown'>together.</span>
+          <span className='text-colors-lightbrown ml-4'>together.</span>
         </Typography>
         <Typography className='font-semibold text-center tablet:text-start'>
           Découvrez le Sénégal en vélo éléctrique

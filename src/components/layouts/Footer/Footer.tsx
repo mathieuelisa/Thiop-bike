@@ -25,7 +25,7 @@ export default function Footer() {
         <div className='flex justify-between items-center flex-col tablet:flex-row'>
           <div className='flex justify-center gap-11 tablet:gap-36 pt-10'>
             <div className='flex flex-col z-20 items-center tablet:items-start'>
-              <Typography className='font-bold mb-5 text-white text-xl font-matisan'>
+              <Typography className='font-bold mb-5 text-white text-xl font-abril'>
                 Thiop Thiop Bike
               </Typography>
               <Typography className='font-semibold mb-2 text-sm'>

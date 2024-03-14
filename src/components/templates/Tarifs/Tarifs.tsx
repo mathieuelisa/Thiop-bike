@@ -13,14 +13,14 @@ export default function Tarifs() {
   return (
     <section className='mx-5 tablet:px-20 h-screen'>
       <div className='flex justify-center flex-col items-center'>
-        <Typography className='text-3xl text-center tablet:text-start tablet:text-4xl mt-10 font-black uppercase'>
+        <Typography className='text-3xl text-center tablet:text-start tablet:text-4xl mt-10 font-black uppercase font-yeseva'>
           Profitez de nos offres
         </Typography>
         <Typography className='max-w-2xl text-center mt-4'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+          Trois expériences captivantes vous attendent lors de votre visite.
+          Nous sommes là pour répondre à tous vos besoins. N&#39;hésitez pas à
+          nous contacter par e-mail pour toute demande spécifique ou pour
+          réserver votre expérience dès maintenant.
         </Typography>
 
         {/* Offers part */}

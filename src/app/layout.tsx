@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Base from "@/components/layouts/Base";
 import { MobileMenuProvider } from "@/context/MobileMenuContext";
-import { Matisan } from "../../utils/customFonts";
+import { Abril, Matisan, Yeseva } from "../../utils/customFonts";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${Matisan.variable}`}>
+      <body
+        className={`${Matisan.variable} ${Abril.variable} ${Yeseva.variable}`}
+      >
         <MobileMenuProvider>
           <Base>{children}</Base>
         </MobileMenuProvider>

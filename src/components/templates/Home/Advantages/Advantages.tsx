@@ -24,18 +24,18 @@ export default function Advantages() {
             width={300}
             height={300}
             src='/assets/images/home/senegal.png'
-            alt='leaf'
+            alt='senegal'
           />
 
-          <Typography className='mb-5 text-3xl tablet:text-4xl text-center tablet:text-start'>
+          <Typography className='mb-5 text-3xl tablet:text-4xl text-center tablet:text-start font-yeseva'>
             VIVEZ UNE EXPERIENCE{" "}
-            <span className='text-colors-darkgreen'>INEDITE</span>
+            <span className='text-colors-lightbrown'>INÉDITE</span>
           </Typography>
           <Typography className='text-base z-10 tablet:text-xl leading-relaxed text-center tablet:text-start'>
-            Our theme lets you integrate Google Maps on any of your pages. Not
-            only this, but the maps are fully customizable so you can use the
-            style that fits you the most! You can also easily pin the
-            destinations from your posts right on the map!
+            À vélo, découvrir un pays devient une expérience immersive où chaque
+            coup de pédale révèle des trésors cachés et des rencontres
+            authentiques, transformant le voyage en une aventure humaine
+            inoubliable.
           </Typography>
         </div>
         <div className='tablet:w-1/2 w-full flex justify-center items-center mt-9'>
@@ -72,18 +72,19 @@ export default function Advantages() {
           />
         </div>
         <div className='flex flex-col tablet:w-1/2 w-full'>
-          <Typography className='mb-5 text-3xl tablet:text-4xl text-center tablet:text-start'>
-            DECOUVREZ
-            <span className='text-colors-darkgreen'>
+          <Typography className='mb-5 text-3xl tablet:text-4xl text-center tablet:text-start font-yeseva'>
+            DÉCOUVREZ
+            <span className='text-colors-lightbrown'>
               {" "}
-              D&#39;INCROYABLE ENDROITS
+              D&#39;INCROYABLES ENDROITS
             </span>
           </Typography>
           <Typography className='text-base z-10 tablet:text-xl leading-relaxed text-center tablet:text-start'>
-            Our theme lets you integrate Google Maps on any of your pages. Not
-            only this, but the maps are fully customizable so you can use the
-            style that fits you the most! You can also easily pin the
-            destinations from your posts right on the map!
+            Au cours de votre périple à vélo, vous découvrirez des paysages
+            magnifiques qui émerveilleront vos sens à chaque tournant. Des
+            montagnes majestueuses aux vallées luxuriantes, chaque coup de
+            pédale vous emmènera à travers des panoramas spectaculaires, offrant
+            une expérience inoubliable au cœur de la nature.
           </Typography>
         </div>
       </div>
@@ -108,15 +109,15 @@ export default function Advantages() {
             alt='leaf'
           />
 
-          <Typography className='mb-5 text-3xl tablet:text-4xl text-center tablet:text-start'>
-            DEGUSTEZ DES PLATS{" "}
-            <span className='text-colors-darkgreen'>INCROYABLE</span>
+          <Typography className='mb-5 text-3xl text-colors-lightbrown tablet:text-4xl text-center tablet:text-start font-yeseva'>
+            DÉGUSTEZ DES PLATS{" "}
+            <span className='text-colors-gray-50'>INCROYABLE</span>
           </Typography>
           <Typography className='text-base tablet:text-xl leading-relaxed text-center tablet:text-start'>
-            Our theme lets you integrate Google Maps on any of your pages. Not
-            only this, but the maps are fully customizable so you can use the
-            style that fits you the most! You can also easily pin the
-            destinations from your posts right on the map!
+            Pendant votre expédition à vélo, vous découvrirez de délicieux plats
+            africains, des saveurs authentiques et des recettes traditionnelles
+            riches en histoire, offrant une expérience culinaire unique par
+            notre chef cuistot !
           </Typography>
         </div>
         <div className='tablet:w-1/2 w-full flex justify-center items-center mt-9'>
