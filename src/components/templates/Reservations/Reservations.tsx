@@ -65,23 +65,7 @@ export default function Reservations({ titleExcursion }: Props) {
           onSubmit={handleSubmit(onSubmit)}
         >
           <div className='flex flex-col w-full gap-3'>
-            <div className='w-full flex gap-7 '>
-              <div className='flex flex-col w-full'>
-                <label>Prénom</label>
-                <input
-                  className={twMerge(
-                    "border bg-colors-transparent w-full rounded-md min-h-9 p-2 mt-2 ",
-                    errors.email && "border-colors-red-200"
-                  )}
-                  type='text'
-                  {...register("firstname")}
-                />
-                {errors.firstname && (
-                  <span className='text-colors-red-200'>
-                    {errors.firstname.message}
-                  </span>
-                )}
-              </div>
+            <div className='w-full flex flex-col tablet:gap-7 tablet:flex-row'>
               <div className='flex flex-col w-full'>
                 <label>Nom</label>
                 <input
@@ -98,12 +82,28 @@ export default function Reservations({ titleExcursion }: Props) {
                   </span>
                 )}
               </div>
+              <div className='flex flex-col w-full mt-2 tablet:mt-0'>
+                <label>Prénom</label>
+                <input
+                  className={twMerge(
+                    "border bg-colors-transparent w-full rounded-md min-h-9 p-2 mt-2 ",
+                    errors.email && "border-colors-red-200"
+                  )}
+                  type='text'
+                  {...register("firstname")}
+                />
+                {errors.firstname && (
+                  <span className='text-colors-red-200'>
+                    {errors.firstname.message}
+                  </span>
+                )}
+              </div>
             </div>
             <div className='w-full'>
               <label>Téléphone</label>
               <input
                 className={twMerge(
-                  "border bg-colors-transparent w-full rounded-md min-h-9 p-2  mt-2",
+                  "border bg-colors-transparent w-full rounded-md min-h-9 p-2 mt-2",
                   errors.email && "border-colors-red-200"
                 )}
                 type='text'
@@ -193,7 +193,7 @@ export default function Reservations({ titleExcursion }: Props) {
                 </span>
               )}
             </div>
-            <div className='w-full flex gap-7 '>
+            <div className='w-full flex-col gap-7 tablet:flex-row'>
               <div className='w-full'>
                 <label>Allergies</label>
                 <textarea
@@ -232,7 +232,7 @@ export default function Reservations({ titleExcursion }: Props) {
         type='submit'
         form='contact-form'
         color='primary'
-        className='border ml-auto mt-3 w-44 bg-colors-gray-50 text-colors-lightgreen hover:bg-colors-middlegreen hover:text-colors-gray-50'
+        className='border ml-auto mt-3 w-full tablet:w-44 bg-colors-gray-50 text-colors-lightgreen hover:bg-colors-middlegreen hover:text-colors-gray-50'
       >
         ENVOYER
       </Button>

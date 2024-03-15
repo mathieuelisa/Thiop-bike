@@ -6,6 +6,8 @@ import { useParams } from "next/navigation";
 import Typography from "@/components/ui/Typography";
 import Reservations from "../Reservations";
 import Image from "next/image";
+import Button from "@/components/ui/Button";
+import ArrowRightIcon from "@/components/ui/Icons/ArrowRightIcon";
 
 export default function Excursion() {
   const { id } = useParams();
@@ -15,8 +17,14 @@ export default function Excursion() {
   );
   return (
     <section className='w-full flex'>
-      <div className='flex '>
-        <div className='w-1/2 flex items-center flex-col mt-10 tablet:px-10'>
+      <div className='flex-col flex tablet:flex-row'>
+        <div className='tablet:w-1/2 w-full flex items-center flex-col mt-10 tablet:px-10'>
+          <Button
+            href='/excursions'
+            className='mr-auto hover:text-colors-middlebrown'
+          >
+            <ArrowRightIcon className='h-6 rotate-180 mr-2' /> RETOUR
+          </Button>
           <Image
             quality={50}
             className=' left-10'
@@ -31,7 +39,7 @@ export default function Excursion() {
           </Typography>
         </div>
 
-        <div className='w-1/2'>
+        <div className='tablet:w-1/2 w-full'>
           <Reservations titleExcursion={excursionId?.title || ""} />
         </div>
       </div>
