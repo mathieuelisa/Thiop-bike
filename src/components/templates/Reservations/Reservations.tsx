@@ -14,9 +14,13 @@ import { twMerge } from "tailwind-merge";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-export default function Reservations() {
+type Props = {
+  titleExcursion: string;
+};
+
+export default function Reservations({ titleExcursion }: Props) {
   const notify = () =>
-    toast.success("Reservation effectuée!", { position: "top-right" });
+    toast.success("Réservation envoyée !", { position: "top-right" });
 
   const {
     handleSubmit,
@@ -36,7 +40,7 @@ export default function Reservations() {
       reset({
         firstname: "",
         lastname: "",
-        phoneNumber: "",
+        phone: "",
         email: "",
         nbOfParticipants: "",
         allergy: "",
@@ -46,16 +50,13 @@ export default function Reservations() {
   }, [isSubmitSuccessful, reset]);
 
   return (
-    <section className='h-screen mx-5 tablet:px-20 '>
+    <section className=' mx-5 tablet:px-12 '>
       <div className='flex  flex-col items-start'>
-        <Typography className='text-3xl text-center tablet:text-start tablet:text-4xl mt-10 font-black uppercase font-yeseva'>
-          Votre reservation
+        <Typography className='text-3xl w-full text-center tablet:text-4xl mt-10 font-black uppercase font-yeseva'>
+          {titleExcursion}
+          <br />
+          <span className='text-colors-lightbrown'>Reservation</span>
         </Typography>
-        {/* <Typography className='max-w-2xl text-center mt-4'>
-          Voici l&#39;équipe derrière le projet Thiop Thiop Bike. Spécialement
-          composée de passionnés de la culture sénégalaise, chef en cuisine et
-          en guide.
-        </Typography> */}
       </div>
       <section className='flex justify-center w-full'>
         <form
@@ -99,18 +100,18 @@ export default function Reservations() {
               </div>
             </div>
             <div className='w-full'>
-              <label>Telephone</label>
+              <label>Téléphone</label>
               <input
                 className={twMerge(
                   "border bg-colors-transparent w-full rounded-md min-h-9 p-2  mt-2",
                   errors.email && "border-colors-red-200"
                 )}
                 type='text'
-                {...register("phoneNumber")}
+                {...register("phone")}
               />
-              {errors.phoneNumber && (
+              {errors.phone && (
                 <span className='text-colors-red-200'>
-                  {errors.phoneNumber.message}
+                  {errors.phone.message}
                 </span>
               )}
             </div>
@@ -169,14 +170,23 @@ export default function Reservations() {
             </div>
             <div className='w-full'>
               <label>Nombre de participants</label>
-              <input
+              <select
+                id='nbOfParticipants'
+                {...register("nbOfParticipants")}
                 className={twMerge(
                   "border bg-colors-transparent w-full rounded-md min-h-9 p-2  mt-2",
                   errors.nbOfParticipants && "border-colors-red-200"
                 )}
-                type='text'
-                {...register("nbOfParticipants")}
-              />
+              >
+                <option value='1'>1 participant</option>
+                <option value='2 à 3'>2 à 3 participants</option>
+                <option value='4 à 5'>4 à 5 participants</option>
+                <option value='6 à 7'>6 à 7 participants</option>
+                <option value='8 à 9'>8 à 9 participants</option>
+                <option value='10 à 11'>10 à 11 participants</option>
+                <option value='plus de 12'>plus de 12 participants</option>
+              </select>
+
               {errors.nbOfParticipants && (
                 <span className='text-colors-red-200'>
                   {errors.nbOfParticipants.message}
@@ -200,7 +210,7 @@ export default function Reservations() {
                 )}
               </div>
               <div className='w-full'>
-                <label>Informations complémentaires</label>
+                <label>Info. complémentaires</label>
                 <textarea
                   className={twMerge(
                     "border bg-colors-transparent w-full rounded-md  p-2 min-h-11  mt-2",
@@ -222,7 +232,7 @@ export default function Reservations() {
         type='submit'
         form='contact-form'
         color='primary'
-        className='border ml-auto mt-3 w-44 bg-colors-middlegreen'
+        className='border ml-auto mt-3 w-44 bg-colors-gray-50 text-colors-lightgreen hover:bg-colors-middlegreen hover:text-colors-gray-50'
       >
         ENVOYER
       </Button>

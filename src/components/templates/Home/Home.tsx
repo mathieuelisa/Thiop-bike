@@ -9,7 +9,7 @@ export default function Home() {
   useEffect(() => {
     window.scrollTo({
       top: 100,
-      behavior: "instant",
+      // behavior: "instant",
     });
   }, []);
 

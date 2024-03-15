@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import Button from "@/components/ui/Button";
 
 import Image from "next/image";
-import { twJoin, twMerge } from "tailwind-merge";
+import { twJoin } from "tailwind-merge";
 
 const container = {
   hidden: {
@@ -18,8 +18,15 @@ const container = {
     transition: {
       type: "spring",
       stiffness: 100,
-      // duration: 6,
       delay: 0.4,
+    },
+  },
+  visibleSpan: {
+    opacity: 1,
+    transition: {
+      type: "spring",
+      stiffness: 100,
+      delay: 1.2,
     },
   },
 };
@@ -63,7 +70,14 @@ export default function Banner() {
           )}
         >
           Let&#39;s ride{" "}
-          <span className='text-colors-lightbrown ml-4'>together.</span>
+          <motion.span
+            animate='visibleSpan'
+            initial='hidden'
+            variants={container}
+            className='text-colors-lightbrown ml-4'
+          >
+            together.
+          </motion.span>
         </Typography>
         <Typography className='font-semibold text-center tablet:text-start'>
           Découvrez le Sénégal en vélo éléctrique
