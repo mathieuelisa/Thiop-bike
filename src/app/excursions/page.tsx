@@ -1,5 +1,6 @@
+import Excursions from "@/components/templates/Excursions";
 import React from "react";
 
 export default function ExcursionsPage() {
-  return <div className='h-screen'>Excursions</div>;
+  return <Excursions />;
 }
