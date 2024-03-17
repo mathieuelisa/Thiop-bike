@@ -41,7 +41,7 @@ export default function Base({ children }: TpageProps) {
   }, []);
 
   return (
-    <main className='bg-colors-lightgreen min-h-screen'>
+    <main className='bg-colors-lightgreen min-h-screen overflow-hidden'>
       <Navbar />
       {isConditionOpen && (
         <div className='bg-colors-gray-500  opacity-70 w-full absolute h-[1243px] z-40' />

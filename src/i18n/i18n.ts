@@ -1,27 +1,36 @@
 import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 
-// the translations
-// (tip move them in a JSON file and import them,
-// or even better, manage them separated from your code: https://react.i18next.com/guides/multiple-translation-files)
+// import translationEN from "./locales/en.json";
+// import translationFR from "./locales/fr.json";
+import en from "./locales/en";
+import fr from "./locales/fr";
+
+// const resources = {
+//   fr,
+//   en,
+// };
+
 const resources = {
   en: {
-    translation: {
-      "Welcome to React": "Welcome to React and react-i18next",
-    },
+    translation: en,
   },
   fr: {
-    translation: {
-      "Welcome to React": "Bienvenue à React et react-i18next",
-    },
+    translation: fr,
   },
 };
 
 i18n.use(initReactI18next).init({
+  fallbackLng: ["en", "fr"],
   resources,
   lng: "fr",
   interpolation: {
     escapeValue: false,
+  },
+  react: {
+    bindI18n: "loaded languageChanged",
+    bindI18nStore: "added",
+    useSuspense: true,
   },
 });
 

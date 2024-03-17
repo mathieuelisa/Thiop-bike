@@ -5,7 +5,6 @@ import Base from "@/components/layouts/Base";
 import { MobileMenuProvider } from "@/context/MobileMenuContext";
 import { Abril, Matisan, Yeseva } from "../../utils/customFonts";
 import { ConditionTextProvider } from "@/context/ConditionsTextContext";
-// import "@/i18n/i18n";
 
 const inter = Inter({ subsets: ["latin"] });
 

@@ -16,19 +16,26 @@ import {
 } from "./Navbar.data";
 import Image from "next/image";
 import i18n from "@/i18n/i18n";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
+  const { t } = useTranslation();
   const pathName = usePathname();
 
   const { isMobileMenuOpen, toggleMobileMenu, setMobileMenuOpen } =
     useMobileMenu();
 
+  // Why doesnt work ??
+  console.log(i18n.language);
+
   return (
     <header className='sticky flex-row-reverse justify-end flex top-0 min-h-14 tablet:px-5 px-2 z-40 items-center border-b bg-colors-lightgreen border-gray-600 tablet:justify-center'>
-      {/* <Typography className='absolute right-10'>FR</Typography> */}
       <Image
         quality={50}
-        className='absolute right-10 cursor-pointer'
+        className={twMerge(
+          "absolute right-10 cursor-pointer rounded-full",
+          i18n.language === "fr" ? "border-2 border-colors-gray-50" : ""
+        )}
         width={25}
         height={25}
         onClick={() => {
@@ -39,7 +46,10 @@ export default function Navbar() {
       />
       <Image
         quality={50}
-        className='absolute right-2 cursor-pointer'
+        className={twMerge(
+          "absolute right-2 cursor-pointer rounded-full",
+          i18n.language === "en" ? "border-2 border-colors-gray-50" : ""
+        )}
         width={25}
         height={25}
         onClick={() => {

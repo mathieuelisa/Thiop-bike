@@ -11,6 +11,7 @@ import { twJoin } from "tailwind-merge";
 import { useRouter } from "next/navigation";
 
 import { useTranslation } from "react-i18next";
+import i18n from "@/i18n/i18n";
 
 const container = {
   hidden: {
@@ -35,6 +36,8 @@ const container = {
 };
 export default function Banner() {
   const { t } = useTranslation();
+
+  // console.log(i18n.language);
 
   const { push } = useRouter();
 
@@ -95,8 +98,7 @@ export default function Banner() {
           color='transparent'
           className='mt-5 hover:text-colors-lightbrown mx-auto tablet:mx-0'
         >
-          {/* Découvrir */}
-          {t("Welcome to React")}
+          {t("home.button.discover")}
         </Button>
       </motion.div>
     </section>
