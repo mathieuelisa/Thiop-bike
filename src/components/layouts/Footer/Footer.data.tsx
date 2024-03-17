@@ -8,7 +8,7 @@ export const FIRST_FOOTER_CONTENT: TFooterLink[] = [
   {
     id: 1,
     label: "Nous contacter",
-    link: "mailto:thipthiopbike@gmail.com",
+    link: "mailto:thiopthiopbike@gmail.com",
   },
   {
     id: 2,
@@ -20,19 +20,19 @@ export const FIRST_FOOTER_CONTENT: TFooterLink[] = [
     label: "Excursions",
     link: "/excursions",
   },
-  {
-    id: 4,
-    label: "Politique de confidentialité des données",
-    link: "/politique-de-confidentialite",
-  },
-  {
-    id: 5,
-    label: "Cookies",
-    link: "/cookies",
-  },
-  {
-    id: 6,
-    label: "Informations légales",
-    link: "/informations-legales",
-  },
+  // {
+  //   id: 4,
+  //   label: "Politique de confidentialité des données",
+  //   link: "/politique-de-confidentialite",
+  // },
+  // {
+  //   id: 5,
+  //   label: "Cookies",
+  //   link: "/cookies",
+  // },
+  // {
+  //   id: 6,
+  //   label: "Informations légales",
+  //   link: "/informations-legales",
+  // },
 ];

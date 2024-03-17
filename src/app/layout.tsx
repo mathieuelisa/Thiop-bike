@@ -4,6 +4,8 @@ import "./globals.css";
 import Base from "@/components/layouts/Base";
 import { MobileMenuProvider } from "@/context/MobileMenuContext";
 import { Abril, Matisan, Yeseva } from "../../utils/customFonts";
+import { ConditionTextProvider } from "@/context/ConditionsTextContext";
+// import "@/i18n/i18n";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,13 +20,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang='en'>
+    <html lang='fr'>
       <body
         className={`${Matisan.variable} ${Abril.variable} ${Yeseva.variable}`}
       >
-        <MobileMenuProvider>
-          <Base>{children}</Base>
-        </MobileMenuProvider>
+        <ConditionTextProvider>
+          <MobileMenuProvider>
+            <Base>{children}</Base>
+          </MobileMenuProvider>
+        </ConditionTextProvider>
       </body>
     </html>
   );

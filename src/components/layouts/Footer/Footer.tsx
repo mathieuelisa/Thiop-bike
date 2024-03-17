@@ -5,8 +5,9 @@ import React from "react";
 import { FIRST_FOOTER_CONTENT, TFooterLink } from "./Footer.data";
 import TwitterIcon from "@/components/ui/Icons/TwitterIcon";
 import FacebookIcon from "@/components/ui/Icons/FacebookIcon";
-import TiktokIcon from "@/components/ui/Icons/TiktokIcon";
+
 import Image from "next/image";
+import InstagramIcon from "@/components/ui/Icons/InstagramIcon";
 
 export default function Footer() {
   return (
@@ -56,11 +57,11 @@ export default function Footer() {
             </Link>
             <Link
               className='cursor-pointer'
-              href='https://tiktok.com/thiop'
+              href='https://www.instagram.com/thiop_thiop_bike'
               aria-label='Tiktok Profile'
               passHref
             >
-              <TiktokIcon className='h-6 duration-500 ease-in-out hover:text-white' />
+              <InstagramIcon className='h-6 duration-500 ease-in-out hover:text-white' />
             </Link>
             <Link
               className='cursor-pointer'

@@ -2,7 +2,6 @@ import React from "react";
 import { EXCURSIONS_DATASET } from "./Excursions.data";
 
 import Typography from "@/components/ui/Typography";
-import Link from "next/link";
 import Button from "@/components/ui/Button";
 
 export default function Excursions() {

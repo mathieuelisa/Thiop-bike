@@ -14,6 +14,8 @@ import {
   NAVBAR_CONTENT_FIRST_PART,
   NAVBAR_CONTENT_SECOND_PART,
 } from "./Navbar.data";
+import Image from "next/image";
+import i18n from "@/i18n/i18n";
 
 export default function Navbar() {
   const pathName = usePathname();
@@ -23,6 +25,29 @@ export default function Navbar() {
 
   return (
     <header className='sticky flex-row-reverse justify-end flex top-0 min-h-14 tablet:px-5 px-2 z-40 items-center border-b bg-colors-lightgreen border-gray-600 tablet:justify-center'>
+      {/* <Typography className='absolute right-10'>FR</Typography> */}
+      <Image
+        quality={50}
+        className='absolute right-10 cursor-pointer'
+        width={25}
+        height={25}
+        onClick={() => {
+          i18n.changeLanguage("fr");
+        }}
+        src='/assets/images/home/fr.png'
+        alt='fr'
+      />
+      <Image
+        quality={50}
+        className='absolute right-2 cursor-pointer'
+        width={25}
+        height={25}
+        onClick={() => {
+          i18n.changeLanguage("en");
+        }}
+        src='/assets/images/home/en.png'
+        alt='en'
+      />
       <nav className='hidden tablet:flex ml-5'>
         {NAVBAR_CONTENT_SECOND_PART.map((element) => {
           return (
@@ -84,7 +109,6 @@ export default function Navbar() {
           );
         })}
       </nav>
-
       <nav className='flex flex-col tablet:hidden'>
         {isMobileMenuOpen ? (
           <CloseIcon

@@ -13,11 +13,17 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 import { TpageProps } from "@/types/common";
 import { useMobileMenu } from "@/context/MobileMenuContext";
+import TwitterIcon from "@/components/ui/Icons/TwitterIcon";
+
+import FacebookIcon from "@/components/ui/Icons/FacebookIcon";
+import InstagramIcon from "@/components/ui/Icons/InstagramIcon";
+import { useConditionText } from "@/context/ConditionsTextContext";
 
 export default function Base({ children }: TpageProps) {
   const pathName = usePathname();
 
   const { isMobileMenuOpen, setMobileMenuOpen } = useMobileMenu();
+  const { isConditionOpen } = useConditionText();
 
   useEffect(() => {
     const handleResize = () => {
@@ -37,6 +43,9 @@ export default function Base({ children }: TpageProps) {
   return (
     <main className='bg-colors-lightgreen min-h-screen'>
       <Navbar />
+      {isConditionOpen && (
+        <div className='bg-colors-gray-500  opacity-70 w-full absolute h-[1243px] z-40' />
+      )}
 
       {/* MENU MOBILE RESPONSIVE */}
       {isMobileMenuOpen && (
@@ -45,31 +54,60 @@ export default function Base({ children }: TpageProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.07 }}
           className={twJoin(
-            "fixed h-[5180px] p-5 bg-colors-lightbrown z-50 transform transition duration-1000 ease-in-out",
+            "fixed h-[5180px] pt-11 p-5 bg-colors-lightbrown z-50 transform transition duration-1000 ease-in-out",
             isMobileMenuOpen ? "w-full" : "w-0"
           )}
         >
           {NAVBAR_CONTENT_MOBILE.map((element) => {
             return (
-              <Link
-                onClick={() => setMobileMenuOpen(false)}
-                href={element.link}
-                key={element.label}
-                className={twMerge(
-                  "mr-5 transform text-white hover:text-colors-lightbrown transition duration-500 ease-in-out text-sm lg:text-base",
-                  pathName === element.link ||
-                    (pathName.includes("assistance") &&
-                      element.label === "Assistance")
-                    ? "text-red-600"
-                    : ""
-                )}
-              >
-                <Typography className='text-xl font-yeseva'>
-                  {element.label}
-                </Typography>
-              </Link>
+              <>
+                <Link
+                  onClick={() => setMobileMenuOpen(false)}
+                  href={element.link}
+                  key={element.label}
+                  className={twMerge(
+                    "mr-5 transform text-white hover:text-colors-lightbrown transition duration-500 ease-in-out text-sm lg:text-base",
+                    pathName === element.link ||
+                      (pathName.includes("assistance") &&
+                        element.label === "Assistance")
+                      ? "text-red-600"
+                      : ""
+                  )}
+                >
+                  <Typography className='text-xl font-yeseva'>
+                    {element.label}
+                  </Typography>
+                </Link>
+              </>
             );
           })}
+
+          <div className='flex border-t justify-center pt-7 border-colors-gray-50 gap-5 z-20 mt-9 tablet:mt-0'>
+            <Link
+              className='cursor-pointer'
+              href='https://twitter.com/thiop'
+              aria-label='Twitter Profile'
+              passHref
+            >
+              <TwitterIcon className='h-6 duration-500 ease-in-out hover:text-white' />
+            </Link>
+            <Link
+              className='cursor-pointer'
+              href='https://www.instagram.com/thiop_thiop_bike'
+              aria-label='Tiktok Profile'
+              passHref
+            >
+              <InstagramIcon className='h-6 duration-500 ease-in-out hover:text-white' />
+            </Link>
+            <Link
+              className='cursor-pointer'
+              href='https://facebook.com/thiop'
+              aria-label='Facebook Profile'
+              passHref
+            >
+              <FacebookIcon className='h-6 duration-500 ease-in-out hover:text-white' />
+            </Link>
+          </div>
         </motion.div>
       )}
       <section>{children}</section>

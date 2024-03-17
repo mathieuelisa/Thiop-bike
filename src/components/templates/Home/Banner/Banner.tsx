@@ -8,6 +8,9 @@ import Button from "@/components/ui/Button";
 
 import Image from "next/image";
 import { twJoin } from "tailwind-merge";
+import { useRouter } from "next/navigation";
+
+import { useTranslation } from "react-i18next";
 
 const container = {
   hidden: {
@@ -31,10 +34,14 @@ const container = {
   },
 };
 export default function Banner() {
+  const { t } = useTranslation();
+
+  const { push } = useRouter();
+
   return (
-    <section className='relative px-0 overflow-hidden h-screen flex justify-center items-center'>
+    <section className='relative overflow-hidden h-screen flex justify-center items-center'>
       <Image
-        quality={50}
+        quality={20}
         className='absolute bottom-0 -right-32 opacity-10'
         width={800}
         height={800}
@@ -80,14 +87,16 @@ export default function Banner() {
           </motion.span>
         </Typography>
         <Typography className='font-semibold text-center tablet:text-start'>
-          Découvrez le Sénégal en vélo éléctrique
+          Découvrez le Sénégal à vélo éléctrique
         </Typography>
         <Button
           type='button'
+          onClick={() => push("/excursions")}
           color='transparent'
           className='mt-5 hover:text-colors-lightbrown mx-auto tablet:mx-0'
         >
-          Découvrir
+          {/* Découvrir */}
+          {t("Welcome to React")}
         </Button>
       </motion.div>
     </section>
