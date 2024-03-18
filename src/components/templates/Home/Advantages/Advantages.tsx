@@ -3,8 +3,11 @@
 import Typography from "@/components/ui/Typography";
 import Image from "next/image";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Advantages() {
+  const { t } = useTranslation();
+
   return (
     <section className='relative flex flex-col tablet:gap-0 gap-12 mb-44'>
       {/* First advantage */}
@@ -27,15 +30,13 @@ export default function Advantages() {
             alt='senegal'
           />
 
-          <Typography className='mb-5 text-3xl tablet:text-4xl text-center tablet:text-start font-yeseva'>
-            VIVEZ UNE EXPERIENCE{" "}
+          <Typography className='mb-5 text-3xl uppercase tablet:text-4xl text-center tablet:text-start font-yeseva'>
+            {/* VIVEZ UNE EXPERIENCE{" "} */}
+            {t("advantage.first.title")}
             <span className='text-colors-lightbrown'>INÉDITE</span>
           </Typography>
           <Typography className='text-base z-10 tablet:text-xl leading-relaxed text-center tablet:text-start'>
-            À vélo, découvrir un pays devient une expérience immersive où chaque
-            coup de pédale révèle des trésors cachés et des rencontres
-            authentiques, transformant le voyage en une aventure humaine
-            inoubliable.
+            {t("advantage.first.description")}
           </Typography>
         </div>
         <div className='tablet:w-1/2 w-full flex justify-center items-center mt-9'>
@@ -72,19 +73,15 @@ export default function Advantages() {
           />
         </div>
         <div className='flex flex-col tablet:w-1/2 w-full'>
-          <Typography className='mb-5 text-3xl tablet:text-4xl text-center tablet:text-start font-yeseva'>
-            DÉCOUVREZ
+          <Typography className='mb-5 text-3xl uppercase tablet:text-4xl text-center tablet:text-start font-yeseva'>
+            {t("advantage.second.title")}
             <span className='text-colors-lightbrown'>
               {" "}
               D&#39;INCROYABLES ENDROITS
             </span>
           </Typography>
           <Typography className='text-base z-10 tablet:text-xl leading-relaxed text-center tablet:text-start'>
-            Au cours de votre périple à vélo, vous découvrirez des paysages
-            magnifiques qui émerveilleront vos sens à chaque tournant. Des
-            montagnes majestueuses aux vallées luxuriantes, chaque coup de
-            pédale vous emmènera à travers des panoramas spectaculaires, offrant
-            une expérience inoubliable au cœur de la nature.
+            {t("advantage.second.description")}
           </Typography>
         </div>
       </div>
@@ -109,15 +106,13 @@ export default function Advantages() {
             alt='leaf'
           />
 
-          <Typography className='mb-5 text-3xl text-colors-lightbrown tablet:text-4xl text-center tablet:text-start font-yeseva'>
-            DÉGUSTEZ DES PLATS{" "}
+          <Typography className='mb-5 uppercase text-3xl text-colors-lightbrown tablet:text-4xl text-center tablet:text-start font-yeseva'>
+            {/* DÉGUSTEZ DES PLATS{" "} */}
+            {t("advantage.third.title")}
             <span className='text-colors-gray-50'>INCROYABLE</span>
           </Typography>
           <Typography className='text-base tablet:text-xl leading-relaxed text-center tablet:text-start'>
-            Pendant votre expédition à vélo, vous découvrirez de délicieux plats
-            africains, des saveurs authentiques et des recettes traditionnelles
-            riches en histoire, offrant une expérience culinaire unique par
-            notre chef cuistot !
+            {t("advantage.third.description")}
           </Typography>
         </div>
         <div className='tablet:w-1/2 w-full flex justify-center items-center mt-9'>

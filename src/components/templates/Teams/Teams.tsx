@@ -1,18 +1,21 @@
+"use client";
+
 import Typography from "@/components/ui/Typography";
 import Image from "next/image";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Teams() {
+  const { t } = useTranslation();
+
   return (
     <section className='mx-5 tablet:px-20 '>
       <div className='flex justify-center flex-col items-center'>
         <Typography className='text-3xl text-center tablet:text-start tablet:text-4xl mt-10 font-black uppercase font-yeseva'>
-          L&#39;équipes derriere Thiop Thiop Bike
+          {t("teams.title")}
         </Typography>
         <Typography className='max-w-2xl text-center mt-4'>
-          Voici l&#39;équipe derrière le projet Thiop Thiop Bike. Spécialement
-          composée de passionnés de la culture sénégalaise, chef en cuisine et
-          en guide.
+          {t("teams.description")}
         </Typography>
       </div>
 

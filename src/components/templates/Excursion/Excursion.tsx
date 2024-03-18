@@ -8,8 +8,11 @@ import Reservations from "../Reservations";
 import Image from "next/image";
 import Button from "@/components/ui/Button";
 import ArrowRightIcon from "@/components/ui/Icons/ArrowRightIcon";
+import { useTranslation } from "react-i18next";
 
 export default function Excursion() {
+  const { t } = useTranslation();
+
   const { id } = useParams();
 
   const excursionId = EXCURSIONS_DATASET.find((element) =>
@@ -23,7 +26,8 @@ export default function Excursion() {
             href='/excursions'
             className='mr-auto hover:text-colors-middlebrown'
           >
-            <ArrowRightIcon className='h-6 rotate-180 mr-2' /> RETOUR
+            <ArrowRightIcon className='h-6 rotate-180 mr-2' />{" "}
+            {t("common.back")}
           </Button>
           <Image
             quality={50}
@@ -35,7 +39,7 @@ export default function Excursion() {
           />
 
           <Typography className='text-center mt-5'>
-            {excursionId?.description}
+            {t(excursionId?.description || "")}
           </Typography>
         </div>
 

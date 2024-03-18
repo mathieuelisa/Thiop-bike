@@ -5,41 +5,41 @@ type TNavbarContent = {
 
 export const NAVBAR_CONTENT_FIRST_PART: TNavbarContent[] = [
   {
-    label: "Accueil",
+    label: "navbar.home",
     link: "/",
   },
   {
-    label: "Excursions",
+    label: "navbar.excursions",
     link: "/excursions",
   },
 ];
 
 export const NAVBAR_CONTENT_SECOND_PART: TNavbarContent[] = [
   {
-    label: "Tarifs",
+    label: "navbar.prices",
     link: "/tarifs",
   },
   {
-    label: "L'équipe",
+    label: "navbar.team",
     link: "/teams",
   },
 ];
 
 export const NAVBAR_CONTENT_MOBILE: TNavbarContent[] = [
   {
-    label: "Accueil",
+    label: "navbar.home",
     link: "/",
   },
   {
-    label: "Excursions",
+    label: "navbar.excursions",
     link: "/excursions",
   },
   {
-    label: "Tarifs",
+    label: "navbar.prices",
     link: "/tarifs",
   },
   {
-    label: "L'équipe",
+    label: "navbar.team",
     link: "/teams",
   },
 ];

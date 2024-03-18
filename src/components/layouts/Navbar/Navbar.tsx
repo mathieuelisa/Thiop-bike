@@ -20,13 +20,11 @@ import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
   const { t } = useTranslation();
+
   const pathName = usePathname();
 
   const { isMobileMenuOpen, toggleMobileMenu, setMobileMenuOpen } =
     useMobileMenu();
-
-  // Why doesnt work ??
-  console.log(i18n.language);
 
   return (
     <header className='sticky flex-row-reverse justify-end flex top-0 min-h-14 tablet:px-5 px-2 z-40 items-center border-b bg-colors-lightgreen border-gray-600 tablet:justify-center'>
@@ -78,7 +76,7 @@ export default function Navbar() {
                     : ""
                 )}
               >
-                {element.label}
+                {t(element.label)}
               </Typography>
             </Link>
           );
@@ -113,7 +111,7 @@ export default function Navbar() {
                     : ""
                 )}
               >
-                {element.label}
+                {t(element.label)}
               </Typography>
             </Link>
           );

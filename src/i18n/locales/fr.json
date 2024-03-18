@@ -1,7 +1,68 @@
 {
+  "common": {
+    "seeMore": "Plus d'infos",
+    "day": "Journée",
+    "halfDay": "Demi journée",
+    "back": "Retour"
+  },
   "home": {
+    "banner": {
+      "secondTitle": "Découvrez le Sénégal à vélo éléctrique"
+    },
     "button": {
       "discover": "Découvrir"
     }
+  },
+  "navbar": {
+    "home": "Accueil",
+    "excursions": "Excursions",
+    "prices": "Tarifs",
+    "team": "L'équipe",
+    "contactUs": "Nous contacter"
+  },
+  "footer": {
+    "title": "Informations"
+  },
+  "advantage": {
+    "first": {
+      "title": "Premier Advantage",
+      "description": "À vélo, découvrir un pays devient une expérience immersive où chaque coup de pédale révèle des trésors cachés et des rencontres authentiques, transformant le voyage en une aventure humaine inoubliable."
+    },
+    "second": {
+      "title": "Découvrez",
+      "description": "Au cours de votre périple à vélo, vous découvrirez des paysages magnifiques qui émerveilleront vos sens à chaque tournant. Des montagnes majestueuses aux vallées luxuriantes, chaque coup de pédale vous emmènera à travers des panoramas spectaculaires, offrant une expérience inoubliable au cœur de la nature."
+    },
+    "third": {
+      "title": "Dégustez des plats",
+      "description": "Pendant votre expédition à vélo, vous découvrirez de délicieux plats africains, des saveurs authentiques et des recettes traditionnelles riches en histoire, offrant une expérience culinaire unique par notre chef cuistot !"
+    }
+  },
+  "excursions": {
+    "title": "Nos excursions",
+    "description": "Le temps de quelques heures, une demi-journée ou une journée, nous vous proposons un ensemble de circuits privatifs. Pour toutes infos n'hesitez pas à nous contacter par mail ou à directement reserver.",
+    "first": {
+      "title": "A la découverte de Djiffer et Palmarin",
+      "description": "french description 1"
+    },
+    "second": {
+      "title": " Sur la route de Joal Fadiouth",
+      "description": "french description 2"
+    },
+    "third": {
+      "title": " Au coeur des villages",
+      "description": "french description 3"
+    },
+    "fourth": {
+      "title": "Sambia dia à l'heure du coucher du soleil",
+      "description": "french description 4"
+    }
+  },
+  "prices": {
+    "title": "Profitez de nos offres",
+    "description": " Trois expériences captivantes vous attendent lors de votre visite. Nous sommes là pour répondre à tous vos besoins. N&#39;hésitez pas à nous contacter par e-mail pour toute demande spécifique ou pour réserver votre expérience dès maintenant."
+  },
+  "teams": {
+    "title": "L'équipe dérrière Thiop Thiop Bike",
+    "description": "Voici l'équipe derrière le projet Thiop Thiop Bike. Spécialement composée de passionnés de la culture sénégalaise, chef en cuisine et en guide."
   }
 }

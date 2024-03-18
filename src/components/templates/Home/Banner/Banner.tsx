@@ -11,7 +11,6 @@ import { twJoin } from "tailwind-merge";
 import { useRouter } from "next/navigation";
 
 import { useTranslation } from "react-i18next";
-import i18n from "@/i18n/i18n";
 
 const container = {
   hidden: {
@@ -36,8 +35,6 @@ const container = {
 };
 export default function Banner() {
   const { t } = useTranslation();
-
-  // console.log(i18n.language);
 
   const { push } = useRouter();
 
@@ -90,7 +87,7 @@ export default function Banner() {
           </motion.span>
         </Typography>
         <Typography className='font-semibold text-center tablet:text-start'>
-          Découvrez le Sénégal à vélo éléctrique
+          {t("home.banner.secondTitle")}
         </Typography>
         <Button
           type='button'

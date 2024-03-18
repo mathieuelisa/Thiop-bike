@@ -1,7 +1,68 @@
 {
+  "common": {
+    "seeMore": "See more",
+    "day": "Day",
+    "halfDay": "Half day",
+    "back": "Back"
+  },
   "home": {
+    "banner": {
+      "secondTitle": "Discover Senegal on an electric bike"
+    },
     "button": {
       "discover": "Discover"
     }
+  },
+  "navbar": {
+    "home": "Home",
+    "excursions": "Excursions",
+    "prices": "Prices",
+    "team": "Teams",
+    "contactUs": "Contact us"
+  },
+  "footer": {
+    "title": "Informations"
+  },
+  "advantage": {
+    "first": {
+      "title": "First Advantage",
+      "description": "By bike, discovering a country becomes an immersive experience where every pedal stroke reveals hidden treasures and authentic encounters, transforming the journey into an unforgettable human adventure."
+    },
+    "second": {
+      "title": "Discover",
+      "description": " During your cycling tour, you'll discover magnificent landscapes your senses at every turn. From majestic mountains to lush valleys, every pedal stroke will take you through spectacular panoramas, offering an unforgettable experience in the heart of nature."
+    },
+    "third": {
+      "title": "Taste the dishes",
+      "description": "During your cycling expedition, you'll discover delicious African dishes, authentic flavors and traditional recipes rich in history, offering a unique culinary experience by our chef!"
+    }
+  },
+  "excursions": {
+    "title": "Our excursions",
+    "description": "For a few hours, half a day or a full day, we offer a range of private tours. For more information, don't hesitate to contact us by e-mail or book directly.",
+    "first": {
+      "title": "Discovering Djiffer and Palmarin",
+      "description": "english description"
+    },
+    "second": {
+      "title": " On the road of Joal Fadiouth",
+      "description": "english description 2"
+    },
+    "third": {
+      "title": "In the heart of the villages",
+      "description": "english description 3"
+    },
+    "fourth": {
+      "title": "Sambia dia at sunset time",
+      "description": "english description 4"
+    }
+  },
+  "prices": {
+    "title": "Take advantage of our offers",
+    "description": "Three exciting experiences await you during your visit. We're here to meet your every need. Don't hesitate to contact us by e-mail for any specific request or to book your experience now."
+  },
+  "teams": {
+    "title": "The team behind Thiop Thiop Bike",
+    "description": "This is the team behind the Thiop Thiop Bike project. Specially composed of Senegalese culture enthusiasts, chefs and guides."
   }
 }

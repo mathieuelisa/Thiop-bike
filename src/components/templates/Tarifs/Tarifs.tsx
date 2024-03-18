@@ -6,21 +6,20 @@ import { TARIF_PART, TpriceCFAContent } from "./Tarifs.data";
 import TarifItem from "./TarifItem";
 import useIsTablet from "@/hooks/useBreakPoint";
 import Carousel from "nuka-carousel";
+import { useTranslation } from "react-i18next";
 
 export default function Tarifs() {
+  const { t } = useTranslation();
   const isTablet = useIsTablet();
 
   return (
     <section className='mx-5 tablet:px-20 h-screen'>
       <div className='flex justify-center flex-col items-center'>
         <Typography className='text-3xl text-center tablet:text-start tablet:text-4xl mt-10 font-black uppercase font-yeseva'>
-          Profitez de nos offres
+          {t("prices.title")}
         </Typography>
         <Typography className='max-w-2xl text-center mt-4'>
-          Trois expériences captivantes vous attendent lors de votre visite.
-          Nous sommes là pour répondre à tous vos besoins. N&#39;hésitez pas à
-          nous contacter par e-mail pour toute demande spécifique ou pour
-          réserver votre expérience dès maintenant.
+          {t("prices.description")}
         </Typography>
 
         {/* Offers part */}

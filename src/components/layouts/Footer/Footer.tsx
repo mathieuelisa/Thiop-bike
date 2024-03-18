@@ -8,8 +8,10 @@ import FacebookIcon from "@/components/ui/Icons/FacebookIcon";
 
 import Image from "next/image";
 import InstagramIcon from "@/components/ui/Icons/InstagramIcon";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
   return (
     <footer className='relative overflow-hidden'>
       <Image
@@ -30,7 +32,7 @@ export default function Footer() {
                 Thiop Thiop Bike
               </Typography>
               <Typography className='font-semibold mb-2 text-sm'>
-                Aide & Tarifs
+                {t("footer.title")}
               </Typography>
 
               {FIRST_FOOTER_CONTENT.map((element: TFooterLink) => {
@@ -40,7 +42,7 @@ export default function Footer() {
                     href={element.link}
                     key={element.label}
                   >
-                    {element.label}
+                    {t(element.label)}
                   </Link>
                 );
               })}

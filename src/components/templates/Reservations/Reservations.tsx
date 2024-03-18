@@ -17,12 +17,14 @@ import AlertBanner from "@/components/ui/AlertBanner";
 import { useConditionText } from "@/context/ConditionsTextContext";
 import ConditionModal from "./ConditionModal";
 import useClickOutside from "@/hooks/useClickOutside";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   titleExcursion?: string;
 };
 
 export default function Reservations({ titleExcursion }: Props) {
+  const { t } = useTranslation();
   const notify = () =>
     toast.success("Réservation envoyée !", { position: "top-right" });
 
@@ -68,7 +70,7 @@ export default function Reservations({ titleExcursion }: Props) {
       <section className=' mx-5 tablet:px-12 '>
         <div className='flex  flex-col items-start'>
           <Typography className='text-3xl w-full text-center tablet:text-4xl mt-10 font-black uppercase font-yeseva'>
-            {titleExcursion}
+            {t(titleExcursion || "")}
             <br />
             <span className='text-colors-lightbrown'>Reservation</span>
           </Typography>

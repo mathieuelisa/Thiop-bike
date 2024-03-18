@@ -7,32 +7,17 @@ export type TFooterLink = {
 export const FIRST_FOOTER_CONTENT: TFooterLink[] = [
   {
     id: 1,
-    label: "Nous contacter",
+    label: "navbar.contactUs",
     link: "mailto:thiopthiopbike@gmail.com",
   },
   {
     id: 2,
-    label: "Tarifs",
+    label: "navbar.prices",
     link: "/tarifs",
   },
   {
     id: 3,
-    label: "Excursions",
+    label: "navbar.excursions",
     link: "/excursions",
   },
-  // {
-  //   id: 4,
-  //   label: "Politique de confidentialité des données",
-  //   link: "/politique-de-confidentialite",
-  // },
-  // {
-  //   id: 5,
-  //   label: "Cookies",
-  //   link: "/cookies",
-  // },
-  // {
-  //   id: 6,
-  //   label: "Informations légales",
-  //   link: "/informations-legales",
-  // },
 ];

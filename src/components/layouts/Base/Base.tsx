@@ -18,8 +18,11 @@ import TwitterIcon from "@/components/ui/Icons/TwitterIcon";
 import FacebookIcon from "@/components/ui/Icons/FacebookIcon";
 import InstagramIcon from "@/components/ui/Icons/InstagramIcon";
 import { useConditionText } from "@/context/ConditionsTextContext";
+import { useTranslation } from "react-i18next";
 
 export default function Base({ children }: TpageProps) {
+  const { t } = useTranslation();
+
   const pathName = usePathname();
 
   const { isMobileMenuOpen, setMobileMenuOpen } = useMobileMenu();
@@ -75,7 +78,7 @@ export default function Base({ children }: TpageProps) {
                   )}
                 >
                   <Typography className='text-xl font-yeseva'>
-                    {element.label}
+                    {t(element.label)}
                   </Typography>
                 </Link>
               </>

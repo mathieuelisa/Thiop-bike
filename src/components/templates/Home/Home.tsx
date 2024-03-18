@@ -3,13 +3,12 @@
 import React, { useEffect } from "react";
 import Banner from "./Banner";
 import Advantages from "./Advantages";
-import Proposals from "./Proposals";
+// import Proposals from "./Proposals";
 
 export default function Home() {
   useEffect(() => {
     window.scrollTo({
       top: 100,
-      // behavior: "instant",
     });
   }, []);
 
@@ -18,7 +17,7 @@ export default function Home() {
       <Banner />
       <div className='px-5 tablet:px-20'>
         <Advantages />
-        <Proposals />
+        {/* <Proposals /> */}
       </div>
     </main>
   );
