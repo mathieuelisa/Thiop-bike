@@ -15,8 +15,8 @@ export type TpriceCFAContent = {
 export const TARIF_PART: TpriceCFAContent[] = [
   {
     id: 1,
-    title: "Excursion à la journée",
-    description: "Le tarif inclus le déjeuner (repas et boisson)",
+    title: "prices.first.title",
+    description: "prices.first.description",
     tarifs: [
       {
         id: 1,
@@ -46,8 +46,8 @@ export const TARIF_PART: TpriceCFAContent[] = [
   },
   {
     id: 2,
-    title: "Excursion à la demi-journée",
-    description: "Le tarif n'inclus pas déjeuner",
+    title: "prices.second.title",
+    description: "prices.second.description",
     tarifs: [
       {
         id: 1,
@@ -77,8 +77,8 @@ export const TARIF_PART: TpriceCFAContent[] = [
   },
   {
     id: 3,
-    title: "Excursion au couché du soleil",
-    description: "/excursions",
+    title: "prices.third.title",
+    description: "prices.third.description",
     tarifs: [
       {
         id: 1,

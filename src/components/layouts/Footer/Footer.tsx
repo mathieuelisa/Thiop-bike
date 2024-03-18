@@ -49,14 +49,14 @@ export default function Footer() {
             </div>
           </div>
           <div className='flex gap-5 z-20 mt-9 tablet:mt-0'>
-            <Link
+            {/* <Link
               className='cursor-pointer'
               href='https://twitter.com/thiop'
               aria-label='Twitter Profile'
               passHref
             >
               <TwitterIcon className='h-6 duration-500 ease-in-out hover:text-white' />
-            </Link>
+            </Link> */}
             <Link
               className='cursor-pointer'
               href='https://www.instagram.com/thiop_thiop_bike'

@@ -5,6 +5,7 @@ import Image from "next/image";
 import React from "react";
 import { twMerge } from "tailwind-merge";
 import { TARIF_PART, TpriceCFAContent } from "../Tarifs.data";
+import { useTranslation } from "react-i18next";
 
 type Props = {
   element: TpriceCFAContent;
@@ -12,6 +13,7 @@ type Props = {
 };
 
 export default function TarifItem({ element, index }: Props) {
+  const { t } = useTranslation();
   const isLastElement = index === TARIF_PART.length - 1;
 
   return (
@@ -32,14 +34,14 @@ export default function TarifItem({ element, index }: Props) {
         src='/assets/images/offers/multi_leafs.png'
         alt='leaf'
       />
-      <Typography className='font-black text-lg'>{element.title}</Typography>
+      <Typography className='font-black text-lg'>{t(element.title)}</Typography>
       <Typography
         className={twMerge(
           "text-xs mb-5",
           isLastElement ? "text-white" : "text-colors-gray-500"
         )}
       >
-        {element.description}
+        {t(element.description)}
       </Typography>
 
       {element.tarifs.map((element) => {
@@ -63,7 +65,7 @@ export default function TarifItem({ element, index }: Props) {
                     isLastElement ? "text-white" : "text-colors-gray-500"
                   )}
                 >
-                  soit
+                  {t("common.or")}
                 </span>{" "}
                 {element.priceEUR} EUR
               </Typography>

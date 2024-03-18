@@ -1,9 +1,26 @@
 {
   "common": {
     "seeMore": "Plus d'infos",
+    "send": "Envoyer",
     "day": "Journée",
     "halfDay": "Demi journée",
-    "back": "Retour"
+    "back": "Retour",
+    "or": "soit"
+  },
+  "inputs": {
+    "discoveringDjifferDay": "Journée - A la découverte de Djiffer et Palmarin",
+    "discoveringDjifferHalfDay": "Demi journée - A la découverte de Djiffer et Palmarin",
+    "onTheRoadOfJoal": "Sur la route de Joal Fadiouth",
+    "inTheHeartOfTheVillagesDay": "Journée - Au coeur des villages",
+    "inTheHeartOfTheVillagesHalfDay": "Demi journée - Au coeur des villages",
+    "sambiaDia": "Sambia dia à l'heure du coucher du soleil",
+    "label": {
+      "numberOfParticipant": "Nombre de participants",
+      "phone": "Numéro de téléphone",
+      "firstname": "Prénom",
+      "lastname": "Nom",
+      "moreInformation": "Info complémentaires"
+    }
   },
   "home": {
     "banner": {
@@ -59,7 +76,21 @@
   },
   "prices": {
     "title": "Profitez de nos offres",
-    "description": " Trois expériences captivantes vous attendent lors de votre visite. Nous sommes là pour répondre à tous vos besoins. N&#39;hésitez pas à nous contacter par e-mail pour toute demande spécifique ou pour réserver votre expérience dès maintenant."
+    "reservationProcessing": "Demandes de reservations traitées sous un délai maximum de 48h",
+    "ourCGV": "Nos CGV and GCU",
+    "description": " Trois expériences captivantes vous attendent lors de votre visite. Nous sommes là pour répondre à tous vos besoins. N&#39;hésitez pas à nous contacter par e-mail pour toute demande spécifique ou pour réserver votre expérience dès maintenant.",
+    "first": {
+      "title": "Excursion à la journée",
+      "description": " Le prix comprend le déjeuner (repas et boissons)"
+    },
+    "second": {
+      "title": "Excursion à la demi-journée",
+      "description": "Le tarif n'inclus pas déjeuner"
+    },
+    "third": {
+      "title": "Excursion au couché du soleil",
+      "description": "french description 3"
+    }
   },
   "teams": {
     "title": "L'équipe dérrière Thiop Thiop Bike",

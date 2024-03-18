@@ -84,7 +84,7 @@ export default function Reservations({ titleExcursion }: Props) {
             <div className='flex flex-col w-full gap-3'>
               <div className='w-full flex flex-col tablet:gap-7 tablet:flex-row'>
                 <div className='flex flex-col w-full'>
-                  <label>Nom</label>
+                  <label>{t("inputs.label.lastname")}</label>
                   <input
                     className={twMerge(
                       "border bg-colors-transparent w-full rounded-md min-h-9 p-2  mt-2",
@@ -100,7 +100,7 @@ export default function Reservations({ titleExcursion }: Props) {
                   )}
                 </div>
                 <div className='flex flex-col w-full mt-2 tablet:mt-0'>
-                  <label>Prénom</label>
+                  <label>{t("inputs.label.firstname")}</label>
                   <input
                     className={twMerge(
                       "border bg-colors-transparent w-full rounded-md min-h-9 p-2 mt-2 ",
@@ -117,7 +117,7 @@ export default function Reservations({ titleExcursion }: Props) {
                 </div>
               </div>
               <div className='w-full'>
-                <label>Téléphone</label>
+                <label>{t("inputs.label.phone")}</label>
                 <input
                   className={twMerge(
                     "border bg-colors-transparent w-full rounded-md min-h-9 p-2 mt-2",
@@ -159,23 +159,23 @@ export default function Reservations({ titleExcursion }: Props) {
                   )}
                 >
                   <option value='Journée - A la découverte de Djiffer et Palmarin'>
-                    Journée - A la découverte de Djiffer et Palmarin
+                    {t("inputs.discoveringDjifferDay")}
                   </option>
                   <option value='Demi journée - A la découverte de Djiffer et Palmarin'>
-                    Demi journée - A la découverte de Djiffer et Palmarin
+                    {t("inputs.discoveringDjifferHalfDay")}
                   </option>
                   <option value='Sur la route de Joal Fadiouth'>
-                    Sur la route de Joal Fadiouth
+                    {t("inputs.onTheRoadOfJoal")}
                   </option>
 
                   <option value='Journée - Au coeur des villages'>
-                    Journée - Au coeur des villages
+                    {t("inputs.inTheHeartOfTheVillagesDay")}
                   </option>
                   <option value='Demi journée - Au coeur des villages'>
-                    Demi journée - Au coeur des villages
+                    {t("inputs.inTheHeartOfTheVillagesHalfDay")}
                   </option>
                   <option value='Sambia dia à l&#39;heure du coucher du soleil'>
-                    Sambia dia à l&#39;heure du coucher du soleil
+                    {t("inputs.sambiaDia")}
                   </option>
                 </select>
 
@@ -186,7 +186,7 @@ export default function Reservations({ titleExcursion }: Props) {
                 )}
               </div>
               <div className='w-full'>
-                <label>Nombre de participants</label>
+                <label>{t("inputs.label.numberOfParticipant")}</label>
                 <select
                   id='nbOfParticipants'
                   {...register("nbOfParticipants")}
@@ -227,7 +227,7 @@ export default function Reservations({ titleExcursion }: Props) {
                   )}
                 </div>
                 <div className='w-full'>
-                  <label>Info. complémentaires</label>
+                  <label>{t("inputs.label.moreInformation")}</label>
                   <textarea
                     className={twMerge(
                       "border bg-colors-transparent w-full rounded-md  p-2 min-h-11  mt-2",
@@ -250,18 +250,18 @@ export default function Reservations({ titleExcursion }: Props) {
           onClick={toggleCondition}
           className='text-sm mb-2 hover:text-colors-gray-50 px-0 ml-auto text-colors-darkgreen'
         >
-          Nos CGV et CGU
+          {t("prices.ourCGV")}
         </Button>
         <Typography className='text-xs text-end text-colors-darkgreen'>
-          Demandes de reservations traitées sous un délai maximum de 48h
+          {t("prices.reservationProcessing")}
         </Typography>
         <Button
           type='submit'
           form='contact-form'
           color='primary'
-          className='border ml-auto mt-3 w-full tablet:w-44 bg-colors-gray-50 text-colors-lightgreen hover:bg-colors-middlegreen hover:text-colors-gray-50'
+          className='border uppercase ml-auto mt-3 w-full tablet:w-44 bg-colors-gray-50 text-colors-lightgreen hover:bg-colors-middlegreen hover:text-colors-gray-50'
         >
-          ENVOYER
+          {t("common.send")}
         </Button>
         <ToastContainer />
       </section>

@@ -1,9 +1,26 @@
 {
   "common": {
     "seeMore": "See more",
+    "send": "Send",
     "day": "Day",
     "halfDay": "Half day",
-    "back": "Back"
+    "back": "Back",
+    "or": "or"
+  },
+  "inputs": {
+    "discoveringDjifferDay": "Day - Discovering Djiffer and Palmarin",
+    "discoveringDjifferHalfDay": "Half day - Discovering Djiffer and Palmarin",
+    "onTheRoadOfJoal": "On the road of Joal Fadiouth",
+    "inTheHeartOfTheVillagesDay": "Day - In the heart of the villages",
+    "inTheHeartOfTheVillagesHalfDay": "Half day - In the heart of the villages",
+    "sambiaDia": "Sambia dia at sunset time",
+    "label": {
+      "numberOfParticipant": "Number of participants",
+      "phone": "Phone number",
+      "firstname": "Firstname",
+      "lastname": "Lastname",
+      "moreInformation": "More informations"
+    }
   },
   "home": {
     "banner": {
@@ -59,7 +76,21 @@
   },
   "prices": {
     "title": "Take advantage of our offers",
-    "description": "Three exciting experiences await you during your visit. We're here to meet your every need. Don't hesitate to contact us by e-mail for any specific request or to book your experience now."
+    "reservationProcessing": "Reservation requests processed within a maximum of 48 hours",
+    "ourCGV": "Our GTM and GCU",
+    "description": "Three exciting experiences await you during your visit. We're here to meet your every need. Don't hesitate to contact us by e-mail for any specific request or to book your experience now.",
+    "first": {
+      "title": "Day trip",
+      "description": "Price includes lunch (meal and beverage)"
+    },
+    "second": {
+      "title": "Half-day excursion",
+      "description": "Rate does not include lunch"
+    },
+    "third": {
+      "title": "Sunset tour",
+      "description": "french description 3"
+    }
   },
   "teams": {
     "title": "The team behind Thiop Thiop Bike",
