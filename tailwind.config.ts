@@ -20,6 +20,7 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      colors,
     },
     screens: {
       laptopl: "1280px",
@@ -28,7 +29,11 @@ const config: Config = {
       tablet: "768px",
       laptop: "1024px",
     },
-    colors,
+    // colors,
+    // backgroundImage: {
+    //   test: "url('/assets/images/excursions/djiffer.jpeg')",
+    //   // "footer-texture": "url('/img/footer-texture.png')",
+    // },
   },
   plugins: [],
 };

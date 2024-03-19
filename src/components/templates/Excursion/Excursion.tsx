@@ -21,12 +21,12 @@ export default function Excursion() {
   return (
     <section className='w-full flex'>
       <div className='flex-col flex tablet:flex-row'>
-        <div className='tablet:w-1/2 w-full flex items-center flex-col mt-10 tablet:px-10'>
+        <div className='tablet:w-1/2 w-full flex items-center flex-col mt-3 tablet:mt-10 tablet:px-10'>
           <Button
             href='/excursions'
-            className='mr-auto hover:text-colors-middlebrown'
+            className='mr-auto ml-7 tablet:ml-0 uppercase hover:text-colors-middlebrown text-sm tablet:text-base'
           >
-            <ArrowRightIcon className='h-6 rotate-180 mr-2' />{" "}
+            <ArrowRightIcon className='h-6 rotate-180 mr-2 hidden tablet:block' />{" "}
             {t("common.back")}
           </Button>
           <Image

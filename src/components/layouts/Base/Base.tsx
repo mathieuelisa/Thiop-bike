@@ -13,7 +13,6 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 import { TpageProps } from "@/types/common";
 import { useMobileMenu } from "@/context/MobileMenuContext";
-import TwitterIcon from "@/components/ui/Icons/TwitterIcon";
 
 import FacebookIcon from "@/components/ui/Icons/FacebookIcon";
 import InstagramIcon from "@/components/ui/Icons/InstagramIcon";
@@ -85,15 +84,7 @@ export default function Base({ children }: TpageProps) {
             );
           })}
 
-          <div className='flex border-t justify-center pt-7 border-colors-gray-50 gap-5 z-20 mt-9 tablet:mt-0'>
-            <Link
-              className='cursor-pointer'
-              href='https://twitter.com/thiop'
-              aria-label='Twitter Profile'
-              passHref
-            >
-              <TwitterIcon className='h-6 duration-500 ease-in-out hover:text-white' />
-            </Link>
+          <div className='flex border-t justify-end pt-7 border-colors-gray-50 gap-5 z-20 mt-48 tablet:mt-0 w-4/5 mx-auto'>
             <Link
               className='cursor-pointer'
               href='https://www.instagram.com/thiop_thiop_bike'

@@ -3,7 +3,6 @@ import Typography from "@/components/ui/Typography";
 import Link from "next/link";
 import React from "react";
 import { FIRST_FOOTER_CONTENT, TFooterLink } from "./Footer.data";
-import TwitterIcon from "@/components/ui/Icons/TwitterIcon";
 import FacebookIcon from "@/components/ui/Icons/FacebookIcon";
 
 import Image from "next/image";
@@ -49,16 +48,8 @@ export default function Footer() {
             </div>
           </div>
           <div className='flex gap-5 z-20 mt-9 tablet:mt-0'>
-            {/* <Link
-              className='cursor-pointer'
-              href='https://twitter.com/thiop'
-              aria-label='Twitter Profile'
-              passHref
-            >
-              <TwitterIcon className='h-6 duration-500 ease-in-out hover:text-white' />
-            </Link> */}
             <Link
-              className='cursor-pointer'
+              className={"cursor-pointer hover:text-colors-darkgreen"}
               href='https://www.instagram.com/thiop_thiop_bike'
               aria-label='Tiktok Profile'
               passHref
@@ -66,7 +57,7 @@ export default function Footer() {
               <InstagramIcon className='h-6 duration-500 ease-in-out hover:text-white' />
             </Link>
             <Link
-              className='cursor-pointer'
+              className='cursor-pointer hover:text-colors-darkgreen'
               href='https://facebook.com/thiop'
               aria-label='Facebook Profile'
               passHref

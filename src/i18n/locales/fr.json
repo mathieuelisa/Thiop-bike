@@ -72,11 +72,14 @@
     "fourth": {
       "title": "Sambia dia à l'heure du coucher du soleil",
       "description": "french description 4"
+    },
+    "cgu": {
+      "title": "conditions générales d'utilisation du site internet"
     }
   },
   "prices": {
     "title": "Profitez de nos offres",
-    "reservationProcessing": "Demandes de reservations traitées sous un délai maximum de 48h",
+    "reservationProcessing": "*Demandes de reservations traitées sous un délai maximum de 48h",
     "ourCGV": "Nos CGV and GCU",
     "description": " Trois expériences captivantes vous attendent lors de votre visite. Nous sommes là pour répondre à tous vos besoins. N&#39;hésitez pas à nous contacter par e-mail pour toute demande spécifique ou pour réserver votre expérience dès maintenant.",
     "first": {
