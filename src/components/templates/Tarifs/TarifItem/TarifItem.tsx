@@ -14,7 +14,7 @@ type Props = {
 
 export default function TarifItem({ element, index }: Props) {
   const { t } = useTranslation();
-  const isLastElement = index === TARIF_PART.length - 1;
+  const isLastElement = index === TARIF_PART.length - 3;
 
   return (
     <div

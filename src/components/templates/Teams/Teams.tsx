@@ -36,38 +36,32 @@ export default function Teams() {
           src='/assets/images/teams/montagne.png'
           alt='montagnes'
         />
-        <Image
-          quality={50}
-          width={300}
-          height={300}
-          className='z-10'
-          src='/assets/images/teams/team.png'
-          alt='team'
-        />
-        <Image
-          quality={50}
-          width={300}
-          height={300}
-          className='z-20'
-          src='/assets/images/teams/team.png'
-          alt='team'
-        />
-        <Image
-          quality={50}
-          width={300}
-          height={300}
-          className='z-10'
-          src='/assets/images/teams/team.png'
-          alt='team'
-        />
-        <Image
-          quality={50}
-          width={300}
-          height={300}
-          className='z-10'
-          src='/assets/images/teams/team.png'
-          alt='team'
-        />
+        <div className='flex flex-wrap justify-between'>
+          <Image
+            quality={50}
+            width={500}
+            height={500}
+            className='z-10'
+            src='/assets/images/teams/cheick.png'
+            alt='team'
+          />
+          <Image
+            quality={50}
+            width={500}
+            height={500}
+            className='z-20'
+            src='/assets/images/teams/cherif.png'
+            alt='team'
+          />
+          <Image
+            quality={50}
+            width={500}
+            height={500}
+            className='z-10'
+            src='/assets/images/teams/filles.png'
+            alt='team'
+          />
+        </div>
       </div>
     </section>
   );

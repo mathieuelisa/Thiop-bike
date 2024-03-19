@@ -74,7 +74,15 @@
       "description": "french description 4"
     },
     "cgu": {
-      "title": "conditions générales d'utilisation du site internet"
+      "title": "conditions générales d'utilisation du site internet",
+      "description": "Les marques, logos, signes ainsi que tous les contenus du site (textes, images, son…) font l'objet d'une protection par le Code de la propriété intellectuelle et plus particulièrement par le droit d'auteur. L'utilisateur doit solliciter l'autorisation préalable du site pour toute reproduction, publication, copie des différents contenus. Il s'engage à une utilisation des contenus du site dans un cadre strictement privé, toute utilisation à des fins commerciales et publicitaires est strictement interdite. Toute représentation totale ou partielle de ce site par quelque procédé que ce soit, sans l’autorisation expresse de l’exploitant du site Internet constituerait une contrefaçon. Il est rappelé que l’Utilisateur qui reproduit, copie ou publie le contenu protégé doit citer l’auteur et sa source."
+    },
+    "cgv": {
+      "title": "conditions générales de vente",
+      "underFirstTitle": " conditions de réservation et modalités de paiement",
+      "underFirstDescription": " Un acompte de 25% du montant total de l’excursion choisie est demandé afin de confirmer la réservation. Les 75% restant seront à payer la veille du rendez-vous. Les règlements sont à effectuer par Wave, Sendwave ou Orange Money. Les coordonnées de notre compte vous seront transmises lors de la réservation. Les frais de transferts restent à votre charge.",
+      "secondTitle": " Conditions de réservation et modalités de paiement",
+      "underSecondDescription": " En cas d’annulation, l’acompte de 25% est conservé par THIOP THIOP BIKE."
     }
   },
   "prices": {
@@ -91,7 +99,7 @@
       "description": "Le tarif n'inclus pas déjeuner"
     },
     "third": {
-      "title": "Excursion au couché du soleil",
+      "title": "Excursion au sunset",
       "description": "french description 3"
     }
   },

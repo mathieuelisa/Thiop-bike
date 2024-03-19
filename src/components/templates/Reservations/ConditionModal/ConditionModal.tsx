@@ -6,6 +6,7 @@ import Typography from "@/components/ui/Typography";
 import Button from "@/components/ui/Button";
 import CloseIcon from "@/components/ui/Icons/CloseIcon";
 import { useConditionText } from "@/context/ConditionsTextContext";
+import { useTranslation } from "react-i18next";
 
 type TrailerModalProps = {
   type: string;
@@ -13,6 +14,8 @@ type TrailerModalProps = {
 
 const ConditionModal = forwardRef(
   ({ type }: TrailerModalProps, ref: ForwardedRef<HTMLDivElement>) => {
+    const { t } = useTranslation();
+
     const [isShowOtherCondition, setIsShowOtherCondition] = useState(false);
     const { setConditionOpen } = useConditionText();
 
@@ -34,55 +37,35 @@ const ConditionModal = forwardRef(
           </Button>
           {isShowOtherCondition ? (
             <div>
-              <Typography className='font-yeseva text-2xl'>
-                CONDITIONS GÉNÉRALES DE VENTE
+              <Typography className='font-yeseva text-2xl uppercase'>
+                {t("excursions.cgv.title")}
               </Typography>
               <div className='my-8'>
                 <Typography className='text-md'>
-                  Conditions de réservation et modalités de paiement
+                  {t("excursions.cgv.underFirstTitle")}
                 </Typography>
                 <Typography className='text-sm mt-5 max-w-[600px]'>
-                  Un acompte de 25% du montant total de l’excursion choisie est
-                  demandé afin de confirmer la réservation. Les 75% restant
-                  seront à payer la veille du rendez-vous. Les règlements sont à
-                  effectuer par Wave, Sendwave ou Orange Money. Les coordonnées
-                  de notre compte vous seront transmises lors de la réservation.
-                  Les frais de transferts restent à votre charge.
+                  {t("excursions.cgv.underFirstDescription")}
                 </Typography>
               </div>
 
               <div>
                 <Typography className='text-md'>
-                  Conditions de réservation et modalités de paiement
+                  {t("excursions.cgv.secondTitle")}
                 </Typography>
                 <Typography className='text-sm mt-5 max-w-[600px]'>
-                  En cas d’annulation, l’acompte de 25% est conservé par THIOP
-                  THIOP BIKE.
+                  {t("excursions.cgv.underSecondDescription")}
                 </Typography>
               </div>
             </div>
           ) : (
             <div>
-              <Typography className='font-yeseva text-2xl'>
-                CONDITIONS GENERALES D’UTILISATION DU SITE INTERNET
+              <Typography className='font-yeseva text-2xl uppercase'>
+                {t("excursions.cgu.title")}
               </Typography>
 
               <Typography className='text-sm my-7 max-w-[600px]'>
-                Les marques, logos, signes ainsi que tous les contenus du site
-                (textes, images, son…) font l&#39;objet d&#39;une protection par
-                le Code de la propriété intellectuelle et plus particulièrement
-                par le droit d&#39;auteur. <br />
-                <br /> L&#39;Utilisateur doit solliciter l&#39;autorisation
-                préalable du site pour toute reproduction, publication, copie
-                des différents contenus. Il s&#39;engage à une utilisation des
-                contenus du site dans un cadre strictement privé, toute
-                utilisation à des fins commerciales et publicitaires est
-                strictement interdite. Toute représentation totale ou partielle
-                de ce site par quelque procédé que ce soit, sans l’autorisation
-                expresse de l’exploitant du site Internet constituerait une
-                contrefaçon. Il est rappelé que l’Utilisateur qui reproduit,
-                copie ou publie le contenu protégé doit citer l’auteur et sa
-                source.
+                {t("excursions.cgu.description")}
               </Typography>
             </div>
           )}

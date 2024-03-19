@@ -25,7 +25,7 @@ export default function Excursions() {
           {t("excursions.description")}
         </Typography>
       </div>
-      <section className=' flex flex-col gap-5 mt-14'>
+      <section className=' flex flex-col gap-5 mt-14 max-w-[900px] mx-auto'>
         {EXCURSIONS_DATASET.map((element) => (
           <Link key={element.id} href={element.urlPath}>
             <div

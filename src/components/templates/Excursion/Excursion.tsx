@@ -32,9 +32,9 @@ export default function Excursion() {
           <Image
             quality={50}
             className=' left-10'
-            width={300}
-            height={250}
-            src={excursionId?.image || ""}
+            width={600}
+            height={600}
+            src={excursionId?.imageDetail || ""}
             alt='elephant'
           />
 

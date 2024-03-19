@@ -4,6 +4,7 @@ export type TExcursionDataSet = {
   time: string;
   description: string;
   image: string;
+  imageDetail: string;
   urlPath: string;
 };
 
@@ -14,6 +15,7 @@ export const EXCURSIONS_DATASET: TExcursionDataSet[] = [
     time: "common.day",
     description: "excursions.first.description",
     image: "/assets/images/excursions/djiffer.jpeg",
+    imageDetail: "/assets/images/excursions/excursion_detail.png",
     urlPath: "excursions/decouverte-de-djiffer-et-palmarin",
   },
   {
@@ -22,6 +24,7 @@ export const EXCURSIONS_DATASET: TExcursionDataSet[] = [
     time: "common.halfDay",
     description: "excursions.first.description",
     image: "/assets/images/excursions/djiffer.jpeg",
+    imageDetail: "/assets/images/excursions/excursion_detail.png",
     urlPath: "excursions/demi-decouverte-de-djiffer-et-palmarin",
   },
   {
@@ -30,6 +33,7 @@ export const EXCURSIONS_DATASET: TExcursionDataSet[] = [
     time: "common.day",
     description: "excursions.second.description",
     image: "/assets/images/excursions/joal.jpeg",
+    imageDetail: "/assets/images/excursions/excursion_detail.png",
     urlPath: "excursions/sur-la-route-de-joal-fadiouth",
   },
   {
@@ -38,6 +42,7 @@ export const EXCURSIONS_DATASET: TExcursionDataSet[] = [
     time: "common.day",
     description: "excursions.third.description",
     image: "/assets/images/excursions/village.jpeg",
+    imageDetail: "/assets/images/excursions/excursion_detail.png",
     urlPath: "excursions/au-coeur-des-villages",
   },
   {
@@ -46,6 +51,7 @@ export const EXCURSIONS_DATASET: TExcursionDataSet[] = [
     time: "common.halfDay",
     description: "excursions.third.description",
     image: "/assets/images/excursions/village.jpeg",
+    imageDetail: "/assets/images/excursions/excursion_detail.png",
     urlPath: "excursions/demi-au-coeur-des-villages",
   },
   {
@@ -54,6 +60,7 @@ export const EXCURSIONS_DATASET: TExcursionDataSet[] = [
     time: "common.halfDay",
     description: "excursions.fourth.description",
     image: "/assets/images/excursions/sambia.jpeg",
+    imageDetail: "/assets/images/excursions/excursion_detail.png",
     urlPath: "excursions/sambia-dia-a-l-heure-du-coucher-du-soleil",
   },
 ];

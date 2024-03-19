@@ -69,11 +69,7 @@ export default function Navbar() {
               <Typography
                 className={twMerge(
                   "text-white",
-                  pathName === element.link ||
-                    (pathName.includes("assistance") &&
-                      element.label === "Assistance")
-                    ? "text-colors-darkgreen"
-                    : ""
+                  pathName === element.link ? "text-colors-darkgreen" : ""
                 )}
               >
                 {t(element.label)}
@@ -104,11 +100,7 @@ export default function Navbar() {
               <Typography
                 className={twMerge(
                   "text-white",
-                  pathName === element.link ||
-                    (pathName.includes("assistance") &&
-                      element.label === "Assistance")
-                    ? "text-colors-darkgreen"
-                    : ""
+                  pathName === element.link ? "text-colors-darkgreen" : ""
                 )}
               >
                 {t(element.label)}
