@@ -48,8 +48,8 @@ export default function Advantages() {
             width={500}
             height={500}
             className='z-10'
-            src='/assets/images/home/polaroid1.png'
-            alt='polaroid1'
+            src='/assets/images/home/polaroid_bike.png'
+            alt='polaroid_bike'
           />
         </div>
       </div>
@@ -61,9 +61,9 @@ export default function Advantages() {
             quality={50}
             width={500}
             height={500}
-            src='/assets/images/home/polaroid2.png'
+            src='/assets/images/home/polaroid_boat.png'
             className='z-10'
-            alt='polaroid2'
+            alt='polaroid_boat'
           />
         </div>
         <div className='flex flex-col tablet:w-1/2 w-full'>
@@ -122,8 +122,8 @@ export default function Advantages() {
             width={500}
             height={500}
             className='z-10'
-            src='/assets/images/home/polaroid1.png'
-            alt='polaroid'
+            src='/assets/images/home/polaroid_bike.png'
+            alt='polaroid_bike'
           />
         </div>
       </div>

@@ -160,45 +160,27 @@ export default function Reservations({ titleExcursion }: Props) {
                   id='excursions'
                   {...register("excursions")}
                   className={twMerge(
-                    "border bg-colors-transparent w-full rounded-md min-h-9 p-2  mt-2",
+                    "border bg-colors-transparent text-colors-gray-50  w-full rounded-md min-h-9 p-2  mt-2",
                     errors.excursions && "border-colors-red-200"
                   )}
                 >
-                  <option
-                    className='text-colors-gray-50'
-                    value='Journée - A la découverte de Djiffer et Palmarin'
-                  >
+                  <option value='Journée - A la découverte de Djiffer et Palmarin'>
                     {t("inputs.discoveringDjifferDay")}
                   </option>
-                  <option
-                    className='text-colors-gray-50'
-                    value='Demi journée - A la découverte de Djiffer et Palmarin'
-                  >
+                  <option value='Demi journée - A la découverte de Djiffer et Palmarin'>
                     {t("inputs.discoveringDjifferHalfDay")}
                   </option>
-                  <option
-                    className='text-colors-gray-50'
-                    value='Sur la route de Joal Fadiouth'
-                  >
+                  <option value='Sur la route de Joal Fadiouth'>
                     {t("inputs.onTheRoadOfJoal")}
                   </option>
 
-                  <option
-                    className='text-colors-gray-50'
-                    value='Journée - Au coeur des villages'
-                  >
+                  <option value='Journée - Au coeur des villages'>
                     {t("inputs.inTheHeartOfTheVillagesDay")}
                   </option>
-                  <option
-                    className='text-colors-gray-50'
-                    value='Demi journée - Au coeur des villages'
-                  >
+                  <option value='Demi journée - Au coeur des villages'>
                     {t("inputs.inTheHeartOfTheVillagesHalfDay")}
                   </option>
-                  <option
-                    className='text-colors-gray-50'
-                    value='Sambia dia à l&#39;heure du coucher du soleil'
-                  >
+                  <option value='Sambia dia à l&#39;heure du coucher du soleil'>
                     {t("inputs.sambiaDia")}
                   </option>
                 </select>
@@ -217,7 +199,7 @@ export default function Reservations({ titleExcursion }: Props) {
                   id='nbOfParticipants'
                   {...register("nbOfParticipants")}
                   className={twMerge(
-                    "border bg-colors-transparent w-full rounded-md min-h-9 p-2  mt-2",
+                    "border bg-colors-transparent text-colors-gray-50 w-full rounded-md min-h-9 p-2  mt-2",
                     errors.nbOfParticipants && "border-colors-red-200"
                   )}
                 >
