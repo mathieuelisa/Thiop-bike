@@ -73,7 +73,7 @@ export default function Banner() {
         <Typography
           type='h1'
           className={twJoin(
-            "text-6xl font-yeseva uppercase font-black flex-col flex tablet:flex-row text-center tablet:text-start"
+            "text-6xl text-colors-gray-50 font-yeseva uppercase font-black flex-col flex tablet:flex-row text-center tablet:text-start"
           )}
         >
           Let&#39;s ride{" "}
