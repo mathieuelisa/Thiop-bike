@@ -48,8 +48,8 @@ export default function Advantages() {
             width={500}
             height={500}
             className='z-10'
-            src='/assets/images/home/polaroid1.png'
-            alt='polaroid'
+            src='/assets/images/home/Polaroid1.png'
+            alt='polaroid2'
           />
         </div>
       </div>
@@ -61,7 +61,7 @@ export default function Advantages() {
             quality={50}
             width={500}
             height={500}
-            src='/assets/images/home/polaroid2.png'
+            src='/assets/images/home/Polaroid2.png'
             className='z-10'
             alt='polaroid'
           />
@@ -119,7 +119,7 @@ export default function Advantages() {
             width={500}
             height={500}
             className='z-10'
-            src='/assets/images/home/polaroid1.png'
+            src='/assets/images/home/Polaroid1.png'
             alt='polaroid'
           />
         </div>
