@@ -164,23 +164,41 @@ export default function Reservations({ titleExcursion }: Props) {
                     errors.excursions && "border-colors-red-200"
                   )}
                 >
-                  <option value='Journée - A la découverte de Djiffer et Palmarin'>
+                  <option
+                    className='text-colors-gray-50'
+                    value='Journée - A la découverte de Djiffer et Palmarin'
+                  >
                     {t("inputs.discoveringDjifferDay")}
                   </option>
-                  <option value='Demi journée - A la découverte de Djiffer et Palmarin'>
+                  <option
+                    className='text-colors-gray-50'
+                    value='Demi journée - A la découverte de Djiffer et Palmarin'
+                  >
                     {t("inputs.discoveringDjifferHalfDay")}
                   </option>
-                  <option value='Sur la route de Joal Fadiouth'>
+                  <option
+                    className='text-colors-gray-50'
+                    value='Sur la route de Joal Fadiouth'
+                  >
                     {t("inputs.onTheRoadOfJoal")}
                   </option>
 
-                  <option value='Journée - Au coeur des villages'>
+                  <option
+                    className='text-colors-gray-50'
+                    value='Journée - Au coeur des villages'
+                  >
                     {t("inputs.inTheHeartOfTheVillagesDay")}
                   </option>
-                  <option value='Demi journée - Au coeur des villages'>
+                  <option
+                    className='text-colors-gray-50'
+                    value='Demi journée - Au coeur des villages'
+                  >
                     {t("inputs.inTheHeartOfTheVillagesHalfDay")}
                   </option>
-                  <option value='Sambia dia à l&#39;heure du coucher du soleil'>
+                  <option
+                    className='text-colors-gray-50'
+                    value='Sambia dia à l&#39;heure du coucher du soleil'
+                  >
                     {t("inputs.sambiaDia")}
                   </option>
                 </select>

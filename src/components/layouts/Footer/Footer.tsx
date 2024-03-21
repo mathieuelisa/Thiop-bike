@@ -49,7 +49,9 @@ export default function Footer() {
           </div>
           <div className='flex gap-5 z-20 mt-9 tablet:mt-0'>
             <Link
-              className={"cursor-pointer hover:text-colors-darkgreen"}
+              className={
+                "cursor-pointer text-colors-gray-50 hover:text-colors-darkgreen"
+              }
               href='https://www.instagram.com/thiop_thiop_bike'
               aria-label='Tiktok Profile'
               passHref
@@ -57,7 +59,7 @@ export default function Footer() {
               <InstagramIcon className='h-6 duration-500 ease-in-out hover:text-white' />
             </Link>
             <Link
-              className='cursor-pointer hover:text-colors-darkgreen'
+              className='cursor-pointer text-colors-gray-50 hover:text-colors-darkgreen'
               href='https://facebook.com/thiop'
               aria-label='Facebook Profile'
               passHref
