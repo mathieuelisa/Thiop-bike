@@ -20,22 +20,6 @@ export default function Teams() {
       </div>
 
       <div className='flex flex-wrap justify-center'>
-        <Image
-          quality={50}
-          width={800}
-          height={800}
-          className='z-10 absolute left-0 opacity-50'
-          src='/assets/images/teams/montagne.png'
-          alt='montagnes'
-        />
-        <Image
-          quality={50}
-          width={800}
-          height={800}
-          className='z-10 absolute right-0 opacity-20'
-          src='/assets/images/teams/montagne.png'
-          alt='montagnes'
-        />
         <div className='flex flex-wrap justify-between'>
           <Image
             quality={50}
