@@ -15,10 +15,10 @@ export default function Tarifs() {
   return (
     <section className='mx-5 tablet:px-20 h-screen'>
       <div className='flex justify-center flex-col items-center'>
-        <Typography className='text-3xl text-center tablet:text-start tablet:text-4xl mt-10 font-black uppercase font-yeseva'>
+        <Typography className='text-3xl text-colors-gray-50 text-center tablet:text-start tablet:text-4xl mt-10 font-black uppercase font-yeseva'>
           {t("prices.title")}
         </Typography>
-        <Typography className='max-w-2xl text-center mt-4'>
+        <Typography className='max-w-2xl text-colors-gray-50 text-center mt-4'>
           {t("prices.description")}
         </Typography>
 

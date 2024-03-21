@@ -83,7 +83,7 @@ export default function Navbar() {
         href='/'
         className=' flex items-center'
       >
-        <Typography className='font-extrabold font-abril tablet:text-2xl text-lg'>
+        <Typography className='font-extrabold text-colors-gray-50 font-abril tablet:text-2xl text-lg'>
           Thiop Thiop Bike
         </Typography>
       </Link>

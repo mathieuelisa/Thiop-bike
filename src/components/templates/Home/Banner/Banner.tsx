@@ -86,7 +86,7 @@ export default function Banner() {
             together.
           </motion.span>
         </Typography>
-        <Typography className='font-semibold text-center tablet:text-start'>
+        <Typography className='font-semibold text-colors-gray-50 text-center tablet:text-start'>
           {t("home.banner.secondTitle")}
         </Typography>
         <Button

@@ -30,14 +30,14 @@ export default function Footer() {
               <Typography className='font-bold mb-5 text-white text-xl font-abril'>
                 Thiop Thiop Bike
               </Typography>
-              <Typography className='font-semibold mb-2 text-sm'>
+              <Typography className='font-semibold text-colors-gray-50 mb-2 text-sm'>
                 {t("footer.title")}
               </Typography>
 
               {FIRST_FOOTER_CONTENT.map((element: TFooterLink) => {
                 return (
                   <Link
-                    className='hover:underline text-xs'
+                    className='hover:underline text-xs text-colors-gray-50'
                     href={element.link}
                     key={element.label}
                   >
@@ -67,7 +67,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <Typography className='text-center text-xs mt-10'>
+        <Typography className='text-center text-colors-gray-50 text-xs mt-10'>
           Copyright &#169; 2024
         </Typography>
       </div>
