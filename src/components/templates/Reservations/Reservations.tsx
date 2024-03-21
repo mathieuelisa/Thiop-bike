@@ -200,8 +200,7 @@ export default function Reservations({ titleExcursion }: Props) {
                   <option value='4 à 5'>4 à 5 participants</option>
                   <option value='6 à 7'>6 à 7 participants</option>
                   <option value='8 à 9'>8 à 9 participants</option>
-                  <option value='10 à 11'>10 à 11 participants</option>
-                  <option value='plus de 12'>plus de 12 participants</option>
+                  <option value='10'>10 participants</option>
                 </select>
 
                 {errors.nbOfParticipants && (

@@ -54,11 +54,11 @@ export default function TarifItem({ element, index }: Props) {
               {element.numberCustomer}
             </Typography>
             <div className='flex flex-col'>
-              <Typography className='text-xs'>
+              <Typography className='text-base font-semibold'>
                 {element.priceCFA} CFA
               </Typography>
 
-              <Typography className='font-semibold text-base'>
+              <Typography className='text-xs'>
                 <span
                   className={twMerge(
                     "text-xs font-normal text-colors-gray-500",

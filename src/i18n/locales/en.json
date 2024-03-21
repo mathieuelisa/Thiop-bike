@@ -24,7 +24,7 @@
   },
   "home": {
     "banner": {
-      "secondTitle": "Discover Senegal on an electric bike"
+      "secondTitle": "Discover the Sine Saloum on an electric bike"
     },
     "button": {
       "discover": "Discover"
@@ -42,16 +42,16 @@
   },
   "advantage": {
     "first": {
-      "title": "First Advantage",
-      "description": "By bike, discovering a country becomes an immersive experience where every pedal stroke reveals hidden treasures and authentic encounters, transforming the journey into an unforgettable human adventure."
+      "title": "<span>an unforgettable</span> experience",
+      "description": "Come and explore the roads, tracks and beaches of Sine Saloum, one of Senegal's most beautiful regions, on our electric bikes."
     },
     "second": {
-      "title": "Discover",
-      "description": " During your cycling tour, you'll discover magnificent landscapes your senses at every turn. From majestic mountains to lush valleys, every pedal stroke will take you through spectacular panoramas, offering an unforgettable experience in the heart of nature."
+      "title": "opt for <span>eco-mobility</span>",
+      "description": "In an environmentally-friendly approach, Thiop Thiop Bike has chosen to promote soft mobility for an authentic experience."
     },
     "third": {
-      "title": "Taste the dishes",
-      "description": "During your cycling expedition, you'll discover delicious African dishes, authentic flavors and traditional recipes rich in history, offering a unique culinary experience by our chef!"
+      "title": "enjoy <span>traditional dishes</span>",
+      "description": "During our lunches, you will enjoy local cuisine and homemade juices. Thieboudienne, fataya, yassa and caldou will hold no secrets for you."
     }
   },
   "excursions": {
@@ -81,7 +81,7 @@
       "title": "terms and conditions of sale",
       "underFirstTitle": "Booking conditions and payment terms",
       "underFirstDescription": " A deposit of 25% of the total cost of the chosen excursion is required to confirm the booking. The remaining 75% must be paid the day before the tour. Payments are to be made by Wave, Sendwave or Orange Money. Our account details will be sent to you at the time of booking. Transfer costs are at your own expense.",
-      "secondTitle": "Booking conditions and payment terms",
+      "secondTitle": "Cancellation policy",
       "underSecondDescription": "In the event of cancellation, the 25% deposit is retained by THIOP THIOP BIKE."
     }
   },
@@ -89,7 +89,7 @@
     "title": "Take advantage of our offers",
     "reservationProcessing": "*Reservation requests processed within a maximum of 48 hours",
     "ourCGV": "Our GTM and GCU",
-    "description": "Three exciting experiences await you during your visit. We're here to meet your every need. Don't hesitate to contact us by e-mail for any specific request or to book your experience now.",
+    "description": "If you have any specific requests, please don't hesitate to contact us by e-mail or WhatsApp.",
     "first": {
       "title": "Day trip",
       "description": "Price includes lunch (meal and beverage)"
@@ -104,7 +104,7 @@
     }
   },
   "teams": {
-    "title": "The team behind Thiop Thiop Bike",
-    "description": "This is the team behind the Thiop Thiop Bike project. Specially composed of Senegalese culture enthusiasts, chefs and guides."
+    "title": "The team",
+    "description": "Experience a moment of escape in the company of our team of experienced guides and talented cooks."
   }
 }

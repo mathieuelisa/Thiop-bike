@@ -54,7 +54,7 @@ export default function Excursions() {
                     <Typography className='text-colors-darkplusgreen text-lg tablet:text-xl font-yeseva '>
                       {t(element.title)}
                     </Typography>
-                    <div className='bg-colors-gray-50 border-colors-gray-500 border mt-2 p-0 tablet:p-1 w-24 rounded-2xl flex justify-center'>
+                    <div className='bg-colors-gray-100 border-colors-gray-500 border mt-2 p-0 tablet:p-1 w-24 rounded-2xl flex justify-center'>
                       <Typography className='text-xs text-colors-middlegreen '>
                         {t(element.time)}
                       </Typography>

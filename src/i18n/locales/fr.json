@@ -24,7 +24,7 @@
   },
   "home": {
     "banner": {
-      "secondTitle": "Découvrez le Sénégal à vélo éléctrique"
+      "secondTitle": "Découvrez le Sine Saloum à vélo électrique"
     },
     "button": {
       "discover": "Découvrir"
@@ -42,16 +42,16 @@
   },
   "advantage": {
     "first": {
-      "title": "Premier Advantage",
-      "description": "À vélo, découvrir un pays devient une expérience immersive où chaque coup de pédale révèle des trésors cachés et des rencontres authentiques, transformant le voyage en une aventure humaine inoubliable."
+      "title": "vivez une experience <span>inoubliable</span>",
+      "description": "Venez parcourir, sur nos vélos électriques, les routes, pistes et plages du Sine Saloum, l’une des plus belles régions du Sénégal"
     },
     "second": {
-      "title": "Découvrez",
-      "description": "Au cours de votre périple à vélo, vous découvrirez des paysages magnifiques qui émerveilleront vos sens à chaque tournant. Des montagnes majestueuses aux vallées luxuriantes, chaque coup de pédale vous emmènera à travers des panoramas spectaculaires, offrant une expérience inoubliable au cœur de la nature."
+      "title": "optez pour <span>l'éco-mobilité</span>",
+      "description": "Dans une démarche respectueuse de l'environnement Thiop Thiop Bike a  fait le choix de mettre en valeur une mobilité douce permettant de vivre une expérience authentique"
     },
     "third": {
-      "title": "Dégustez des plats",
-      "description": "Pendant votre expédition à vélo, vous découvrirez de délicieux plats africains, des saveurs authentiques et des recettes traditionnelles riches en histoire, offrant une expérience culinaire unique par notre chef cuistot !"
+      "title": "dégustez des plats <span>traditionnels</span>",
+      "description": "Lors de nos déjeuners, vous apprécierez la cuisine locale et les jus faits maison. Thieboudienne, fataya, yassa et caldou n'auront plus de secrets pour vous!"
     }
   },
   "excursions": {
@@ -79,9 +79,9 @@
     },
     "cgv": {
       "title": "conditions générales de vente",
-      "underFirstTitle": " conditions de réservation et modalités de paiement",
+      "underFirstTitle": " Conditions de réservation et modalités de paiement",
       "underFirstDescription": " Un acompte de 25% du montant total de l’excursion choisie est demandé afin de confirmer la réservation. Les 75% restant seront à payer la veille du rendez-vous. Les règlements sont à effectuer par Wave, Sendwave ou Orange Money. Les coordonnées de notre compte vous seront transmises lors de la réservation. Les frais de transferts restent à votre charge.",
-      "secondTitle": " Conditions de réservation et modalités de paiement",
+      "secondTitle": " Conditions d'annulation",
       "underSecondDescription": " En cas d’annulation, l’acompte de 25% est conservé par THIOP THIOP BIKE."
     }
   },
@@ -89,7 +89,7 @@
     "title": "Profitez de nos offres",
     "reservationProcessing": "*Demandes de reservations traitées sous un délai maximum de 48h",
     "ourCGV": "Nos CGV and GCU",
-    "description": " Trois expériences captivantes vous attendent lors de votre visite. Nous sommes là pour répondre à tous vos besoins. N&#39;hésitez pas à nous contacter par e-mail pour toute demande spécifique ou pour réserver votre expérience dès maintenant.",
+    "description": "Pour toutes demandes spécifiques n'hésitez pas à nous contacter par e-mail ou WhatsApp",
     "first": {
       "title": "Excursion à la journée",
       "description": " Le prix comprend le déjeuner (repas et boissons)"
@@ -99,12 +99,12 @@
       "description": "Le tarif n'inclus pas déjeuner"
     },
     "third": {
-      "title": "Excursion au sunset",
+      "title": "Excursion sunset",
       "description": "french description 3"
     }
   },
   "teams": {
-    "title": "L'équipe dérrière Thiop Thiop Bike",
-    "description": "Voici l'équipe derrière le projet Thiop Thiop Bike. Spécialement composée de passionnés de la culture sénégalaise, chef en cuisine et en guide."
+    "title": "L'équipe",
+    "description": "Vivez un moment d'évasion en compagnie des membres de notre équipe composée de guides expérimentés et de cuisinières talentueuses"
   }
 }

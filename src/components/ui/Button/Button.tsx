@@ -45,8 +45,7 @@ export default function Button({
           classes += "bg-red-600 hover:bg-red-700 text-black ";
           break;
         case "transparent":
-          classes +=
-            "bg-transparent text-white border hover:bg-colors-offWhite hover:text-colors-lightBlack ";
+          classes += "bg-transparent text-white border ";
           break;
         default:
           break;

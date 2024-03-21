@@ -93,7 +93,7 @@ export default function Banner() {
           type='button'
           onClick={() => push("/excursions")}
           color='transparent'
-          className='mt-5 hover:text-colors-lightbrown mx-auto tablet:mx-0'
+          className='mt-5 hover:text-colors-lightbrown hover:border-colors-lightbrown border-2 uppercase mx-auto tablet:mx-0'
         >
           {t("home.button.discover")}
         </Button>

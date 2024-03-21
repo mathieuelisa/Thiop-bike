@@ -68,12 +68,8 @@ export default function Base({ children }: TpageProps) {
                   href={element.link}
                   key={element.label}
                   className={twMerge(
-                    "mr-5 transform text-white hover:text-colors-lightbrown transition duration-500 ease-in-out text-sm lg:text-base",
-                    pathName === element.link ||
-                      (pathName.includes("assistance") &&
-                        element.label === "Assistance")
-                      ? "text-red-600"
-                      : ""
+                    "mr-5 transform text-white hover:text-colors-darkbrown transition duration-500 ease-in-out text-sm lg:text-base",
+                    pathName === element.link ? "text-colors-darkbrown " : ""
                   )}
                 >
                   <Typography className='text-xl font-yeseva'>
@@ -91,7 +87,7 @@ export default function Base({ children }: TpageProps) {
               aria-label='Tiktok Profile'
               passHref
             >
-              <InstagramIcon className='h-6 duration-500 ease-in-out hover:text-white' />
+              <InstagramIcon className='h-7 duration-500 ease-in-out hover:text-colors-darkbrown' />
             </Link>
             <Link
               className='cursor-pointer'
@@ -99,7 +95,7 @@ export default function Base({ children }: TpageProps) {
               aria-label='Facebook Profile'
               passHref
             >
-              <FacebookIcon className='h-6 duration-500 ease-in-out hover:text-white' />
+              <FacebookIcon className='h-7 duration-500 ease-in-out hover:text-colors-darkbrown' />
             </Link>
           </div>
         </motion.div>

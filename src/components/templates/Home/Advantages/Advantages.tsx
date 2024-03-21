@@ -3,7 +3,7 @@
 import Typography from "@/components/ui/Typography";
 import Image from "next/image";
 import React from "react";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 export default function Advantages() {
   const { t } = useTranslation();
@@ -31,9 +31,12 @@ export default function Advantages() {
           />
 
           <Typography className='mb-5 text-3xl uppercase tablet:text-4xl text-center tablet:text-start font-yeseva'>
-            {/* VIVEZ UNE EXPERIENCE{" "} */}
-            {t("advantage.first.title")}
-            <span className='text-colors-lightbrown'>INÉDITE</span>
+            <Trans
+              i18nKey='advantage.first.title'
+              components={{
+                span: <span className='text-colors-lightbrown font-semibold' />,
+              }}
+            />
           </Typography>
           <Typography className='text-base z-10 tablet:text-xl leading-relaxed text-center tablet:text-start'>
             {t("advantage.first.description")}
@@ -53,15 +56,6 @@ export default function Advantages() {
 
       {/* Second advantage */}
       <div className='flex flex-col-reverse tablet:flex-row items-center'>
-        <Image
-          quality={50}
-          className='absolute -bottom-48 right-0 opacity-10'
-          width={300}
-          height={300}
-          src='/assets/images/home/elephant.svg'
-          alt='elephant'
-        />
-
         <div className='tablet:w-1/2 w-full flex justify-center items-center mt-9'>
           <Image
             quality={50}
@@ -74,11 +68,12 @@ export default function Advantages() {
         </div>
         <div className='flex flex-col tablet:w-1/2 w-full'>
           <Typography className='mb-5 text-3xl uppercase tablet:text-4xl text-center tablet:text-start font-yeseva'>
-            {t("advantage.second.title")}
-            <span className='text-colors-lightbrown'>
-              {" "}
-              D&#39;INCROYABLES ENDROITS
-            </span>
+            <Trans
+              i18nKey='advantage.second.title'
+              components={{
+                span: <span className='text-colors-lightbrown font-semibold' />,
+              }}
+            />
           </Typography>
           <Typography className='text-base z-10 tablet:text-xl leading-relaxed text-center tablet:text-start'>
             {t("advantage.second.description")}
@@ -86,7 +81,7 @@ export default function Advantages() {
         </div>
       </div>
 
-      {/* hird advantage */}
+      {/* third advantage */}
       <div className='flex flex-col tablet:flex-row items-center'>
         <div className=' flex flex-col w-full tablet:w-1/2'>
           <Image
@@ -106,10 +101,13 @@ export default function Advantages() {
             alt='leaf'
           />
 
-          <Typography className='mb-5 uppercase text-3xl text-colors-lightbrown tablet:text-4xl text-center tablet:text-start font-yeseva'>
-            {/* DÉGUSTEZ DES PLATS{" "} */}
-            {t("advantage.third.title")}
-            <span className='text-colors-gray-50'>INCROYABLE</span>
+          <Typography className='mb-5 uppercase text-3xl tablet:text-4xl text-center tablet:text-start font-yeseva'>
+            <Trans
+              i18nKey='advantage.third.title'
+              components={{
+                span: <span className='text-colors-lightbrown font-semibold' />,
+              }}
+            />
           </Typography>
           <Typography className='text-base tablet:text-xl leading-relaxed text-center tablet:text-start'>
             {t("advantage.third.description")}

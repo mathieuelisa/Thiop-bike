@@ -18,8 +18,8 @@ export default function Footer() {
         className='absolute left-10 opacity-10'
         width={300}
         height={300}
-        src='/assets/images/home/plane_path.svg'
-        alt='elephant'
+        src='/assets/images/home/bike_path.png'
+        alt='bike_path'
       />
 
       <div className='w-full py-5' />
