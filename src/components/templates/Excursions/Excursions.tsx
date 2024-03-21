@@ -36,7 +36,7 @@ export default function Excursions() {
               <div className='flex direction-row justify-end'>
                 <Image
                   quality={50}
-                  className='object-cover bg-colors-red-200 z-0 w-full max-w-[280px] h-full max-h-[130px]'
+                  className='object-cover bg-colors-gray-50 z-0 w-full max-w-[280px] h-full max-h-[130px]'
                   width={300}
                   objectFit='cover'
                   height={200}
