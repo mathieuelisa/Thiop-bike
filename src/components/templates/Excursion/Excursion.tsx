@@ -38,7 +38,7 @@ export default function Excursion() {
             alt='elephant'
           />
 
-          <Typography className='text-center mt-5'>
+          <Typography className='text-center text-colors-gray-50 mt-5'>
             {t(excursionId?.description || "")}
           </Typography>
         </div>

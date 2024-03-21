@@ -49,7 +49,7 @@ export default function Advantages() {
             height={500}
             className='z-10'
             src='/assets/images/home/polaroid1.png'
-            alt='polaroid2'
+            alt='polaroid1'
           />
         </div>
       </div>
@@ -63,7 +63,7 @@ export default function Advantages() {
             height={500}
             src='/assets/images/home/polaroid2.png'
             className='z-10'
-            alt='polaroid'
+            alt='polaroid2'
           />
         </div>
         <div className='flex flex-col tablet:w-1/2 w-full'>
@@ -109,7 +109,10 @@ export default function Advantages() {
               }}
             />
           </Typography>
-          <Typography className='text-base text-colors-gray-50 tablet:text-xl leading-relaxed text-center tablet:text-start'>
+          <Typography
+            className='text-base text-colors-gray-50
+           tablet:text-xl leading-relaxed text-center tablet:text-start'
+          >
             {t("advantage.third.description")}
           </Typography>
         </div>

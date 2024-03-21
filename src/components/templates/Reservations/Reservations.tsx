@@ -69,7 +69,7 @@ export default function Reservations({ titleExcursion }: Props) {
     <>
       <section className=' mx-5 tablet:px-12 '>
         <div className='flex  flex-col items-start'>
-          <Typography className='text-3xl w-full text-center tablet:text-4xl mt-10 font-black uppercase font-yeseva'>
+          <Typography className='text-3xl text-colors-gray-50 w-full text-center tablet:text-4xl mt-10 font-black uppercase font-yeseva'>
             {t(titleExcursion || "")}
             <br />
             <span className='text-colors-lightbrown'>Reservation</span>
@@ -84,7 +84,9 @@ export default function Reservations({ titleExcursion }: Props) {
             <div className='flex flex-col w-full gap-3'>
               <div className='w-full flex flex-col tablet:gap-7 tablet:flex-row'>
                 <div className='flex flex-col w-full'>
-                  <label>{t("inputs.label.lastname")}</label>
+                  <label className='text-colors-gray-50'>
+                    {t("inputs.label.lastname")}
+                  </label>
                   <input
                     className={twMerge(
                       "border bg-colors-transparent w-full rounded-md min-h-9 p-2  mt-2",
@@ -100,7 +102,9 @@ export default function Reservations({ titleExcursion }: Props) {
                   )}
                 </div>
                 <div className='flex flex-col w-full mt-2 tablet:mt-0'>
-                  <label>{t("inputs.label.firstname")}</label>
+                  <label className='text-colors-gray-50'>
+                    {t("inputs.label.firstname")}
+                  </label>
                   <input
                     className={twMerge(
                       "border bg-colors-transparent w-full rounded-md min-h-9 p-2 mt-2 ",
@@ -117,7 +121,9 @@ export default function Reservations({ titleExcursion }: Props) {
                 </div>
               </div>
               <div className='w-full'>
-                <label>{t("inputs.label.phone")}</label>
+                <label className='text-colors-gray-50'>
+                  {t("inputs.label.phone")}
+                </label>
                 <input
                   className={twMerge(
                     "border bg-colors-transparent w-full rounded-md min-h-9 p-2 mt-2",
@@ -133,7 +139,7 @@ export default function Reservations({ titleExcursion }: Props) {
                 )}
               </div>
               <div className='w-full'>
-                <label>Email</label>
+                <label className='text-colors-gray-50'>Email</label>
                 <input
                   className={twMerge(
                     "border bg-colors-transparent w-full rounded-md min-h-9 p-2  mt-2",
@@ -149,7 +155,7 @@ export default function Reservations({ titleExcursion }: Props) {
                 )}
               </div>
               <div className='w-full'>
-                <label>Excursions</label>
+                <label className='text-colors-gray-50'>Excursions</label>
                 <select
                   id='excursions'
                   {...register("excursions")}
@@ -186,7 +192,9 @@ export default function Reservations({ titleExcursion }: Props) {
                 )}
               </div>
               <div className='w-full'>
-                <label>{t("inputs.label.numberOfParticipant")}</label>
+                <label className='text-colors-gray-50'>
+                  {t("inputs.label.numberOfParticipant")}
+                </label>
                 <select
                   id='nbOfParticipants'
                   {...register("nbOfParticipants")}
@@ -211,7 +219,7 @@ export default function Reservations({ titleExcursion }: Props) {
               </div>
               <div className='w-full flex-col gap-7 tablet:flex-row'>
                 <div className='w-full'>
-                  <label>Allergies</label>
+                  <label className='text-colors-gray-50'>Allergies</label>
                   <textarea
                     className={twMerge(
                       "border bg-colors-transparent w-full rounded-md min-h-11  p-2  mt-2",
@@ -226,7 +234,9 @@ export default function Reservations({ titleExcursion }: Props) {
                   )}
                 </div>
                 <div className='w-full'>
-                  <label>{t("inputs.label.moreInformation")}</label>
+                  <label className='text-colors-gray-50'>
+                    {t("inputs.label.moreInformation")}
+                  </label>
                   <textarea
                     className={twMerge(
                       "border bg-colors-transparent w-full rounded-md  p-2 min-h-11  mt-2",
