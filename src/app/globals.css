@@ -36,6 +36,10 @@ body {
   width: 350px;
 }
 
+.slide-visible {
+  height: 350px !important;
+}
+
 .slide-current {
   display: flex;
   justify-content: center;
@@ -45,4 +49,5 @@ body {
 .slide {
   display: flex;
   justify-content: center;
+  height: 343px;
 }

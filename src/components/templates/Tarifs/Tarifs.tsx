@@ -55,7 +55,7 @@ export default function Tarifs() {
               renderBottomCenterControls={renderDots}
               renderCenterLeftControls={null}
               renderCenterRightControls={null}
-              autoplay
+              // autoplay
               style={{ height: "100%" }}
               autoplayInterval={5000}
               wrapAround={true}

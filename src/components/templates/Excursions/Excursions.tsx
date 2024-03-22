@@ -34,7 +34,7 @@ export default function Excursions() {
                   quality={50}
                   className='object-cover bg-colors-gray-50 z-0 w-full max-w-[280px] h-full max-h-[130px]'
                   width={300}
-                  objectFit='cover'
+                  // objectFit='cover'
                   height={200}
                   src={element.image}
                   alt='senegal'

@@ -14,9 +14,9 @@ export default function InstagramIcon({ className }: TIcons) {
         r='40'
         fill='none'
         stroke='currentColor'
-        stroke-linecap='round'
-        stroke-linejoin='round'
-        stroke-width='8'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        strokeWidth='8'
       />
       <rect
         x='32'
@@ -26,9 +26,9 @@ export default function InstagramIcon({ className }: TIcons) {
         rx='48'
         fill='none'
         stroke='currentColor'
-        stroke-linecap='round'
-        stroke-linejoin='round'
-        stroke-width='8'
+        strokeLinecap='round'
+        strokeLinejoin='round'
+        strokeWidth='8'
       />
       <circle cx='180' cy='76' r='8' />
     </svg>

@@ -30,12 +30,12 @@ export default function Excursion() {
             {t("common.back")}
           </Button>
           <Image
-            quality={50}
+            quality={30}
             className=' left-10'
-            width={600}
-            height={600}
+            width={500}
+            height={500}
             src={excursionId?.imageDetail || ""}
-            alt='elephant'
+            alt='excursion_detail'
           />
 
           <Typography className='text-center text-colors-gray-50 mt-5'>

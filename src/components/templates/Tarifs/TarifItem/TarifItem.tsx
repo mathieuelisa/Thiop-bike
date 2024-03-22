@@ -14,7 +14,7 @@ type Props = {
 
 export default function TarifItem({ element, index }: Props) {
   const { t } = useTranslation();
-  const isLastElement = index === TARIF_PART.length - 3;
+  const isLastElement = index === TARIF_PART.length - 2;
 
   return (
     <div
@@ -37,11 +37,14 @@ export default function TarifItem({ element, index }: Props) {
       <Typography className='font-black text-lg'>{t(element.title)}</Typography>
       <Typography
         className={twMerge(
-          "text-xs mb-5",
+          "text-xs mb-4",
           isLastElement ? "text-white" : "text-colors-gray-500"
         )}
       >
         <Trans i18nKey={t(element.description)} />
+      </Typography>
+      <Typography className='text-xs text-end w-full opacity-55'>
+        * Tarif par personne
       </Typography>
 
       {element.tarifs.map((element) => {
@@ -55,7 +58,7 @@ export default function TarifItem({ element, index }: Props) {
             </Typography>
             <div className='flex flex-col'>
               <Typography className='text-base font-semibold'>
-                {element.priceCFA} FCFA*
+                {element.priceCFA} FCFA <span className='text-xs'>*</span>
               </Typography>
 
               <Typography className='text-xs'>
@@ -73,9 +76,6 @@ export default function TarifItem({ element, index }: Props) {
           </div>
         );
       })}
-      <Typography className='text-xs text-end w-full opacity-55'>
-        * Tarif par personne
-      </Typography>
     </div>
   );
 }
