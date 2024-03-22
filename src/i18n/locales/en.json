@@ -92,15 +92,15 @@
     "description": "If you have any specific requests, please don't hesitate to contact us by e-mail or WhatsApp.",
     "first": {
       "title": "Day trip",
-      "description": "Price includes lunch (meal and beverage)"
+      "description": "The price includes lunch <br/>(meal and beverage)"
     },
     "second": {
       "title": "Half-day excursion",
-      "description": "Rate does not include lunch"
+      "description": "The price does not include lunch"
     },
     "third": {
       "title": "Sunset tour",
-      "description": "french description 3"
+      "description": "The price includes a tasting of <br/> (appetizers)"
     }
   },
   "teams": {

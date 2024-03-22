@@ -42,6 +42,19 @@ export default function Base({ children }: TpageProps) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // UseEffect for not scroll if mobile menu is open
+  useEffect(() => {
+    const handleScroll = () => {
+      document.body.style.overflow = isMobileMenuOpen ? "hidden" : "auto";
+    };
+    handleScroll();
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      document.body.style.overflow = "auto";
+    };
+  }, [isMobileMenuOpen]);
+
   return (
     <main className='bg-colors-lightgreen min-h-screen overflow-hidden'>
       <Navbar />
@@ -56,7 +69,7 @@ export default function Base({ children }: TpageProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.07 }}
           className={twJoin(
-            "fixed h-[5180px] pt-11 p-5 bg-colors-lightbrown z-50 transform transition duration-1000 ease-in-out",
+            "fixed flex flex-col pt-24 items-center gap-11 h-[5180px] p-5 bg-colors-lightbrown z-50 transform transition duration-1000 ease-in-out",
             isMobileMenuOpen ? "w-full" : "w-0"
           )}
         >
@@ -72,7 +85,7 @@ export default function Base({ children }: TpageProps) {
                     pathName === element.link ? "text-colors-darkbrown " : ""
                   )}
                 >
-                  <Typography className='text-xl font-yeseva'>
+                  <Typography className='text-5xl font-yeseva'>
                     {t(element.label)}
                   </Typography>
                 </Link>

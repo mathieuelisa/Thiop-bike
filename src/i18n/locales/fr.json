@@ -89,10 +89,10 @@
     "title": "Profitez de nos offres",
     "reservationProcessing": "*Demandes de reservations traitées sous un délai maximum de 48h",
     "ourCGV": "Nos CGV and GCU",
-    "description": "Pour toutes demandes spécifiques n'hésitez pas à nous contacter par e-mail ou WhatsApp",
+    "description": "Pour toute demande spécifique n'hésitez pas à nous contacter par e-mail ou WhatsApp",
     "first": {
       "title": "Excursion à la journée",
-      "description": " Le prix comprend le déjeuner (repas et boissons)"
+      "description": " Le tarif comprend le déjeuner <br/>(repas et boissons)"
     },
     "second": {
       "title": "Excursion à la demi-journée",
@@ -100,7 +100,7 @@
     },
     "third": {
       "title": "Excursion sunset",
-      "description": "french description 3"
+      "description": "Le tarif inclut une dégustation <br/> (bouchées apéritives)"
     }
   },
   "teams": {

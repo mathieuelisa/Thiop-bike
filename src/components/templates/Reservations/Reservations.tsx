@@ -13,7 +13,6 @@ import { twMerge } from "tailwind-merge";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import AlertBanner from "@/components/ui/AlertBanner";
 import { useConditionText } from "@/context/ConditionsTextContext";
 import ConditionModal from "./ConditionModal";
 import useClickOutside from "@/hooks/useClickOutside";
@@ -46,9 +45,29 @@ export default function Reservations({ titleExcursion }: Props) {
   } = useForm<TCustomerFormSchema>({
     resolver: zodResolver(customerSchema),
   });
-  const onSubmit = (data: any) => {
+
+  const onSubmit = async (data: any) => {
     console.log("formulaire validé:", data);
-    notify();
+    // notify();
+
+    await fetch("api/send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Erreur lors de l'envoi de la requête");
+        } else {
+          console.log("Formulaire validé");
+          notify();
+        }
+      })
+      .catch((error) => {
+        console.error("Erreur:", error);
+      });
   };
 
   useEffect(() => {

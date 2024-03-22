@@ -5,7 +5,7 @@ import Image from "next/image";
 import React from "react";
 import { twMerge } from "tailwind-merge";
 import { TARIF_PART, TpriceCFAContent } from "../Tarifs.data";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 type Props = {
   element: TpriceCFAContent;
@@ -20,7 +20,7 @@ export default function TarifItem({ element, index }: Props) {
     <div
       key={element.id}
       className={twMerge(
-        "relative mx-4 border overflow-hidden w-[290px] h-[400px] p-5 flex shadow-lg items-start flex-col rounded-lg text-colors-black",
+        "relative mx-4 border overflow-hidden w-[290px] tablet:h-[400px]] p-5 flex shadow-lg items-start flex-col rounded-lg text-colors-black",
         isLastElement
           ? "bg-colors-middlegreen text-colors-gray-50"
           : "bg-colors-gray-50 border-colors-gray-400 "
@@ -41,7 +41,7 @@ export default function TarifItem({ element, index }: Props) {
           isLastElement ? "text-white" : "text-colors-gray-500"
         )}
       >
-        {t(element.description)}
+        <Trans i18nKey={t(element.description)} />
       </Typography>
 
       {element.tarifs.map((element) => {
@@ -55,7 +55,7 @@ export default function TarifItem({ element, index }: Props) {
             </Typography>
             <div className='flex flex-col'>
               <Typography className='text-base font-semibold'>
-                {element.priceCFA} CFA
+                {element.priceCFA} FCFA*
               </Typography>
 
               <Typography className='text-xs'>
@@ -73,6 +73,9 @@ export default function TarifItem({ element, index }: Props) {
           </div>
         );
       })}
+      <Typography className='text-xs text-end w-full opacity-55'>
+        * Tarif par personne
+      </Typography>
     </div>
   );
 }

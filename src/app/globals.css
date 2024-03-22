@@ -39,4 +39,10 @@ body {
 .slide-current {
   display: flex;
   justify-content: center;
+  height: 100%;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
 }
