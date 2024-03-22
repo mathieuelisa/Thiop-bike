@@ -30,7 +30,7 @@ export default function Advantages() {
             alt='senegal'
           />
 
-          <Typography className='mb-5 text-colors-gray-50 text-3xl uppercase tablet:text-4xl text-center tablet:text-start font-yeseva'>
+          <Typography className='mb-5 text-colors-gray-50 text-2xl uppercase tablet:text-4xl text-center tablet:text-start font-yeseva'>
             <Trans
               i18nKey='advantage.first.title'
               components={{
@@ -38,7 +38,7 @@ export default function Advantages() {
               }}
             />
           </Typography>
-          <Typography className='text-base text-colors-gray-50 z-10 tablet:text-xl leading-relaxed text-center tablet:text-start'>
+          <Typography className='text-sm text-colors-gray-50 z-10 tablet:text-xl leading-relaxed text-center tablet:text-start'>
             {t("advantage.first.description")}
           </Typography>
         </div>
@@ -67,7 +67,7 @@ export default function Advantages() {
           />
         </div>
         <div className='flex flex-col tablet:w-1/2 w-full'>
-          <Typography className='mb-5 text-3xl text-colors-gray-50 uppercase tablet:text-4xl text-center tablet:text-start font-yeseva'>
+          <Typography className='mb-5 text-2xl text-colors-gray-50 uppercase tablet:text-4xl text-center tablet:text-start font-yeseva'>
             <Trans
               i18nKey='advantage.second.title'
               components={{
@@ -75,7 +75,7 @@ export default function Advantages() {
               }}
             />
           </Typography>
-          <Typography className='text-base text-colors-gray-50 z-10 tablet:text-xl leading-relaxed text-center tablet:text-start'>
+          <Typography className='text-sm text-colors-gray-50 z-10 tablet:text-xl leading-relaxed text-center tablet:text-start'>
             {t("advantage.second.description")}
           </Typography>
         </div>
@@ -101,7 +101,7 @@ export default function Advantages() {
             alt='leaf'
           />
 
-          <Typography className='mb-5 uppercase text-colors-gray-50 text-3xl tablet:text-4xl text-center tablet:text-start font-yeseva'>
+          <Typography className='mb-5 uppercase text-colors-gray-50 text-2xl tablet:text-4xl text-center tablet:text-start font-yeseva'>
             <Trans
               i18nKey='advantage.third.title'
               components={{
@@ -110,7 +110,7 @@ export default function Advantages() {
             />
           </Typography>
           <Typography
-            className='text-base text-colors-gray-50
+            className='text-sm text-colors-gray-50
            tablet:text-xl leading-relaxed text-center tablet:text-start'
           >
             {t("advantage.third.description")}

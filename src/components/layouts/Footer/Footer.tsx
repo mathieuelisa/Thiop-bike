@@ -22,7 +22,6 @@ export default function Footer() {
         alt='bike_path'
       />
 
-      <div className='w-full py-5' />
       <div className=' pb-10 px-10 tablet:px-40'>
         <div className='flex justify-between items-center flex-col tablet:flex-row'>
           <div className='flex justify-center gap-11 tablet:gap-36 pt-10'>

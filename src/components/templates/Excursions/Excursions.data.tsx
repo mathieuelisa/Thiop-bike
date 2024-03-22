@@ -15,7 +15,7 @@ export const EXCURSIONS_DATASET: TExcursionDataSet[] = [
     time: "common.day",
     description: "excursions.first.description",
     image: "/assets/images/excursions/djiffer.jpeg",
-    imageDetail: "/assets/images/excursions/excursion_detail.png",
+    imageDetail: "/assets/images/excursions/day_djiffer.jpg",
     urlPath: "excursions/decouverte-de-djiffer-et-palmarin",
   },
   {
@@ -24,7 +24,7 @@ export const EXCURSIONS_DATASET: TExcursionDataSet[] = [
     time: "common.halfDay",
     description: "excursions.first.description",
     image: "/assets/images/excursions/djiffer.jpeg",
-    imageDetail: "/assets/images/excursions/excursion_detail.png",
+    imageDetail: "/assets/images/excursions/half_palmarin.jpg",
     urlPath: "excursions/demi-decouverte-de-djiffer-et-palmarin",
   },
   {
@@ -33,7 +33,7 @@ export const EXCURSIONS_DATASET: TExcursionDataSet[] = [
     time: "common.day",
     description: "excursions.second.description",
     image: "/assets/images/excursions/joal.jpeg",
-    imageDetail: "/assets/images/excursions/excursion_detail.png",
+    imageDetail: "/assets/images/excursions/day_joal.jpg",
     urlPath: "excursions/sur-la-route-de-joal-fadiouth",
   },
   {
@@ -42,7 +42,7 @@ export const EXCURSIONS_DATASET: TExcursionDataSet[] = [
     time: "common.day",
     description: "excursions.third.description",
     image: "/assets/images/excursions/village.jpeg",
-    imageDetail: "/assets/images/excursions/excursion_detail.png",
+    imageDetail: "/assets/images/excursions/day_village.jpg",
     urlPath: "excursions/au-coeur-des-villages",
   },
   {
@@ -51,7 +51,7 @@ export const EXCURSIONS_DATASET: TExcursionDataSet[] = [
     time: "common.halfDay",
     description: "excursions.third.description",
     image: "/assets/images/excursions/village.jpeg",
-    imageDetail: "/assets/images/excursions/excursion_detail.png",
+    imageDetail: "/assets/images/excursions/half_village.jpg",
     urlPath: "excursions/demi-au-coeur-des-villages",
   },
   {
@@ -60,7 +60,7 @@ export const EXCURSIONS_DATASET: TExcursionDataSet[] = [
     time: "common.halfDay",
     description: "excursions.fourth.description",
     image: "/assets/images/excursions/sambia.jpeg",
-    imageDetail: "/assets/images/excursions/excursion_detail.png",
+    imageDetail: "/assets/images/excursions/sambia_sunset.jpg",
     urlPath: "excursions/sambia-dia-a-l-heure-du-coucher-du-soleil",
   },
 ];

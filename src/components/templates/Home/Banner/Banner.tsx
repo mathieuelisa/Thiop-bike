@@ -73,7 +73,7 @@ export default function Banner() {
         <Typography
           type='h1'
           className={twJoin(
-            "text-6xl text-colors-gray-50 font-yeseva uppercase font-black flex-col flex tablet:flex-row text-center tablet:text-start"
+            "text-3xl text-colors-gray-50 font-yeseva uppercase font-black flex-col flex tablet:flex-row text-center tablet:text-start"
           )}
         >
           Let&#39;s ride{" "}
@@ -81,12 +81,12 @@ export default function Banner() {
             animate='visibleSpan'
             initial='hidden'
             variants={container}
-            className='text-colors-lightbrown ml-4'
+            className='text-colors-lightbrown tablet:ml-4'
           >
-            together.
+            together
           </motion.span>
         </Typography>
-        <Typography className='font-semibold text-colors-gray-50 text-center tablet:text-start'>
+        <Typography className='font-semibold text-sm tablet:text-base text-colors-gray-50 text-center tablet:text-start'>
           {t("home.banner.secondTitle")}
         </Typography>
         <Button

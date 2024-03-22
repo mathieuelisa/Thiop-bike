@@ -3,7 +3,6 @@
 import React, { useEffect } from "react";
 import Banner from "./Banner";
 import Advantages from "./Advantages";
-// import Proposals from "./Proposals";
 
 export default function Home() {
   useEffect(() => {
@@ -17,7 +16,6 @@ export default function Home() {
       <Banner />
       <div className='px-5 tablet:px-20'>
         <Advantages />
-        {/* <Proposals /> */}
       </div>
     </main>
   );

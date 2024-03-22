@@ -14,7 +14,7 @@ export default function Teams() {
         <Typography className='text-3xl text-colors-gray-50 text-center tablet:text-start tablet:text-4xl mt-10 font-black uppercase font-yeseva'>
           {t("teams.title")}
         </Typography>
-        <Typography className='max-w-2xl text-colors-gray-50 text-center mt-4'>
+        <Typography className='max-w-2xl text-sm tablet:text-base text-colors-gray-50 text-center mt-4'>
           {t("teams.description")}
         </Typography>
       </div>

@@ -4,16 +4,12 @@ import React from "react";
 import { EXCURSIONS_DATASET } from "./Excursions.data";
 
 import Typography from "@/components/ui/Typography";
-import Button from "@/components/ui/Button";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import Link from "next/link";
 
 export default function Excursions() {
   const { t } = useTranslation();
-
-  const { push } = useRouter();
 
   return (
     <section className='mx-5 tablet:px-20'>
@@ -21,7 +17,7 @@ export default function Excursions() {
         <Typography className='text-3xl text-colors-gray-50 text-center tablet:text-start tablet:text-4xl mt-10 font-black uppercase font-yeseva'>
           {t("excursions.title")}
         </Typography>
-        <Typography className='max-w-2xl text-colors-gray-50 text-center mt-4'>
+        <Typography className='max-w-2xl text-sm tablet:text-base text-colors-gray-50 text-center mt-4'>
           {t("excursions.description")}
         </Typography>
       </div>
@@ -50,8 +46,8 @@ export default function Excursions() {
               {/* Text Layer */}
               <div className='absolute inset-0'>
                 <div className='flex direction-row items-center justify-between h-full w-full'>
-                  <div className='flex flex-col p-6 justify-center items-start h-full w-full'>
-                    <Typography className='text-colors-darkplusgreen text-lg tablet:text-xl font-yeseva '>
+                  <div className='flex flex-col p-4 justify-center items-start h-full w-full'>
+                    <Typography className='text-colors-darkplusgreen text-base tablet:text-xl font-yeseva '>
                       {t(element.title)}
                     </Typography>
                     <div className='bg-colors-gray-100 border-colors-gray-500 border mt-2 p-0 tablet:p-1 w-24 rounded-2xl flex justify-center'>
@@ -60,17 +56,6 @@ export default function Excursions() {
                       </Typography>
                     </div>
                   </div>
-                  {/* <div className='max-w-[280px] w-full h-full flex justify-center items-center'>
-                    <Button
-                      href={element.urlPath}
-                      type='button'
-                      className='group/btn opacity-0 shadow-lg group-hover/item:opacity-100 duration-300 transition-opacity ease-in-out uppercase rounded-md px-4 py-2 bg-colors-gray-50 text-colors-middlegreen'
-                    >
-                      <Typography className='text-xs text-end tablet:text-center tablet:text-sm uppercase font-semibold font-yeseva group-hover/btn:underline'>
-                        {t("common.seeMore")}
-                      </Typography>
-                    </Button>
-                  </div> */}
                 </div>
               </div>
             </div>
