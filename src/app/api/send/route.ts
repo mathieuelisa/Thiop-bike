@@ -2,7 +2,7 @@ import EmailTemplate from "@/components/templates/Emails/email-template";
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend(process.env.NEXT_PUBLIC_RESEND_API_KEY);
 
 export async function POST(request: any) {
   try {
@@ -16,9 +16,6 @@ export async function POST(request: any) {
       react: EmailTemplate({ firstName: "Mathieu" }),
     });
 
-    // if (data.status === "success") {
-    //   return NextResponse.json({ message: "Email envoyé" });
-    // }
     return NextResponse.json(data);
   } catch (error) {
     return Response.json({ error });
