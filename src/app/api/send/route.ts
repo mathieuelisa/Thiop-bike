@@ -12,7 +12,7 @@ export async function POST(request: any) {
     const { firstname } = body;
 
     const data = await resend.emails.send({
-      from: "Mathieu <mathieu.elisa@gmail.com>",
+      from: "Thiop <contact@thiopthiopbike.com>",
       to: ["mathieu.elisa@gmail.com"],
       subject: "Hello world test",
       react: EmailTemplate({ firstName: firstname }),

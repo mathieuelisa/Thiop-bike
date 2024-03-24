@@ -62,17 +62,6 @@ export default function Reservations({ titleExcursion }: Props) {
       console.log("Formulaire envoyé");
       notify();
     }
-    // .then((response) => {
-    //   if (!response.ok) {
-    //     throw new Error("Erreur lors de l'envoi de la requête");
-    //   } else {
-    //     console.log("Formulaire envoyé");
-    //     notify();
-    //   }
-    // })
-    // .catch((error) => {
-    //   console.error("Erreur:", error);
-    // });
   };
 
   useEffect(() => {
