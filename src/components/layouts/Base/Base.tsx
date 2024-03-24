@@ -95,7 +95,7 @@ export default function Base({ children }: TpageProps) {
 
           <div className='flex border-t justify-end pt-7 border-colors-gray-50 gap-5 z-20 mt-12 tablet:mt-0 w-4/5 mx-auto'>
             <Link
-              className='cursor-pointer'
+              className='cursor-pointer text-colors-gray-50'
               href='https://www.instagram.com/thiop_thiop_bike'
               aria-label='Tiktok Profile'
               passHref
@@ -103,7 +103,7 @@ export default function Base({ children }: TpageProps) {
               <InstagramIcon className='h-7 duration-500 ease-in-out hover:text-colors-darkbrown' />
             </Link>
             <Link
-              className='cursor-pointer'
+              className='cursor-pointer text-colors-gray-50'
               href='https://facebook.com/thiop'
               aria-label='Facebook Profile'
               passHref
