@@ -19,8 +19,6 @@ export default function Excursion() {
     element.urlPath.includes(id as string)
   );
 
-  console.log(typeof id);
-
   // Schema rendering
   const getRenderSchema = (id: number) => {
     switch (id) {
@@ -195,7 +193,7 @@ export default function Excursion() {
           </section>
         );
       default:
-        return "ji";
+        return "pas de parcours";
     }
   };
 
@@ -219,13 +217,10 @@ export default function Excursion() {
             alt='excursion_detail'
           />
 
-          {/* <Typography className='text-center text-colors-gray-50 mt-5'> */}
-          {/* {t(excursionId?.description || "")} */}
-          <Typography className='w-full mb-4 text-base text-center tablet:text-start'>
-            Nos étapes
+          <Typography className='w-full mb-4 text-base text-center text-colors-gray-50 tablet:text-start'>
+            {t("excursions.ourStep")}
           </Typography>
           {getRenderSchema(excursionId?.id || 0)}
-          {/* </Typography> */}
         </div>
 
         <div className='tablet:w-1/2 w-full'>

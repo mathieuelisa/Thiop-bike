@@ -47,27 +47,32 @@ export default function Reservations({ titleExcursion }: Props) {
   });
 
   const onSubmit = async (data: any) => {
-    console.log("formulaire validé:", data);
+    // console.log("formulaire validé:", data);
     // notify();
 
-    await fetch("api/send", {
+    const response = await fetch("/api/send", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
-    })
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Erreur lors de l'envoi de la requête");
-        } else {
-          console.log("Formulaire validé");
-          notify();
-        }
-      })
-      .catch((error) => {
-        console.error("Erreur:", error);
-      });
+    });
+
+    if (response.status === 200) {
+      console.log("Formulaire envoyé");
+      notify();
+    }
+    // .then((response) => {
+    //   if (!response.ok) {
+    //     throw new Error("Erreur lors de l'envoi de la requête");
+    //   } else {
+    //     console.log("Formulaire envoyé");
+    //     notify();
+    //   }
+    // })
+    // .catch((error) => {
+    //   console.error("Erreur:", error);
+    // });
   };
 
   useEffect(() => {

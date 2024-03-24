@@ -93,7 +93,7 @@ export default function Base({ children }: TpageProps) {
             );
           })}
 
-          <div className='flex border-t justify-end pt-7 border-colors-gray-50 gap-5 z-20 mt-48 tablet:mt-0 w-4/5 mx-auto'>
+          <div className='flex border-t justify-end pt-7 border-colors-gray-50 gap-5 z-20 mt-12 tablet:mt-0 w-4/5 mx-auto'>
             <Link
               className='cursor-pointer'
               href='https://www.instagram.com/thiop_thiop_bike'
