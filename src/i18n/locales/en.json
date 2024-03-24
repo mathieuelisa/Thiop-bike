@@ -58,6 +58,27 @@
     "title": "Our excursions",
     "ourStep": "Our steps",
     "description": "For a few hours, half a day or a full day, we offer a range of private tours. For more information, don't hesitate to contact us by e-mail or book directly.",
+    "steps": {
+      "departureFromNdangane": "Départure from Ndangane",
+      "crossingTheSambiaForest": "Crossing the Sambia Dia classified forest",
+      "crossingTheSambiaForestSunset": "Crossing the Sambia Dia classified forest at sunset ",
+      "arrivalDjifferFishermen": "Djiffer (arrival of fishermen)",
+      "arrivalJoalFishermen": "Joal (arrival of fishermen)",
+      "lunch": "Lunch",
+      "relaxationInBolongs": "Relaxation and swimming in the bolongs",
+      "visitPalmarinSalt": "Visit the Palmarin salt pits",
+      "backToNdangane": " Back to Ndangane",
+      "discoverYayèmeVillage": "Discover the village of Yayème",
+      "guidedFadiouthShellfishIsland": "Guided tour of Fadiouth shellfish island",
+      "discoveryBaobabFadial": "Discovery of the sacred baobab of Fadial",
+      "discoverDjilor": "Discover Djilor",
+      "marketFimela": "Visit the Fimela market",
+      "crossTheSimalBridge": "Crossing the Simal bridge",
+      "aperitifEntertainement": "Aperitif, djembé entertainment and traditional songs",
+      "visitMahicoMuseum": "Visit of Mahicao museum",
+      "swimming": "Swimming",
+      "sacredWellOfCheikh": "Sacred well of Cheikh Oumar Fouty Tall"
+    },
     "first": {
       "title": "Discovering Djiffer and Palmarin",
       "description": "english description"

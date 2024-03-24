@@ -58,6 +58,27 @@
     "title": "Nos excursions",
     "ourStep": "Nos étapes",
     "description": "Le temps de quelques heures, une demi-journée ou une journée, nous vous proposons un ensemble de circuits privatifs. Pour toutes infos n'hesitez pas à nous contacter par mail ou à directement reserver.",
+    "steps": {
+      "departureFromNdangane": "Départ de Ndangane",
+      "crossingTheSambiaForest": "Traversée de la forêt classée de Sambia Dia",
+      "crossingTheSambiaForestSunset": "Traversée de la forêt classée de Sambia Dia au coucher du soleil ",
+      "arrivalDjifferFishermen": "Djiffer (arrivée des pêcheurs)",
+      "arrivalJoalFishermen": "Joal (arrivée des pêcheurs)",
+      "lunch": "Déjeuner",
+      "relaxationInBolongs": "Détente et baignade dans les bolongs",
+      "visitPalmarinSalt": "Visite des puits de sel de Palmarin",
+      "backToNdangane": " Retour à Ndangane",
+      "discoverYayèmeVillage": " Découverte du village de Yayème",
+      "guidedFadiouthShellfishIsland": "Visite guidée de l’île aux coquillages de Fadiouth",
+      "discoveryBaobabFadial": "Découverte du grand baobab sacré de Fadial",
+      "discoverDjilor": "Découverte de Djilor",
+      "marketFimela": "Visite du marché de Fimela",
+      "crossTheSimalBridge": "Traversée du pont de Simal",
+      "aperitifEntertainement": "Apéritif, animation djembé et chants traditionnels",
+      "visitMahicoMuseum": "Visite du musée Mahicao",
+      "swimming": "Baignade",
+      "sacredWellOfCheikh": "Puit sacré de Cheikh Oumar Fouty Tall"
+    },
     "first": {
       "title": "A la découverte de Djiffer et Palmarin",
       "description": "french description 1"

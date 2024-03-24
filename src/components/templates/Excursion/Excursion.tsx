@@ -28,25 +28,25 @@ export default function Excursion() {
             <div className='border-r-4 mr-2 border-colors-darkbrown h-80' />
             <div className='flex flex-col items-start gap-5 justify-between'>
               <Typography className='text-colors-darkbrown'>
-                Départ de Ndangane
+                {t("excursions.steps.departureFromNdangane")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Traversée de la forêt classée de Sambia Dia
+                {t("excursions.steps.crossingTheSambiaForest")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Djiffer (arrivée des pecheurs)
+                {t("excursions.steps.arrivalDjifferFishermen")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Déjeuner
+                {t("excursions.steps.lunch")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Détente et baignade dans les bolongs
+                {t("excursions.steps.relaxationInBolongs")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Visite des puits de sel de Palmarin
+                {t("excursions.steps.visitPalmarinSalt")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Retour à Ndangane
+                {t("excursions.steps.backToNdangane")}
               </Typography>
             </div>
           </section>
@@ -57,19 +57,19 @@ export default function Excursion() {
             <div className='border-r-4 mr-2 border-colors-darkbrown h-48' />
             <div className='flex flex-col items-start gap-5'>
               <Typography className='text-colors-darkbrown'>
-                Départ de Ndangane
+                {t("excursions.steps.departureFromNdangane")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Traversée dela forêt de Samba Dia
+                {t("excursions.steps.crossingTheSambiaForest")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Détente etbaignade dans les bolongs
+                {t("excursions.steps.relaxationInBolongs")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Visite despuis de sel de Palmarin
+                {t("excursions.steps.visitPalmarinSalt")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Retour à Ndangane
+                {t("excursions.steps.backToNdangane")}
               </Typography>
             </div>
           </section>
@@ -80,28 +80,28 @@ export default function Excursion() {
             <div className='border-r-4 mr-2 border-colors-darkbrown h-80' />
             <div className='flex flex-col items-start gap-5 justify-between'>
               <Typography className='text-colors-darkbrown'>
-                Départ de Ndangane
+                {t("excursions.steps.departureFromNdangane")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Traversée de la forêt classée de Sambia Dia
+                {t("excursions.steps.crossingTheSambiaForest")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Joal (arrivée des pecheurs)
+                {t("excursions.steps.arrivalJoalFishermen")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Visite guidée de l’île aux coquillages de Fadiouth
+                {t("excursions.steps.guidedFadiouthShellfishIsland")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Déjeuner
+                {t("excursions.steps.lunch")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Découverte du grand baobab sacré de Fadial
+                {t("excursions.steps.discoveryBaobabFadial")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Visite des puits de sels de Palmarin
+                {t("excursions.steps.visitPalmarinSalt")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Retour à Ndangane
+                {t("excursions.steps.backToNdangane")}
               </Typography>
             </div>
           </section>
@@ -112,31 +112,31 @@ export default function Excursion() {
             <div className='border-r-4 mr-2 border-colors-darkbrown h-[450px]' />
             <div className='flex flex-col items-start gap-5 justify-between'>
               <Typography className='text-colors-darkbrown'>
-                Départ deNdangane
+                {t("excursions.steps.departureFromNdangane")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Découverte duvillage de Yayème
+                {t("excursions.steps.discoverYayèmeVillage")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Visite de laForêt de Samba Dia
+                {t("excursions.steps.crossingTheSambiaForest")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Traversée dupont de Simal
+                {t("excursions.steps.crossTheSimalBridge")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Puit sacré deCheikh Oumar Fouty Tall
+                {t("excursions.steps.sacredWellOfCheikh")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Déjeuner
+                {t("excursions.steps.lunch")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Baignade
+                {t("excursions.steps.swimming")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Visite dumusée Mahicao
+                {t("excursions.steps.visitMahicoMuseum")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Retour à Ndangane
+                {t("excursions.steps.backToNdangane")}
               </Typography>
             </div>
           </section>
@@ -147,29 +147,28 @@ export default function Excursion() {
             <div className='border-r-4 mr-2 border-colors-darkbrown h-[400px]' />
             <div className='flex flex-col items-start gap-5 justify-between'>
               <Typography className='text-colors-darkbrown'>
-                Découverte du village de Yayème
+                {t("excursions.steps.discoverYayèmeVillage")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Visite de la Forêt de Samba Dia
+                {t("excursions.steps.crossingTheSambiaForest")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Visite de laForêt de Samba Dia
+                {t("excursions.steps.marketFimela")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Traversée du pont de Simal
+                {t("excursions.steps.crossTheSimalBridge")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Découverte du puit sacré
-                <br /> de Cheikh Oumar Fouty Tall
+                {t("excursions.steps.sacredWellOfCheikh")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Baignade dans les bolongs
+                {t("excursions.steps.relaxationInBolongs")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Découverte de Djilor
+                {t("excursions.steps.discoverDjilor")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Retour à Ndangane
+                {t("excursions.steps.backToNdangane")}
               </Typography>
             </div>
           </section>
@@ -180,14 +179,13 @@ export default function Excursion() {
             <div className='border-r-4 mr-2 border-colors-darkbrown h-32' />
             <div className='flex flex-col items-start gap-4 justify-between'>
               <Typography className='text-colors-darkbrown'>
-                Découverte du village de Yayème
+                {t("excursions.steps.discoverYayèmeVillage")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Découverte de la Forêt de Samba Dia à l’heure du coucher du
-                soleil
+                {t("excursions.steps.crossingTheSambiaForestSunset")}
               </Typography>
               <Typography className='text-colors-darkbrown'>
-                Apéritif, animation djembé et chants traditionnels
+                {t("excursions.steps.aperitifEntertainement")}
               </Typography>
             </div>
           </section>
