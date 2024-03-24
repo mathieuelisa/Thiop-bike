@@ -109,6 +109,11 @@
   },
   "prices": {
     "title": "Take advantage of our offers",
+    "pricePerPerson": "Price per person",
+    "twoPersons": "2 persons",
+    "threeFourPersons": "3 to 4 persons",
+    "fiveToSevenPersons": "5 to 7 persons",
+    "eightToTenPersons": "8 to 10 persons",
     "reservationProcessing": "*Reservation requests processed within a maximum of 48 hours",
     "ourCGV": "Our GTM and GCU",
     "description": "If you have any specific requests, please don't hesitate to contact us by e-mail or WhatsApp.",

@@ -44,7 +44,7 @@ export default function TarifItem({ element, index }: Props) {
         <Trans i18nKey={t(element.description)} />
       </Typography>
       <Typography className='text-xs text-end w-full opacity-55'>
-        * Tarif par personne
+        * {t("prices.pricePerPerson")}
       </Typography>
 
       {element.tarifs.map((element) => {
@@ -54,7 +54,7 @@ export default function TarifItem({ element, index }: Props) {
             className='flex justify-between w-full items-center mb-4'
           >
             <Typography className='text-xs'>
-              {element.numberCustomer}
+              {t(element.numberCustomer)}
             </Typography>
             <div className='flex flex-col'>
               <Typography className='text-base font-semibold'>

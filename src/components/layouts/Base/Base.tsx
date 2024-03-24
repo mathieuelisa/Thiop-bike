@@ -69,7 +69,7 @@ export default function Base({ children }: TpageProps) {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.07 }}
           className={twJoin(
-            "fixed flex flex-col pt-24 items-center gap-11 h-[5180px] p-5 bg-colors-lightbrown z-50 transform transition duration-1000 ease-in-out",
+            "fixed flex flex-col pt-16 items-center gap-11 h-[5180px] p-5 bg-colors-lightbrown z-50 transform transition duration-1000 ease-in-out",
             isMobileMenuOpen ? "w-full" : "w-0"
           )}
         >

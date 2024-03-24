@@ -20,25 +20,25 @@ export const TARIF_PART: TpriceCFAContent[] = [
     tarifs: [
       {
         id: 1,
-        numberCustomer: "2 personnes",
+        numberCustomer: "prices.twoPersons",
         priceCFA: 23000,
         priceEUR: 35,
       },
       {
         id: 2,
-        numberCustomer: "3 à 4 personnes",
+        numberCustomer: "prices.threeFourPersons",
         priceCFA: 20000,
         priceEUR: 30,
       },
       {
         id: 3,
-        numberCustomer: "5 à 7 personnes",
+        numberCustomer: "prices.fiveToSevenPersons",
         priceCFA: 17000,
         priceEUR: 26,
       },
       {
         id: 3,
-        numberCustomer: "8 à 10 personnes",
+        numberCustomer: "prices.eightToTenPersons",
         priceCFA: 15000,
         priceEUR: 23,
       },
@@ -51,25 +51,25 @@ export const TARIF_PART: TpriceCFAContent[] = [
     tarifs: [
       {
         id: 1,
-        numberCustomer: "2 personnes",
+        numberCustomer: "prices.twoPersons",
         priceCFA: 36000,
         priceEUR: 55,
       },
       {
         id: 2,
-        numberCustomer: "3 à 4 personnes",
+        numberCustomer: "prices.threeFourPersons",
         priceCFA: 33000,
         priceEUR: 50,
       },
       {
         id: 3,
-        numberCustomer: "5 à 7 personnes",
+        numberCustomer: "prices.fiveToSevenPersons",
         priceCFA: 29000,
         priceEUR: 45,
       },
       {
         id: 3,
-        numberCustomer: "8 à 10 personnes",
+        numberCustomer: "prices.eightToTenPersons",
         priceCFA: 26000,
         priceEUR: 40,
       },
@@ -82,25 +82,25 @@ export const TARIF_PART: TpriceCFAContent[] = [
     tarifs: [
       {
         id: 1,
-        numberCustomer: "2 personnes",
+        numberCustomer: "prices.twoPersons",
         priceCFA: 26000,
         priceEUR: 40,
       },
       {
         id: 2,
-        numberCustomer: "3 à 4 personnes",
+        numberCustomer: "prices.threeFourPersons",
         priceCFA: 23000,
         priceEUR: 35,
       },
       {
         id: 3,
-        numberCustomer: "5 à 7 personnes",
+        numberCustomer: "prices.fiveToSevenPersons",
         priceCFA: 20000,
         priceEUR: 30,
       },
       {
         id: 3,
-        numberCustomer: "8 à 10 personnes",
+        numberCustomer: "prices.eightToTenPersons",
         priceCFA: 18000,
         priceEUR: 28,
       },
