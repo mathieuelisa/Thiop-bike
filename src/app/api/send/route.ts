@@ -9,11 +9,13 @@ export async function POST(request: any) {
     const body = await request.json();
     console.log("Voici les données de mon body:", body);
 
+    const { firstname } = body;
+
     const data = await resend.emails.send({
-      from: "Mathieu <mathieu.elisag@gmail.com>",
+      from: "Mathieu <mathieu.elisa@gmail.com>",
       to: ["mathieu.elisa@gmail.com"],
       subject: "Hello world test",
-      react: EmailTemplate({ firstName: "Mathieu" }),
+      react: EmailTemplate({ firstName: firstname }),
     });
 
     return NextResponse.json(data);
