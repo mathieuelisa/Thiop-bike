@@ -9,7 +9,7 @@
   },
   "inputs": {
     "discoveringDjifferDay": "Day - Discovering Djiffer and Palmarin",
-    "discoveringDjifferHalfDay": "Half day - Discovering Djiffer and Palmarin",
+    "discoveringDjifferHalfDay": "Half day - Discovering Palmarin",
     "onTheRoadOfJoal": "On the road of Joal Fadiouth",
     "inTheHeartOfTheVillagesDay": "Day - In the heart of the villages",
     "inTheHeartOfTheVillagesHalfDay": "Half day - In the heart of the villages",
@@ -92,8 +92,12 @@
       "description": "english description 3"
     },
     "fourth": {
-      "title": "Sambia dia at sunset time",
+      "title": "Sambia Dia at sunset time",
       "description": "english description 4"
+    },
+    "fifth": {
+      "title": "Discovering Palmarin",
+      "description": "english description 5"
     },
     "cgu": {
       "title": "general terms of use of the website",

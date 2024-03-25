@@ -25,7 +25,7 @@ type Props = {
 export default function Reservations({ titleExcursion }: Props) {
   const { t } = useTranslation();
   const notify = () =>
-    toast.success("Réservation envoyée !", { position: "top-right" });
+    toast.success("Réservation envoyée !", { position: "bottom-right" });
 
   const { toggleCondition, isConditionOpen, setConditionOpen } =
     useConditionText();
@@ -82,7 +82,7 @@ export default function Reservations({ titleExcursion }: Props) {
           <Typography className='text-3xl text-colors-gray-50 w-full text-center tablet:text-4xl mt-10 font-black uppercase font-yeseva'>
             {t(titleExcursion || "")}
             <br />
-            <span className='text-colors-lightbrown'>Reservation</span>
+            <span className='text-colors-lightbrown'>Réservation</span>
           </Typography>
         </div>
         <section className='flex justify-center w-full'>
@@ -139,7 +139,7 @@ export default function Reservations({ titleExcursion }: Props) {
                     "border bg-colors-transparent w-full rounded-md min-h-9 p-2 mt-2",
                     errors.email && "border-colors-red-200"
                   )}
-                  type='text'
+                  type='string'
                   {...register("phone")}
                 />
                 {errors.phone && (
@@ -177,7 +177,7 @@ export default function Reservations({ titleExcursion }: Props) {
                   <option value='Journée - A la découverte de Djiffer et Palmarin'>
                     {t("inputs.discoveringDjifferDay")}
                   </option>
-                  <option value='Demi journée - A la découverte de Djiffer et Palmarin'>
+                  <option value='Demi journée - A la découverte de Palmarin'>
                     {t("inputs.discoveringDjifferHalfDay")}
                   </option>
                   <option value='Sur la route de Joal Fadiouth'>

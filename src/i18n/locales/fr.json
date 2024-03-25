@@ -9,11 +9,11 @@
   },
   "inputs": {
     "discoveringDjifferDay": "Journée - A la découverte de Djiffer et Palmarin",
-    "discoveringDjifferHalfDay": "Demi journée - A la découverte de Djiffer et Palmarin",
+    "discoveringDjifferHalfDay": "Demi journée - A la découverte de Palmarin",
     "onTheRoadOfJoal": "Sur la route de Joal Fadiouth",
     "inTheHeartOfTheVillagesDay": "Journée - Au coeur des villages",
     "inTheHeartOfTheVillagesHalfDay": "Demi journée - Au coeur des villages",
-    "sambiaDia": "Sambia dia à l'heure du coucher du soleil",
+    "sambiaDia": "Sambia dia à l'heure du sunset",
     "label": {
       "numberOfParticipant": "Nombre de participants",
       "phone": "Numéro de téléphone",
@@ -92,8 +92,12 @@
       "description": "french description 3"
     },
     "fourth": {
-      "title": "Sambia dia à l'heure du coucher du soleil",
+      "title": "Sambia Dia à l'heure du coucher du soleil",
       "description": "french description 4"
+    },
+    "fifth": {
+      "title": "A la découverte de Palmarin",
+      "description": "french description 5"
     },
     "cgu": {
       "title": "Conditions générales d'utilisation du site internet",

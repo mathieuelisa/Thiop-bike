@@ -6,7 +6,7 @@ interface EmailTemplateProps {
   firstname: string;
   nbOfParticipants: string;
   email: string;
-  numberphone: string;
+  phone: string;
   allergy: string;
   additionalInfo: string;
   excursions: string;
@@ -17,7 +17,7 @@ function EmailTemplate({
   firstname,
   nbOfParticipants,
   email,
-  numberphone,
+  phone,
   allergy,
   additionalInfo,
   excursions,
@@ -44,7 +44,7 @@ function EmailTemplate({
         <Typography>Nom: {lastname}</Typography>
         <Typography>Prénom: {firstname}</Typography>
         <Typography>Email: {email}</Typography>
-        <Typography>Numéro de téléphone: {numberphone}</Typography>
+        <Typography>Numéro de téléphone: {phone}</Typography>
         <Typography>Allergies: {allergy}</Typography>
       </div>
 

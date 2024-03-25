@@ -34,7 +34,6 @@ export default function Excursions() {
                   quality={50}
                   className='object-cover bg-colors-gray-50 z-0 w-full max-w-[280px] h-full max-h-[130px]'
                   width={300}
-                  // objectFit='cover'
                   height={200}
                   src={element.image}
                   alt='senegal'
@@ -50,7 +49,7 @@ export default function Excursions() {
                     <Typography className='text-colors-darkplusgreen text-base tablet:text-xl font-yeseva '>
                       {t(element.title)}
                     </Typography>
-                    <div className='bg-colors-gray-100 border-colors-gray-500 border mt-2 p-0 tablet:p-1 w-24 rounded-2xl flex justify-center'>
+                    <div className='bg-colors-gray-50 border-colors-gray-500 border mt-2 p-0 tablet:p-1 w-24 rounded-2xl flex justify-center'>
                       <Typography className='text-xs text-colors-middlegreen '>
                         {t(element.time)}
                       </Typography>

@@ -51,7 +51,8 @@ export default function Footer() {
               className={
                 "cursor-pointer text-colors-gray-50 hover:text-colors-darkgreen"
               }
-              href='https://www.instagram.com/thiop_thiop_bike'
+              href='https://www.instagram.com/thiop_thiop_bike/?igsh=MWo5dmVjZ3pzc2czag%3D%3D'
+              target='_blank'
               aria-label='Tiktok Profile'
               passHref
             >
@@ -59,7 +60,8 @@ export default function Footer() {
             </Link>
             <Link
               className='cursor-pointer text-colors-gray-50 hover:text-colors-darkgreen'
-              href='https://facebook.com/thiop'
+              href='https://www.facebook.com/people/Thiop-Thiop-Bike/pfbid02ohjoEx23NiMMrCbn4YUMNCvBdezfMfUAfQoVBZu6Y2Tap12pxQ5YdjzF5wGwRmRdl/'
+              target='_blank'
               aria-label='Facebook Profile'
               passHref
             >

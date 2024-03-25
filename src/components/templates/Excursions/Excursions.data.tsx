@@ -20,7 +20,7 @@ export const EXCURSIONS_DATASET: TExcursionDataSet[] = [
   },
   {
     id: 2,
-    title: "excursions.first.title",
+    title: "excursions.fifth.title",
     time: "common.halfDay",
     description: "excursions.first.description",
     image: "/assets/images/excursions/djiffer.jpeg",
