@@ -19,7 +19,7 @@ export async function POST(request: any) {
     } = body;
 
     const data = await resend.emails.send({
-      from: "Thiop <contact@thiopthiopbike.com>",
+      from: "Thiop Thiop Bike <contact@thiopthiopbike.com>",
       to: ["mathieu.elisa@gmail.com"], // Ne pas oublier de mettre le email
       subject: `Confirmation pour ton excursion - ${excursions}`,
       react: EmailTemplate({
