@@ -47,9 +47,6 @@ export default function Reservations({ titleExcursion }: Props) {
   });
 
   const onSubmit = async (data: any) => {
-    // console.log("formulaire validé:", data);
-    // notify();
-
     const response = await fetch("/api/send", {
       method: "POST",
       headers: {
@@ -59,7 +56,6 @@ export default function Reservations({ titleExcursion }: Props) {
     });
 
     if (response.status === 200) {
-      console.log("Formulaire envoyé");
       notify();
     }
   };
@@ -71,6 +67,7 @@ export default function Reservations({ titleExcursion }: Props) {
         lastname: "",
         phone: "",
         email: "",
+        excursions: "",
         nbOfParticipants: "",
         allergy: "",
         additionalInfo: "",

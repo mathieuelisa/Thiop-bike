@@ -122,7 +122,7 @@ export default function Advantages() {
             width={500}
             height={500}
             className='z-10'
-            src='/assets/images/home/polaroid_bike.png'
+            src='/assets/images/home/polaroid_food.png'
             alt='polaroid_bike'
           />
         </div>
