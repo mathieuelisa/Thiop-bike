@@ -30,13 +30,12 @@ function EmailTemplate({
         Bonjour {firstname}, ta réservation a bien été reçue.
       </Typography>
       <Typography className='mb-5'>
-        Nous sommes ravis de te confirmer ta réservation pour l&#39;excursion
-        que tu as choisie.
+        Merci de nous avoir soumis ta demande de réservation.
         <br /> Nous n&#39;hésiterons pas à revenir vers toi dans un délai
-        maximum de 48 h.
+        maximum de 48h.
         <br />
         <br /> Si tu as des questions d&#39;ici là n&#39;hésite pas à nous
-        contacter via thiopthiopbike@gmail.com
+        contacter par mail: thiopthiopbike@gmail.com
         <br />
         <br />
       </Typography>
@@ -70,8 +69,7 @@ function EmailTemplate({
       <br />
       <div>
         <Typography>
-          Merci de ne pas répondre à cet email. Pour nous contacter, cliquez
-          sur: thiopthiopbike@gmail.com
+          Ceci est un mail automatique, merci de ne pas y répondre.
         </Typography>
       </div>
     </div>
