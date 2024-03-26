@@ -12,7 +12,7 @@ export const customerSchema = object({
   email: string().email("Votre adresse email est invalide"),
   excursions: string(),
   nbOfParticipants: string(),
-  date: z.date(),
+  date: string(),
   allergy: string(),
   additionalInfo: string(),
 });

@@ -72,7 +72,7 @@ export default function Reservations({ titleExcursion }: Props) {
         nbOfParticipants: "",
         allergy: "",
         additionalInfo: "",
-        date: new Date(),
+        date: "",
       });
     }
   }, [isSubmitSuccessful, reset]);
