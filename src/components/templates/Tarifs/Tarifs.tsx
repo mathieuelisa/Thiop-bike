@@ -8,6 +8,7 @@ import useIsTablet from "@/hooks/useBreakPoint";
 import Carousel from "nuka-carousel";
 import { useTranslation } from "react-i18next";
 import { twMerge } from "tailwind-merge";
+import Image from "next/image";
 
 export default function Tarifs() {
   const { t } = useTranslation();
@@ -35,7 +36,23 @@ export default function Tarifs() {
   };
 
   return (
-    <section className='mx-5 tablet:px-20 h-screen'>
+    <section className='relative mx-5 tablet:px-20 h-screen'>
+      <Image
+        quality={50}
+        className='absolute top-96 -right-32 rotate-180 opacity-5'
+        width={500}
+        height={500}
+        src='/assets/images/home/leaf.svg'
+        alt='leaf'
+      />
+      <Image
+        quality={50}
+        className='absolute top-96 -left-28 rotate-90 opacity-15'
+        width={500}
+        height={500}
+        src='/assets/images/home/leaf.svg'
+        alt='leaf'
+      />
       <div className='flex justify-center flex-col items-center'>
         <Typography className='text-3xl text-colors-gray-50 text-center tablet:text-start tablet:text-4xl mt-10 font-black uppercase font-yeseva'>
           {t("prices.title")}

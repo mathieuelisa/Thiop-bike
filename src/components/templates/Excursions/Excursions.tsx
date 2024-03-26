@@ -12,7 +12,15 @@ export default function Excursions() {
   const { t } = useTranslation();
 
   return (
-    <section className='mx-5 tablet:px-20'>
+    <section className='relative mx-5 tablet:px-20'>
+      <Image
+        quality={50}
+        className='absolute top-0 -left-5 rotate-90 opacity-15'
+        width={700}
+        height={700}
+        src='/assets/images/excursions/leaf_palmer.png'
+        alt='leaf'
+      />
       <div className='flex flex-col items-center'>
         <Typography className='text-3xl text-colors-gray-50 text-center tablet:text-start tablet:text-4xl mt-10 font-black uppercase font-yeseva'>
           {t("excursions.title")}

@@ -102,7 +102,7 @@ export default function Reservations({ titleExcursion }: Props) {
                   </label>
                   <input
                     className={twMerge(
-                      "border bg-colors-transparent w-full rounded-md min-h-9 p-2  mt-2",
+                      "border bg-colors-transparent text-colors-gray-50 w-full rounded-md min-h-9 p-2  mt-2",
                       errors.lastname && "border-colors-red-200"
                     )}
                     type='text'
@@ -122,7 +122,7 @@ export default function Reservations({ titleExcursion }: Props) {
                   </label>
                   <input
                     className={twMerge(
-                      "border bg-colors-transparent w-full rounded-md min-h-9 p-2 mt-2 ",
+                      "border bg-colors-transparent text-colors-gray-50 w-full rounded-md min-h-9 p-2 mt-2 ",
                       errors.firstname && "border-colors-red-200"
                     )}
                     type='text'
@@ -143,7 +143,7 @@ export default function Reservations({ titleExcursion }: Props) {
                 </label>
                 <input
                   className={twMerge(
-                    "border bg-colors-transparent w-full rounded-md min-h-9 p-2 mt-2",
+                    "border bg-colors-transparent w-full text-colors-gray-50 rounded-md min-h-9 p-2 mt-2",
                     errors.phone && "border-colors-red-200"
                   )}
                   type='string'
@@ -161,7 +161,7 @@ export default function Reservations({ titleExcursion }: Props) {
                 <label className='text-colors-gray-50'>Email</label>
                 <input
                   className={twMerge(
-                    "border bg-colors-transparent w-full rounded-md min-h-9 p-2  mt-2",
+                    "border bg-colors-transparent text-colors-gray-50 w-full rounded-md min-h-9 p-2  mt-2",
                     errors.email && "border-colors-red-200"
                   )}
                   type='email'
@@ -222,7 +222,7 @@ export default function Reservations({ titleExcursion }: Props) {
                   id='nbOfParticipants'
                   {...register("nbOfParticipants")}
                   className={twMerge(
-                    "border bg-colors-transparent text-colors-gray-50 w-full rounded-md min-h-9 p-2  mt-2",
+                    "border bg-colors-transparent text-colors-gray-50 w-full rounded-md min-h-9 p-2 mt-2",
                     errors.nbOfParticipants && "border-colors-red-200"
                   )}
                 >
@@ -246,7 +246,7 @@ export default function Reservations({ titleExcursion }: Props) {
                 <label className='text-colors-gray-50'>Date</label>
                 <input
                   className={twMerge(
-                    "border bg-colors-transparent w-full cursor-pointer rounded-md min-h-9 p-2 ",
+                    "border bg-colors-transparent w-full cursor-pointer text-colors-gray-50 rounded-md min-h-9 p-2 ",
                     errors.date && "border-colors-red-200"
                   )}
                   type='date'
@@ -265,7 +265,7 @@ export default function Reservations({ titleExcursion }: Props) {
                   <label className='text-colors-gray-50'>Allergies</label>
                   <textarea
                     className={twMerge(
-                      "border bg-colors-transparent w-full rounded-md min-h-11  p-2  mt-2",
+                      "border bg-colors-transparent w-full text-colors-gray-50 rounded-md min-h-11 p-2 mt-2",
                       errors.allergy && "border-colors-red-200"
                     )}
                     {...register("allergy")}
@@ -284,7 +284,7 @@ export default function Reservations({ titleExcursion }: Props) {
                   </label>
                   <textarea
                     className={twMerge(
-                      "border bg-colors-transparent w-full rounded-md  p-2 min-h-11  mt-2",
+                      "border bg-colors-transparent w-full text-colors-gray-50 rounded-md p-2 min-h-11 mt-2",
                       errors.additionalInfo && "border-colors-red-200"
                     )}
                     {...register("additionalInfo")}

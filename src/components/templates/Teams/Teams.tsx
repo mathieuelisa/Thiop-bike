@@ -9,7 +9,23 @@ export default function Teams() {
   const { t } = useTranslation();
 
   return (
-    <section className='mx-5 tablet:px-20 '>
+    <section className='relative mx-5 tablet:px-20 '>
+      <Image
+        quality={50}
+        className='absolute -top-20 right-2 rotate-180 opacity-5'
+        width={500}
+        height={500}
+        src='/assets/images/home/leaf.svg'
+        alt='leaf'
+      />
+      <Image
+        quality={50}
+        className='absolute top-80 -left-28 opacity-20'
+        width={500}
+        height={500}
+        src='/assets/images/home/leaf.svg'
+        alt='leaf'
+      />
       <div className='flex justify-center flex-col items-center'>
         <Typography className='text-3xl text-colors-gray-50 text-center tablet:text-start tablet:text-4xl mt-10 font-black uppercase font-yeseva'>
           {t("teams.title")}

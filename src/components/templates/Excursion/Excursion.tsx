@@ -215,7 +215,7 @@ export default function Excursion() {
             alt='excursion_detail'
           />
 
-          <Typography className='w-full mx-5 uppercase mb-4 text-base text-center text-colors-gray-50 tablet:text-start'>
+          <Typography className='w-full mx-5 uppercase mb-4 text-base text-center text-colors-gray-50'>
             {t("excursions.ourStep")}
           </Typography>
           {getRenderSchema(excursionId?.id || 0)}
