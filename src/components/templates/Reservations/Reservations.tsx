@@ -185,23 +185,41 @@ export default function Reservations({ titleExcursion }: Props) {
                     errors.excursions && "border-colors-red-200"
                   )}
                 >
-                  <option value='Journée - A la découverte de Djiffer et Palmarin'>
+                  <option
+                    className='text-colors-black'
+                    value='Journée - A la découverte de Djiffer et Palmarin'
+                  >
                     {t("inputs.discoveringDjifferDay")}
                   </option>
-                  <option value='Demi journée - A la découverte de Palmarin'>
+                  <option
+                    className='text-colors-black'
+                    value='Demi journée - A la découverte de Palmarin'
+                  >
                     {t("inputs.discoveringDjifferHalfDay")}
                   </option>
-                  <option value='Sur la route de Joal Fadiouth'>
+                  <option
+                    className='text-colors-black'
+                    value='Sur la route de Joal Fadiouth'
+                  >
                     {t("inputs.onTheRoadOfJoal")}
                   </option>
 
-                  <option value='Journée - Au coeur des villages'>
+                  <option
+                    className='text-colors-black'
+                    value='Journée - Au coeur des villages'
+                  >
                     {t("inputs.inTheHeartOfTheVillagesDay")}
                   </option>
-                  <option value='Demi journée - Au coeur des villages'>
+                  <option
+                    className='text-colors-black'
+                    value='Demi journée - Au coeur des villages'
+                  >
                     {t("inputs.inTheHeartOfTheVillagesHalfDay")}
                   </option>
-                  <option value='Sambia dia à l&#39;heure du coucher du soleil'>
+                  <option
+                    className='text-colors-black'
+                    value='Sambia dia à l&#39;heure du coucher du soleil'
+                  >
                     {t("inputs.sambiaDia")}
                   </option>
                 </select>
@@ -226,12 +244,24 @@ export default function Reservations({ titleExcursion }: Props) {
                     errors.nbOfParticipants && "border-colors-red-200"
                   )}
                 >
-                  <option value='1'>1 participant</option>
-                  <option value='2 à 3'>2 à 3 participants</option>
-                  <option value='4 à 5'>4 à 5 participants</option>
-                  <option value='6 à 7'>6 à 7 participants</option>
-                  <option value='8 à 9'>8 à 9 participants</option>
-                  <option value='10'>10 participants</option>
+                  <option className='text-colors-black' value='1'>
+                    1 participant
+                  </option>
+                  <option className='text-colors-black' value='2 à 3'>
+                    2 à 3 participants
+                  </option>
+                  <option className='text-colors-black' value='4 à 5'>
+                    4 à 5 participants
+                  </option>
+                  <option className='text-colors-black' value='6 à 7'>
+                    6 à 7 participants
+                  </option>
+                  <option className='text-colors-black' value='8 à 9'>
+                    8 à 9 participants
+                  </option>
+                  <option className='text-colors-black' value='10'>
+                    10 participants
+                  </option>
                 </select>
 
                 {errors.nbOfParticipants && (
