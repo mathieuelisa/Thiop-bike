@@ -30,10 +30,10 @@ function EmailTemplate({
         Bonjour {firstname}, ta réservation a bien été reçue.
       </Typography>
       <Typography className='mb-5'>
-        Merci de nous avoir soumis ta demande de réservation.
+        Merci {firstname} de nous avoir soumis ta demande de réservation.
+        <br />
         <br /> Nous n&#39;hésiterons pas à revenir vers toi dans un délai
         maximum de 48h.
-        <br />
         <br /> Si tu as des questions d&#39;ici là n&#39;hésite pas à nous
         contacter par mail: thiopthiopbike@gmail.com
         <br />

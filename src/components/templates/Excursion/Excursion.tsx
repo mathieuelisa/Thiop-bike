@@ -196,9 +196,9 @@ export default function Excursion() {
   };
 
   return (
-    <section className='w-full flex'>
-      <div className='flex-col flex tablet:flex-row'>
-        <div className='tablet:w-1/2 w-full flex items-center flex-col mt-3 tablet:mt-10 tablet:px-10'>
+    <section className='flex w-full justify-center'>
+      <div className='flex flex-col tablet:flex-row'>
+        <div className='flex tablet:w-1/2 w-full items-center flex-col mt-3 tablet:mt-10 tablet:px-10'>
           <Button
             href='/excursions'
             className='mr-auto ml-7 tablet:ml-0 uppercase text-colors-gray-50 hover:text-colors-middlebrown text-sm tablet:text-base'
