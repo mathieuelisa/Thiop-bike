@@ -72,6 +72,7 @@ export default function Reservations({ titleExcursion }: Props) {
         nbOfParticipants: "",
         allergy: "",
         additionalInfo: "",
+        date: new Date(),
       });
     }
   }, [isSubmitSuccessful, reset]);
@@ -94,6 +95,7 @@ export default function Reservations({ titleExcursion }: Props) {
           >
             <div className='flex flex-col w-full gap-3'>
               <div className='w-full flex flex-col tablet:gap-7 tablet:flex-row'>
+                {/* Lastname */}
                 <div className='flex flex-col w-full'>
                   <label className='text-colors-gray-50'>
                     {t("inputs.label.lastname")}
@@ -101,7 +103,7 @@ export default function Reservations({ titleExcursion }: Props) {
                   <input
                     className={twMerge(
                       "border bg-colors-transparent w-full rounded-md min-h-9 p-2  mt-2",
-                      errors.email && "border-colors-red-200"
+                      errors.lastname && "border-colors-red-200"
                     )}
                     type='text'
                     {...register("lastname")}
@@ -112,6 +114,8 @@ export default function Reservations({ titleExcursion }: Props) {
                     </span>
                   )}
                 </div>
+
+                {/* Firstname */}
                 <div className='flex flex-col w-full mt-2 tablet:mt-0'>
                   <label className='text-colors-gray-50'>
                     {t("inputs.label.firstname")}
@@ -119,7 +123,7 @@ export default function Reservations({ titleExcursion }: Props) {
                   <input
                     className={twMerge(
                       "border bg-colors-transparent w-full rounded-md min-h-9 p-2 mt-2 ",
-                      errors.email && "border-colors-red-200"
+                      errors.firstname && "border-colors-red-200"
                     )}
                     type='text'
                     {...register("firstname")}
@@ -131,6 +135,8 @@ export default function Reservations({ titleExcursion }: Props) {
                   )}
                 </div>
               </div>
+
+              {/* Phone */}
               <div className='w-full'>
                 <label className='text-colors-gray-50'>
                   {t("inputs.label.phone")}
@@ -138,7 +144,7 @@ export default function Reservations({ titleExcursion }: Props) {
                 <input
                   className={twMerge(
                     "border bg-colors-transparent w-full rounded-md min-h-9 p-2 mt-2",
-                    errors.email && "border-colors-red-200"
+                    errors.phone && "border-colors-red-200"
                   )}
                   type='string'
                   {...register("phone")}
@@ -149,6 +155,8 @@ export default function Reservations({ titleExcursion }: Props) {
                   </span>
                 )}
               </div>
+
+              {/* Emails */}
               <div className='w-full'>
                 <label className='text-colors-gray-50'>Email</label>
                 <input
@@ -165,6 +173,8 @@ export default function Reservations({ titleExcursion }: Props) {
                   </span>
                 )}
               </div>
+
+              {/* Excursions */}
               <div className='w-full'>
                 <label className='text-colors-gray-50'>Excursions</label>
                 <select
@@ -202,6 +212,8 @@ export default function Reservations({ titleExcursion }: Props) {
                   </span>
                 )}
               </div>
+
+              {/* Number of participants */}
               <div className='w-full'>
                 <label className='text-colors-gray-50'>
                   {t("inputs.label.numberOfParticipant")}
@@ -228,6 +240,26 @@ export default function Reservations({ titleExcursion }: Props) {
                   </span>
                 )}
               </div>
+
+              {/* Date */}
+              <div className='w-full'>
+                <label className='text-colors-gray-50'>Date</label>
+                <input
+                  className={twMerge(
+                    "border bg-colors-transparent w-full cursor-pointer rounded-md min-h-9 p-2 ",
+                    errors.date && "border-colors-red-200"
+                  )}
+                  type='date'
+                  {...register("date")}
+                />
+                {errors.date && (
+                  <span className='text-colors-red-200'>
+                    {errors.date.message}
+                  </span>
+                )}
+              </div>
+
+              {/* Allergies */}
               <div className='w-full flex-col gap-7 tablet:flex-row'>
                 <div className='w-full'>
                   <label className='text-colors-gray-50'>Allergies</label>
@@ -244,6 +276,8 @@ export default function Reservations({ titleExcursion }: Props) {
                     </span>
                   )}
                 </div>
+
+                {/* Additional informations */}
                 <div className='w-full'>
                   <label className='text-colors-gray-50'>
                     {t("inputs.label.moreInformation")}

@@ -1,4 +1,4 @@
-import { object, string, number, z } from "zod";
+import { object, string, z, date } from "zod";
 import { phoneRegex } from "../../utils/commonFn";
 
 export const customerSchema = object({
@@ -12,6 +12,7 @@ export const customerSchema = object({
   email: string().email("Votre adresse email est invalide"),
   excursions: string(),
   nbOfParticipants: string(),
+  date: z.date(),
   allergy: string(),
   additionalInfo: string(),
 });

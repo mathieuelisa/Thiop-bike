@@ -4,7 +4,7 @@ import React from "react";
 import { EXCURSIONS_DATASET } from "./Excursions.data";
 
 import Typography from "@/components/ui/Typography";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -18,7 +18,7 @@ export default function Excursions() {
           {t("excursions.title")}
         </Typography>
         <Typography className='max-w-2xl text-sm tablet:text-base text-colors-gray-50 text-center mt-4'>
-          {t("excursions.description")}
+          <Trans i18nKey='excursions.description' />
         </Typography>
       </div>
       <section className=' flex flex-col gap-5 mt-14 max-w-[900px] mx-auto'>

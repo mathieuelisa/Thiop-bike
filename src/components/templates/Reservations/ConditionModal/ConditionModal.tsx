@@ -6,7 +6,7 @@ import Typography from "@/components/ui/Typography";
 import Button from "@/components/ui/Button";
 import CloseIcon from "@/components/ui/Icons/CloseIcon";
 import { useConditionText } from "@/context/ConditionsTextContext";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 type TrailerModalProps = {
   type: string;
@@ -65,7 +65,8 @@ const ConditionModal = forwardRef(
               </Typography>
 
               <Typography className='text-sm my-7 max-w-[600px]'>
-                {t("excursions.cgu.description")}
+                {/* {t("excursions.cgu.description")} */}
+                <Trans i18nKey={"excursions.cgu.description"} />
               </Typography>
             </div>
           )}

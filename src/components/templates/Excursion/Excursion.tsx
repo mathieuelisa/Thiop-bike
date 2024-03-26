@@ -24,8 +24,8 @@ export default function Excursion() {
     switch (id) {
       case 1:
         return (
-          <section className='flex '>
-            <div className='border-r-4 mr-2 border-colors-darkbrown h-80' />
+          <section className='flex mx-5'>
+            <div className='border-r-4 mr-2 border-colors-darkbrown' />
             <div className='flex flex-col items-start gap-5 justify-between'>
               <Typography className='text-colors-darkbrown'>
                 {t("excursions.steps.departureFromNdangane")}
@@ -53,8 +53,8 @@ export default function Excursion() {
         );
       case 2:
         return (
-          <section className='flex '>
-            <div className='border-r-4 mr-2 border-colors-darkbrown h-48' />
+          <section className='flex mx-5'>
+            <div className='border-r-4 mr-2 border-colors-darkbrown' />
             <div className='flex flex-col items-start gap-5'>
               <Typography className='text-colors-darkbrown'>
                 {t("excursions.steps.departureFromNdangane")}
@@ -76,8 +76,8 @@ export default function Excursion() {
         );
       case 3:
         return (
-          <section className='flex '>
-            <div className='border-r-4 mr-2 border-colors-darkbrown h-80' />
+          <section className='flex mx-5'>
+            <div className='border-r-4 mr-2 border-colors-darkbrown' />
             <div className='flex flex-col items-start gap-5 justify-between'>
               <Typography className='text-colors-darkbrown'>
                 {t("excursions.steps.departureFromNdangane")}
@@ -108,8 +108,8 @@ export default function Excursion() {
         );
       case 4:
         return (
-          <section className='flex '>
-            <div className='border-r-4 mr-2 border-colors-darkbrown h-[450px]' />
+          <section className='flex mx-5'>
+            <div className='border-r-4 mr-2 border-colors-darkbrown' />
             <div className='flex flex-col items-start gap-5 justify-between'>
               <Typography className='text-colors-darkbrown'>
                 {t("excursions.steps.departureFromNdangane")}
@@ -143,8 +143,8 @@ export default function Excursion() {
         );
       case 5:
         return (
-          <section className='flex '>
-            <div className='border-r-4 mr-2 border-colors-darkbrown h-[400px]' />
+          <section className='flex mx-5'>
+            <div className='border-r-4 mr-2 border-colors-darkbrown' />
             <div className='flex flex-col items-start gap-5 justify-between'>
               <Typography className='text-colors-darkbrown'>
                 {t("excursions.steps.discoverYayèmeVillage")}
@@ -175,9 +175,9 @@ export default function Excursion() {
         );
       case 6:
         return (
-          <section className='flex '>
-            <div className='border-r-4 mr-2 border-colors-darkbrown h-32' />
-            <div className='flex flex-col items-start gap-4 justify-between'>
+          <section className='flex mx-5'>
+            <div className='border-r-4 mr-2 border-colors-darkbrown' />
+            <div className='flex flex-col items-start  gap-4 justify-between'>
               <Typography className='text-colors-darkbrown'>
                 {t("excursions.steps.discoverYayèmeVillage")}
               </Typography>
@@ -215,7 +215,7 @@ export default function Excursion() {
             alt='excursion_detail'
           />
 
-          <Typography className='w-full mb-4 text-base text-center text-colors-gray-50 tablet:text-start'>
+          <Typography className='w-full mx-5 uppercase mb-4 text-base text-center text-colors-gray-50 tablet:text-start'>
             {t("excursions.ourStep")}
           </Typography>
           {getRenderSchema(excursionId?.id || 0)}

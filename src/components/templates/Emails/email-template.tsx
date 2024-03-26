@@ -10,6 +10,7 @@ interface EmailTemplateProps {
   allergy: string;
   additionalInfo: string;
   excursions: string;
+  date: string;
 }
 
 function EmailTemplate({
@@ -21,6 +22,7 @@ function EmailTemplate({
   allergy,
   additionalInfo,
   excursions,
+  date,
 }: EmailTemplateProps): JSX.Element {
   return (
     <div>
@@ -45,8 +47,10 @@ function EmailTemplate({
         <Typography>
           Nombre de participants : {nbOfParticipants} personne(s)
         </Typography>
+        <Typography>Date de reservation : le {date}</Typography>
       </div>
-
+      <br />
+      <br />
       <div className='flex flex-col border-2'>
         <Typography type='h2'> Informations de contact</Typography>
         <Typography>Nom: {lastname}</Typography>
@@ -58,10 +62,12 @@ function EmailTemplate({
       <br />
       <br />
       <div>
-        <Typography type='h3'>Informations complémentaires ?</Typography>
+        <Typography type='h2'>Informations complémentaires ?</Typography>
         <Typography>{additionalInfo}</Typography>
       </div>
-
+      <br />
+      <br />
+      <br />
       <div>
         <Typography>
           Merci de ne pas répondre à cet email. Pour nous contacter, cliquez

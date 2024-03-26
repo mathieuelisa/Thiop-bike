@@ -16,6 +16,7 @@ export async function POST(request: any) {
       allergy,
       additionalInfo,
       excursions,
+      date,
     } = body;
 
     const data = await resend.emails.send({
@@ -31,6 +32,7 @@ export async function POST(request: any) {
         allergy,
         additionalInfo,
         excursions,
+        date,
       }),
     });
 
