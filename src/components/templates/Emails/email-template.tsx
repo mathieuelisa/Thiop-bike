@@ -1,6 +1,6 @@
 import Typography from "@/components/ui/Typography";
 import React from "react";
-import { format, parse } from "date-fns";
+// import { format, parse } from "date-fns";
 
 interface EmailTemplateProps {
   lastname: string;
@@ -25,10 +25,10 @@ function EmailTemplate({
   excursions,
   date,
 }: EmailTemplateProps): JSX.Element {
-  const parseDate = parse(date, "yyyy-MM-dd", new Date());
-  const formattedDate = format(parseDate, "EEEE dd MMMM yyyy", {
-    locale: require("date-fns/locale/fr"),
-  });
+  // const parseDate = parse(date, "yyyy-MM-dd", new Date());
+  // const formattedDate = format(parseDate, "EEEE dd MMMM yyyy", {
+  //   locale: require("date-fns/locale/fr"),
+  // });
 
   return (
     <div>
@@ -52,7 +52,7 @@ function EmailTemplate({
         <Typography>
           Nombre de participants : {nbOfParticipants} personne(s)
         </Typography>
-        <Typography>Date de réservation : le {formattedDate}</Typography>
+        <Typography>Date de réservation : le {date}</Typography>
       </div>
       <br />
       <br />
