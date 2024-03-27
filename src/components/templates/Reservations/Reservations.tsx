@@ -218,7 +218,7 @@ export default function Reservations({ titleExcursion }: Props) {
                   </option>
                   <option
                     className='text-colors-black'
-                    value='Sambia dia à l&#39;heure du coucher du soleil'
+                    value='Sambia dia à l&#39;heure du sunset'
                   >
                     {t("inputs.sambiaDia")}
                   </option>
@@ -247,17 +247,29 @@ export default function Reservations({ titleExcursion }: Props) {
                   <option className='text-colors-black' value='1'>
                     1 participant
                   </option>
-                  <option className='text-colors-black' value='2 à 3'>
-                    2 à 3 participants
+                  <option className='text-colors-black' value='2'>
+                    2 participants
                   </option>
-                  <option className='text-colors-black' value='4 à 5'>
-                    4 à 5 participants
+                  <option className='text-colors-black' value='3'>
+                    3 participants
                   </option>
-                  <option className='text-colors-black' value='6 à 7'>
-                    6 à 7 participants
+                  <option className='text-colors-black' value='4'>
+                    4 participants
                   </option>
-                  <option className='text-colors-black' value='8 à 9'>
-                    8 à 9 participants
+                  <option className='text-colors-black' value='5'>
+                    5 participants
+                  </option>
+                  <option className='text-colors-black' value='6'>
+                    6 participants
+                  </option>
+                  <option className='text-colors-black' value='7'>
+                    7 participants
+                  </option>
+                  <option className='text-colors-black' value='8'>
+                    8 participants
+                  </option>
+                  <option className='text-colors-black' value='9'>
+                    9 participants
                   </option>
                   <option className='text-colors-black' value='10'>
                     10 participants

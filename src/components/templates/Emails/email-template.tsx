@@ -27,15 +27,15 @@ function EmailTemplate({
   return (
     <div>
       <Typography type='h1' className='font-semibold'>
-        Bonjour {firstname}, ta réservation a bien été reçue.
+        Bonjour {firstname}, votre réservation a bien été reçue.
       </Typography>
       <Typography className='mb-5'>
-        Merci {firstname} de nous avoir soumis ta demande de réservation.
+        Merci {firstname} de nous avoir soumis votre demande de réservation.
         <br />
-        <br /> Nous n&#39;hésiterons pas à revenir vers toi dans un délai
+        <br /> Nous n&#39;hésiterons pas à revenir vers vous dans un délai
         maximum de 48h.
-        <br /> Si tu as des questions d&#39;ici là n&#39;hésite pas à nous
-        contacter par mail: thiopthiopbike@gmail.com
+        <br /> Si vous avez des questions d&#39;ici là n&#39;hésitez pas à nous
+        contacter par mail: contact@thiopthiopbike.com
         <br />
         <br />
       </Typography>
@@ -46,7 +46,7 @@ function EmailTemplate({
         <Typography>
           Nombre de participants : {nbOfParticipants} personne(s)
         </Typography>
-        <Typography>Date de reservation : le {date}</Typography>
+        <Typography>Date de réservation : le {date}</Typography>
       </div>
       <br />
       <br />
