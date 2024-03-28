@@ -18,6 +18,7 @@ import { useConditionText } from "@/context/ConditionsTextContext";
 import ConditionModal from "./ConditionModal";
 import useClickOutside from "@/hooks/useClickOutside";
 import { useTranslation } from "react-i18next";
+import { format, parse } from "date-fns";
 
 type Props = {
   titleExcursion?: string;
@@ -48,6 +49,13 @@ export default function Reservations({ titleExcursion }: Props) {
   });
 
   const onSubmit = async (data: any) => {
+    const parseDate = parse(data.date, "yyyy-MM-dd", new Date());
+    const formattedDate = format(parseDate, "EEEE dd MMMM yyyy", {
+      locale: require("date-fns/locale/fr"),
+    });
+
+    data.date = formattedDate;
+
     const response = await fetch("/api/send", {
       method: "POST",
       headers: {

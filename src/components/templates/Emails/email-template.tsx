@@ -1,6 +1,5 @@
 import Typography from "@/components/ui/Typography";
 import React from "react";
-// import { format, parse } from "date-fns";
 
 interface EmailTemplateProps {
   lastname: string;
@@ -25,11 +24,6 @@ function EmailTemplate({
   excursions,
   date,
 }: EmailTemplateProps): JSX.Element {
-  // const parseDate = parse(date, "yyyy-MM-dd", new Date());
-  // const formattedDate = format(parseDate, "EEEE dd MMMM yyyy", {
-  //   locale: require("date-fns/locale/fr"),
-  // });
-
   return (
     <div>
       <Typography type='h1' className='font-semibold'>
