@@ -53,12 +53,12 @@ export default function Reservations({ titleExcursion }: Props) {
   });
 
   const onSubmit = async (data: any) => {
-    const parseDate = parse(data.date, "yyyy-MM-dd", new Date());
-    const formattedDate = format(parseDate, "EEEE dd MMMM yyyy", {
-      locale: require("date-fns/locale/fr"),
-    });
+    // const parseDate = parse(data.date, "yyyy-MM-dd", new Date());
+    // const formattedDate = format(parseDate, "EEEE dd MMMM yyyy", {
+    //   locale: require("date-fns/locale/fr"),
+    // });
 
-    data.date = formattedDate;
+    // data.date = formattedDate;
 
     const response = await fetch("/api/send", {
       method: "POST",
