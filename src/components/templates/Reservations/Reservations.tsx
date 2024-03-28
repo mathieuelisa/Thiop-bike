@@ -29,6 +29,10 @@ export default function Reservations({ titleExcursion }: Props) {
   const notify = () =>
     toast.success("Réservation envoyée !", { position: "bottom-right" });
 
+  const notifyError = () => {
+    toast.error("Une erreur est survenue", { position: "bottom-right" });
+  };
+
   const { toggleCondition, isConditionOpen, setConditionOpen } =
     useConditionText();
   const conditionCheckRef = useRef<HTMLDivElement>(null);
@@ -66,6 +70,8 @@ export default function Reservations({ titleExcursion }: Props) {
 
     if (response.status === 200) {
       notify();
+    } else {
+      notifyError();
     }
   };
 
